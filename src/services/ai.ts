@@ -62,11 +62,13 @@ Nhiệm vụ:
 Một tin được xem là liên quan nếu thuộc một trong các nhóm sau:
 - Tin tức về Bitcoin (BTC) hoặc Solana (SOL) (ví dụ: cập nhật công nghệ, sự kiện, dòng tiền của BTC/SOL).
 - Chính sách, pháp luật, quản lý nhà nước liên quan đến crypto, blockchain, tài sản số, fintech sandbox (đặc biệt tại Việt Nam hoặc các quốc gia lớn như Mỹ/EU/Trung Quốc).
-- Tin về Việt Nam có liên quan trực tiếp đến tài sản số, blockchain, fintech, ngân hàng số, chính sách quản lý tài sản mã hóa của chính phủ, các sàn giao dịch hoạt động tại Việt Nam, hoặc các tổ chức như VIFC (Hiệp hội các nhà đầu tư tài chính Việt Nam).
+- Tin về Việt Nam có liên quan trực tiếp đến tài sản số, blockchain, chính sách quản lý tài sản mã hóa của chính phủ, các sàn giao dịch hoạt động tại Việt Nam, các tổ chức như VIFC (Hiệp hội các nhà đầu tư tài chính Việt Nam).
+- Các sự kiện, hội thảo lớn, chuyển biến và xu hướng quan trọng về tài chính công nghệ (Fintech) tại Việt Nam.
 - Tin vĩ mô quốc tế có tác động rõ ràng đến thị trường crypto nói chung (ví dụ: lãi suất FED, báo cáo CPI Mỹ, tin tức về SEC, ETF crypto giao ngay...).
 - Công nghệ blockchain, hạ tầng kỹ thuật on-chain, Web3 nói chung.
 
 Một tin KHÔNG được xem là liên quan nếu:
+- Tin tức giá cả, biến động giá chỉ mang tính chất báo cáo bề mặt hoặc phân tích kỹ thuật sơ sài của BTC và Solana (ví dụ: 'Giá BTC tăng 2% hôm nay', 'Chỉ số RSI cho thấy BTC quá mua'...). Chỉ giữ lại tin về giá nếu bài viết mang tính phân tích chuyên sâu, giải thích được bản chất gốc rễ của sự việc (đáp ứng nguyên lý phân tích '3 Whys': Tại sao giá biến động? Tại sao điều này quan trọng? Và Tại sao lại vào lúc này/tác động tiếp theo là gì?).
 - Tin tức giá cả, biến động giá, phân tích kỹ thuật của các đồng coin khác ngoài BTC và Solana (ví dụ: giá ETH tăng/giảm, biến động BNB, XRP, meme coins...).
 - Tin tức dự án, cập nhật công nghệ, tin nội bộ của các đồng coin/token khác ngoài BTC và Solana (ví dụ: tin về mạng lưới Ethereum, Cardano, Ripple, các dự án DeFi nhỏ khác).
 - Chỉ nói chung về công nghệ, AI, ngân hàng truyền thống, chứng khoán, bất động sản, vàng, tỷ giá ngoại tệ mà không có liên hệ rõ với crypto/blockchain/tài sản số.
@@ -104,7 +106,8 @@ Một tin KHÔNG được xem là liên quan nếu:
 - "low": thông tin phụ, tác động thấp.
 - Nếu relevant = false, dùng "low".
 
-*LƯU Ý ĐẶC BIỆT*: Ưu tiên đánh giá mức độ quan trọng là "high" hoặc "medium" đối với các tin tức về Việt Nam liên quan đến pháp lý, chính sách chính phủ, sàn giao dịch trong nước, và các tổ chức tài chính tại Việt Nam (như VIFC). Không được đánh giá các tin này là "low".
+*LƯU Ý ĐẶC BIỆT*: 
+- Ưu tiên đánh giá mức độ quan trọng là "high" hoặc "medium" đối với các tin tức về Việt Nam liên quan đến pháp lý, chính sách chính phủ, các sự kiện tài chính công nghệ (Fintech) lớn, sàn giao dịch trong nước, và các tổ chức tài chính tại Việt Nam (như VIFC). Không được đánh giá các tin này là "low".
 
 JSON kết quả bắt buộc đúng schema sau:
 
