@@ -2,10 +2,12 @@ import { Telegraf } from 'telegraf';
 
 export class TelegramService {
   private bot: Telegraf | null = null;
-  private authorizedChatIds: number[] = [];
+  private db: any = null;
+  private authorizedChatIds: (number | string)[] = [];
   private dryRun: boolean = false;
 
-  constructor() {
+  constructor(db: any) {
+    this.db = db;
     this.dryRun = process.env.DRY_RUN === 'true';
     
     const token = process.env.TELEGRAM_BOT_TOKEN;
@@ -25,17 +27,23 @@ export class TelegramService {
       console.log('[Telegram] TELEGRAM_BOT_TOKEN not provided or default. Running in dry-run/console-only mode.');
     }
 
-    // Parse authorized chat IDs
+    // Parse authorized chat IDs/channels from .env
     const chatIdsStr = process.env.TELEGRAM_CHAT_IDS || '';
     this.authorizedChatIds = chatIdsStr
       .split(',')
-      .map(id => parseInt(id.trim(), 10))
-      .filter(id => !isNaN(id));
+      .map(id => id.trim())
+      .filter(id => id.length > 0)
+      .map(id => {
+        // Channels starting with @ are kept as string usernames, numbers are parsed as integers
+        if (id.startsWith('@')) {
+          return id;
+        }
+        const num = parseInt(id, 10);
+        return isNaN(num) ? id : num;
+      });
       
     if (this.authorizedChatIds.length > 0) {
-      console.log(`[Telegram] Loaded ${this.authorizedChatIds.length} authorized Chat ID(s):`, this.authorizedChatIds);
-    } else {
-      console.log('[Telegram] WARNING: No authorized Chat IDs loaded. Configure TELEGRAM_CHAT_IDS in .env.');
+      console.log(`[Telegram] Loaded ${this.authorizedChatIds.length} static target(s) from .env:`, this.authorizedChatIds);
     }
   }
 
@@ -50,34 +58,59 @@ export class TelegramService {
   }
 
   /**
-   * Listen to bot commands, especially for getting the user's Chat ID
+   * Listen to bot commands, enabling public interactive subscription
    */
   private setupBotCommands() {
     if (!this.bot) return;
 
-    this.bot.start((ctx) => {
+    // Start / Subscribe Command
+    this.bot.start(async (ctx) => {
       const chatId = ctx.chat.id;
-      const isAuthorized = this.authorizedChatIds.includes(chatId);
+      const username = ctx.from?.first_name || 'bạn';
 
-      if (isAuthorized) {
-        ctx.reply(
-          `🔔 <b>Hệ thống quét tin tức tài sản số realtime đã sẵn sàng!</b>\n\n` +
-          `Bạn đã được ủy quyền nhận tin tức tại đây. Chat ID của bạn là: <code>${chatId}</code>`,
-          { parse_mode: 'HTML' }
-        );
+      if (this.db) {
+        const added = await this.db.addSubscriber(chatId);
+        if (added) {
+          ctx.reply(
+            `🔔 <b>Chào ${username}! Đăng ký thành công!</b>\n\n` +
+            `Bạn đã đăng ký nhận tin tức chọn lọc chất lượng cao (độ quan trọng CAO) về thị trường tài sản số tại Việt Nam & quốc tế.\n\n` +
+            `Để dừng nhận tin, bất kỳ lúc nào hãy gửi lệnh /stop.`,
+            { parse_mode: 'HTML' }
+          );
+        } else {
+          ctx.reply(
+            `🔔 <b>Bạn đã đăng ký trước đó rồi!</b>\n\n` +
+            `Hệ thống sẽ tiếp tục gửi tin tức nóng hổi trực tiếp tại đây khi có diễn biến mới.`,
+            { parse_mode: 'HTML' }
+          );
+        }
       } else {
-        ctx.reply(
-          `🔒 <b>Yêu cầu truy cập bị từ chối!</b>\n\n` +
-          `Bạn chưa được cấp quyền nhận tin tức. Hãy sao chép Chat ID bên dưới và thêm nó vào biến <code>TELEGRAM_CHAT_IDS</code> trong file <code>.env</code>:\n\n` +
-          `<b>Chat ID của bạn:</b> <code>${chatId}</code>`,
-          { parse_mode: 'HTML' }
-        );
+        ctx.reply('🔒 Hệ thống cơ sở dữ liệu tạm thời chưa sẵn sàng, vui lòng thử lại sau.');
+      }
+    });
+
+    // Unsubscribe Command
+    this.bot.command('stop', async (ctx) => {
+      const chatId = ctx.chat.id;
+      if (this.db) {
+        const removed = await this.db.removeSubscriber(chatId);
+        if (removed) {
+          ctx.reply(
+            `🔕 <b>Đã hủy đăng ký nhận tin!</b>\n\n` +
+            `Hệ thống đã loại bỏ tài khoản của bạn khỏi danh sách phát sóng. Để đăng ký lại, hãy gửi /start.`,
+            { parse_mode: 'HTML' }
+          );
+        } else {
+          ctx.reply('Bạn chưa đăng ký nhận tin từ hệ thống. Gửi /start để đăng ký.', { parse_mode: 'HTML' });
+        }
+      } else {
+        ctx.reply('🔒 Hệ thống cơ sở dữ liệu tạm thời chưa sẵn sàng, vui lòng thử lại sau.');
       }
     });
   }
 
   /**
-   * Broadcasts a news article to all authorized Telegram chat IDs
+   * Broadcasts a news article to all static targets (.env) and interactive subscribers (DB)
    */
   async sendNews(
     title: string,
@@ -126,7 +159,6 @@ export class TelegramService {
     message += `📰 <b>Nguồn:</b> ${escapedSource}\n\n`;
     
     if (summary) {
-      // Split summary by newlines and clean it
       const summaryLines = summary
         .split('\n')
         .map(line => line.trim())
@@ -139,27 +171,45 @@ export class TelegramService {
     
     message += `🔗 <a href="${url}">Xem chi tiết bài báo gốc</a>`;
 
+    // Retrieve database interactive subscribers
+    const dbSubscribers = this.db ? this.db.getSubscribers() : [];
+    
+    // Combine static targets (.env) and interactive subscribers (DB)
+    const targets = Array.from(new Set([...this.authorizedChatIds, ...dbSubscribers]));
+
     if (this.dryRun || !this.bot) {
       console.log('\n--- [DRY RUN - TELEGRAM BROADCAST] ---');
-      console.log(`To: ${this.authorizedChatIds.join(', ') || 'No Subscribers'}`);
+      console.log(`To: ${targets.join(', ') || 'No Subscribers'}`);
       console.log(message);
       console.log('-------------------------------------\n');
       return;
     }
 
-    if (this.authorizedChatIds.length === 0) {
-      console.log('[Telegram] Aborted sending: No authorized Chat IDs configured.');
+    if (targets.length === 0) {
+      console.log('[Telegram] Aborted sending: No subscribers or channel targets configured.');
       return;
     }
 
-    for (const chatId of this.authorizedChatIds) {
+    for (const chatId of targets) {
       try {
         await this.bot.telegram.sendMessage(chatId, message, {
           parse_mode: 'HTML'
         });
-        console.log(`[Telegram] News successfully sent to Chat ID: ${chatId}`);
+        console.log(`[Telegram] News successfully sent to: ${chatId}`);
       } catch (error: any) {
-        console.error(`[Telegram] Error sending to Chat ID ${chatId}:`, error.message);
+        console.error(`[Telegram] Error sending to ${chatId}:`, error.message);
+        
+        // Self-cleaning: if user blocked the bot or chat not found, remove them
+        if (
+          error.message.includes('forbidden') || 
+          error.message.includes('blocked') || 
+          error.message.includes('chat not found')
+        ) {
+          console.log(`[Telegram] Destination ${chatId} invalid/blocked. Removing from subscribers list.`);
+          if (this.db && typeof chatId === 'number') {
+            await this.db.removeSubscriber(chatId);
+          }
+        }
       }
     }
   }

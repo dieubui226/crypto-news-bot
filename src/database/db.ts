@@ -4,16 +4,22 @@ import { ProcessedArticle } from '../types';
 
 export class JSONDatabase {
   private dbPath: string;
+  private subscribersPath: string;
   private memoryCache: Map<string, ProcessedArticle> = new Map();
+  private subscribersCache: Set<number> = new Set();
 
   constructor(dbPath: string = 'db.json') {
     this.dbPath = path.resolve(dbPath);
+    // Determine subscribers path in the same directory
+    const dir = path.dirname(this.dbPath);
+    this.subscribersPath = path.join(dir, 'subscribers.json');
   }
 
   /**
    * Initializes the database, loading existing records from disk
    */
   async init(): Promise<void> {
+    // 1. Initialize Articles DB
     try {
       await fs.access(this.dbPath);
       const data = await fs.readFile(this.dbPath, 'utf8');
@@ -22,25 +28,51 @@ export class JSONDatabase {
       for (const record of records) {
         this.memoryCache.set(record.url, record);
       }
-      console.log(`[DB] Loaded. Tracking ${this.memoryCache.size} articles.`);
+      console.log(`[DB] Articles loaded. Tracking ${this.memoryCache.size} articles.`);
     } catch (error: any) {
       if (error.code === 'ENOENT') {
-        console.log('[DB] File not found. Initializing a new one...');
-        await this.save([]);
+        console.log('[DB] Articles file not found. Initializing a new one...');
+        await this.saveArticles([]);
       } else {
-        console.error('[DB] Failed to initialize:', error);
+        console.error('[DB] Failed to initialize articles:', error);
+        throw error;
+      }
+    }
+
+    // 2. Initialize Subscribers DB
+    try {
+      await fs.access(this.subscribersPath);
+      const data = await fs.readFile(this.subscribersPath, 'utf8');
+      const list: number[] = JSON.parse(data);
+      this.subscribersCache = new Set(list);
+      console.log(`[DB] Subscribers loaded. Tracking ${this.subscribersCache.size} users.`);
+    } catch (error: any) {
+      if (error.code === 'ENOENT') {
+        console.log('[DB] Subscribers file not found. Initializing a new one...');
+        await this.saveSubscribers([]);
+      } else {
+        console.error('[DB] Failed to initialize subscribers:', error);
         throw error;
       }
     }
   }
 
   /**
-   * Saves records to disk
+   * Saves article records to disk
    */
-  private async save(records: ProcessedArticle[]): Promise<void> {
+  private async saveArticles(records: ProcessedArticle[]): Promise<void> {
     const dir = path.dirname(this.dbPath);
     await fs.mkdir(dir, { recursive: true });
     await fs.writeFile(this.dbPath, JSON.stringify(records, null, 2), 'utf8');
+  }
+
+  /**
+   * Saves subscribers to disk
+   */
+  private async saveSubscribers(list: number[]): Promise<void> {
+    const dir = path.dirname(this.subscribersPath);
+    await fs.mkdir(dir, { recursive: true });
+    await fs.writeFile(this.subscribersPath, JSON.stringify(list, null, 2), 'utf8');
   }
 
   /**
@@ -71,7 +103,7 @@ export class JSONDatabase {
     
     this.memoryCache.set(url, record);
     const records = Array.from(this.memoryCache.values());
-    await this.save(records);
+    await this.saveArticles(records);
   }
 
   /**
@@ -92,8 +124,51 @@ export class JSONDatabase {
     
     if (deletedCount > 0) {
       console.log(`[DB] Cleaned up ${deletedCount} database records older than ${days} days.`);
-      await this.save(Array.from(this.memoryCache.values()));
+      await this.saveArticles(Array.from(this.memoryCache.values()));
     }
   }
+
+  // --- SUBSCRIBER MANAGEMENT ---
+
+  /**
+   * Adds a subscriber chat ID
+   */
+  async addSubscriber(chatId: number): Promise<boolean> {
+    if (this.subscribersCache.has(chatId)) {
+      return false; // Already subscribed
+    }
+    this.subscribersCache.add(chatId);
+    await this.saveSubscribers(Array.from(this.subscribersCache));
+    console.log(`[DB] Added subscriber chat ID: ${chatId}`);
+    return true;
+  }
+
+  /**
+   * Removes a subscriber chat ID
+   */
+  async removeSubscriber(chatId: number): Promise<boolean> {
+    if (!this.subscribersCache.has(chatId)) {
+      return false; // Not subscribed
+    }
+    this.subscribersCache.delete(chatId);
+    await this.saveSubscribers(Array.from(this.subscribersCache));
+    console.log(`[DB] Removed subscriber chat ID: ${chatId}`);
+    return true;
+  }
+
+  /**
+   * Gets list of all subscriber chat IDs
+   */
+  getSubscribers(): number[] {
+    return Array.from(this.subscribersCache);
+  }
+
+  /**
+   * Checks if chat ID is subscribed
+   */
+  hasSubscriber(chatId: number): boolean {
+    return this.subscribersCache.has(chatId);
+  }
 }
+
 export default JSONDatabase;

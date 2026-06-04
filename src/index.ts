@@ -16,7 +16,7 @@ const dbPath = process.env.DB_PATH || 'db.json';
 const db = new JSONDatabase(dbPath);
 const crawlerService = new CrawlerService();
 const aiService = new AIService();
-const telegramService = new TelegramService();
+const telegramService = new TelegramService(db);
 
 let isRunning = false;
 let isFirstCycle = true;
