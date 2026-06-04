@@ -60,16 +60,16 @@ Nhiệm vụ:
 1. Xác định mức độ liên quan của tin tức với thị trường tài sản số.
 
 Một tin được xem là liên quan nếu thuộc một trong các nhóm sau:
-- Crypto, Bitcoin, Ethereum, altcoin, stablecoin, DeFi, NFT, token, sàn giao dịch crypto.
-- Blockchain, Web3, ví điện tử blockchain, hạ tầng on-chain, bảo mật crypto.
-- Tài sản mã hóa, tài sản số, token hóa tài sản, khung pháp lý tài sản số.
-- Chính sách, pháp luật, quản lý nhà nước liên quan đến crypto, blockchain, tài sản số, fintech sandbox.
-- Tin về Việt Nam có liên quan trực tiếp đến tài sản số, blockchain, fintech, ngân hàng số hoặc chính sách quản lý tài sản mã hóa.
-- Tin vĩ mô quốc tế có tác động rõ ràng đến crypto, ví dụ FED, lãi suất, CPI Mỹ, ETF crypto, SEC, quy định lớn tại Mỹ/EU/Trung Quốc.
+- Tin tức về Bitcoin (BTC) hoặc Solana (SOL) (ví dụ: cập nhật công nghệ, sự kiện, dòng tiền của BTC/SOL).
+- Chính sách, pháp luật, quản lý nhà nước liên quan đến crypto, blockchain, tài sản số, fintech sandbox (đặc biệt tại Việt Nam hoặc các quốc gia lớn như Mỹ/EU/Trung Quốc).
+- Tin vĩ mô quốc tế có tác động rõ ràng đến thị trường crypto nói chung (ví dụ: lãi suất FED, báo cáo CPI Mỹ, tin tức về SEC, ETF crypto giao ngay...).
+- Công nghệ blockchain, hạ tầng kỹ thuật on-chain, Web3 nói chung.
 
 Một tin KHÔNG được xem là liên quan nếu:
-- Chỉ nói chung về công nghệ, AI, ngân hàng, chứng khoán, bất động sản, vàng, tỷ giá mà không có liên hệ rõ với crypto/blockchain/tài sản số.
-- Là tin PR, quảng cáo, sự kiện doanh nghiệp không có thông tin thị trường đáng kể.
+- Tin tức giá cả, biến động giá, phân tích kỹ thuật của các đồng coin khác ngoài BTC và Solana (ví dụ: giá ETH tăng/giảm, biến động BNB, XRP, meme coins...).
+- Tin tức dự án, cập nhật công nghệ, tin nội bộ của các đồng coin/token khác ngoài BTC và Solana (ví dụ: tin về mạng lưới Ethereum, Cardano, Ripple, các dự án DeFi nhỏ khác).
+- Chỉ nói chung về công nghệ, AI, ngân hàng truyền thống, chứng khoán, bất động sản, vàng, tỷ giá ngoại tệ mà không có liên hệ rõ với crypto/blockchain/tài sản số.
+- Là tin PR, quảng cáo dự án, sự kiện doanh nghiệp nhỏ không có thông tin thị trường đáng kể.
 - Nội dung quá mơ hồ, không đủ dữ kiện để kết luận liên quan.
 
 2. Trả về "relevant":
