@@ -147,5 +147,13 @@ export const SOURCES: CrawlerConfig[] = [
     selector: 'div.tgme_widget_message',
     titleSelector: 'div.tgme_widget_message_text',
     linkSelector: 'a.tgme_widget_message_date'
+  },
+  {
+    name: 'Wu Blockchain English (TG)',
+    type: 'html',
+    url: 'https://t.me/s/wublockchainenglish',
+    selector: 'div.tgme_widget_message',
+    titleSelector: 'div.tgme_widget_message_text',
+    linkSelector: 'a.tgme_widget_message_date'
   }
 ];
