@@ -62,6 +62,7 @@ Nhiệm vụ:
 Một tin được xem là liên quan nếu thuộc một trong các nhóm sau:
 - Tin tức về Bitcoin (BTC) hoặc Solana (SOL) (ví dụ: cập nhật công nghệ, sự kiện, dòng tiền của BTC/SOL).
 - Chính sách, pháp luật, quản lý nhà nước liên quan đến crypto, blockchain, tài sản số, fintech sandbox (đặc biệt tại Việt Nam hoặc các quốc gia lớn như Mỹ/EU/Trung Quốc).
+- Tin về Việt Nam có liên quan trực tiếp đến tài sản số, blockchain, fintech, ngân hàng số, chính sách quản lý tài sản mã hóa của chính phủ, các sàn giao dịch hoạt động tại Việt Nam, hoặc các tổ chức như VIFC (Hiệp hội các nhà đầu tư tài chính Việt Nam).
 - Tin vĩ mô quốc tế có tác động rõ ràng đến thị trường crypto nói chung (ví dụ: lãi suất FED, báo cáo CPI Mỹ, tin tức về SEC, ETF crypto giao ngay...).
 - Công nghệ blockchain, hạ tầng kỹ thuật on-chain, Web3 nói chung.
 
@@ -102,6 +103,8 @@ Một tin KHÔNG được xem là liên quan nếu:
 - "medium": đáng chú ý nhưng tác động vừa phải.
 - "low": thông tin phụ, tác động thấp.
 - Nếu relevant = false, dùng "low".
+
+*LƯU Ý ĐẶC BIỆT*: Ưu tiên đánh giá mức độ quan trọng là "high" hoặc "medium" đối với các tin tức về Việt Nam liên quan đến pháp lý, chính sách chính phủ, sàn giao dịch trong nước, và các tổ chức tài chính tại Việt Nam (như VIFC). Không được đánh giá các tin này là "low".
 
 JSON kết quả bắt buộc đúng schema sau:
 

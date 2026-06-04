@@ -100,8 +100,8 @@ async function checkNews() {
       // Analyze with AI (relevance, translation, summary)
       const analysis = await aiService.analyzeArticle(article);
 
-      if (analysis.relevant) {
-        console.log(`[Orchestrator] -> Article is RELEVANT. Broadcasting to Telegram...`);
+      if (analysis.relevant && analysis.importance !== 'low') {
+        console.log(`[Orchestrator] -> Article is RELEVANT (${analysis.importance}). Broadcasting to Telegram...`);
         
         await telegramService.sendNews(
           analysis.title || article.title,
@@ -119,7 +119,7 @@ async function checkNews() {
         // Sleep to avoid rate limiting or spamming the chat
         await delay(3000);
       } else {
-        console.log(`[Orchestrator] -> Article is IRRELEVANT. Skipping Telegram, adding to DB...`);
+        console.log(`[Orchestrator] -> Article is IRRELEVANT or LOW importance (${analysis.importance}). Skipping Telegram, adding to DB...`);
         // Save to DB anyway so we don't process it in subsequent runs
         await db.add(article.url, article.title, article.source);
       }
