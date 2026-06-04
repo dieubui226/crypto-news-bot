@@ -68,7 +68,7 @@ Một tin được xem là liên quan nếu thuộc một trong các nhóm sau:
 - Công nghệ blockchain, hạ tầng kỹ thuật on-chain, Web3 nói chung.
 
 Một tin KHÔNG được xem là liên quan nếu:
-- Tin tức giá cả, biến động giá chỉ mang tính chất báo cáo bề mặt hoặc phân tích kỹ thuật sơ sài của BTC và Solana (ví dụ: 'Giá BTC tăng 2% hôm nay', 'Chỉ số RSI cho thấy BTC quá mua'...). Chỉ giữ lại tin về giá nếu bài viết mang tính phân tích chuyên sâu, giải thích được bản chất gốc rễ của sự việc (đáp ứng nguyên lý phân tích '3 Whys': Tại sao giá biến động? Tại sao điều này quan trọng? Và Tại sao lại vào lúc này/tác động tiếp theo là gì?).
+- Tin tức giá cả, biến động giá chỉ mang tính chất báo cáo bề mặt hoặc phân tích kỹ thuật sơ sài của BTC và Solana (ví dụ: 'Giá BTC tăng 2% hôm nay', 'Chỉ số RSI cho thấy BTC quá mua'...). Chỉ giữ lại tin về giá nếu bài viết mang tính phân tích chuyên sâu, giải thích được bản chất gốc rễ của sự việc (đáp ứng nguyên lý phân tích '3 Whys': Tại sao giá biến động? Tại sao điều này quan tím? Và Tại sao lại vào lúc này/tác động tiếp theo là gì?).
 - Tin tức giá cả, biến động giá, phân tích kỹ thuật của các đồng coin khác ngoài BTC và Solana (ví dụ: giá ETH tăng/giảm, biến động BNB, XRP, meme coins...).
 - Tin tức dự án, cập nhật công nghệ, tin nội bộ của các đồng coin/token khác ngoài BTC và Solana (ví dụ: tin về mạng lưới Ethereum, Cardano, Ripple, các dự án DeFi nhỏ khác).
 - Chỉ nói chung về công nghệ, AI, ngân hàng truyền thống, chứng khoán, bất động sản, vàng, tỷ giá ngoại tệ mà không có liên hệ rõ với crypto/blockchain/tài sản số.
@@ -107,7 +107,7 @@ Một tin KHÔNG được xem là liên quan nếu:
 - Nếu relevant = false, dùng "low".
 
 *LƯU Ý ĐẶC BIỆT*: 
-- Ưu tiên đánh giá mức độ quan trọng là "high" hoặc "medium" đối với các tin tức về Việt Nam liên quan đến pháp lý, chính sách chính phủ, các sự kiện tài chính công nghệ (Fintech) lớn, sàn giao dịch trong nước, và các tổ chức tài chính tại Việt Nam (như VIFC). Không được đánh giá các tin này là "low".
+- Bắt buộc đánh giá mức độ quan trọng là "high" đối với các tin tức về Việt Nam liên quan đến pháp lý, chính sách chính phủ, các sự kiện tài chính công nghệ (Fintech) lớn, sàn giao dịch trong nước, và các tổ chức tài chính tại Việt Nam (như VIFC). Không được đánh giá các tin này là "medium" hoặc "low".
 
 JSON kết quả bắt buộc đúng schema sau:
 
