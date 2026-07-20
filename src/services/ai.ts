@@ -30,9 +30,9 @@ export class AIService {
 
   /**
    * Processes a crawled article: determines relevance, translates, and summarizes.
-   * Falls back to pass-through if Gemini is not configured.
+   * Retries on 503/429 errors with fallback models.
    */
-  async analyzeArticle(article: Article): Promise<AIAnalysisResult> {
+  async analyzeArticle(article: Article): Promise<AIAnalysisResult & { error?: boolean }> {
     if (!this.aiClient) {
       // Pass-through mode: all articles are considered relevant
       return {
@@ -44,9 +44,11 @@ export class AIService {
       };
     }
 
-    try {
-      const prompt = `
-Bạn là một trợ lý AI chuyên phân tích tin tức về thị trường tài sản số, bao gồm crypto, blockchain, Web3, token hóa tài sản, stablecoin, quy định pháp lý, fintech, kinh tế vĩ mô và các sự kiện có thể ảnh hưởng đến thị trường crypto.
+    const modelsToTry = ['gemini-3.5-flash', 'gemini-2.0-flash-exp'];
+    const maxRetries = 2;
+
+    const prompt = `
+Bạn là một trợ lý AI chuyên phân tích tin tức về thị trường tài sản số, bao gồm crypto, blockchain, Web3, token hóa tài sản, RWA (Real World Asset), stablecoin, quy định pháp lý, fintech, kinh tế vĩ mô và các sự kiện có thể ảnh hưởng đến thị trường crypto.
 
 Hãy phân tích tin tức dưới đây và chỉ trả về kết quả bằng JSON hợp lệ. Không giải thích thêm, không dùng markdown, không bọc trong code block.
 
@@ -60,9 +62,9 @@ Nhiệm vụ:
 1. Xác định mức độ liên quan của tin tức với thị trường tài sản số.
 
 Một tin được xem là liên quan nếu thuộc một trong các nhóm sau:
-- Tin tức về Bitcoin (BTC) hoặc Solana (SOL) (ví dụ: cập nhật công nghệ, sự kiện, dòng tiền của BTC/SOL).
-- Chính sách, pháp luật, quản lý nhà nước liên quan đến crypto, blockchain, tài sản số, fintech sandbox (đặc biệt tại Việt Nam hoặc các quốc gia lớn như Mỹ/EU/Trung Quốc).
-- Tin về Việt Nam có liên quan trực tiếp đến tài sản số, blockchain, chính sách quản lý tài sản mã hóa của chính phủ, các sàn giao dịch hoạt động tại Việt Nam, các tổ chức như VIFC (Hiệp hội các nhà đầu tư tài chính Việt Nam).
+- Tin tức về Bitcoin (BTC), Solana (SOL) hoặc RWA (Real World Asset) / token hóa tài sản thực (ví dụ: cập nhật công nghệ, sự kiện, dòng tiền, hạ tầng, sản phẩm hoặc khung pháp lý liên quan).
+- Chính sách, pháp luật, quản lý nhà nước liên quan đến crypto, blockchain, tài sản số, tài sản ảo, tài sản mã hóa, fintech sandbox (đặc biệt tại Việt Nam hoặc các quốc gia lớn như Mỹ/EU/Trung Quốc).
+- Tin về Việt Nam có liên quan trực tiếp đến tài sản số, tài sản ảo, tài sản mã hóa, blockchain, RWA, token hóa tài sản thực, chính sách quản lý tài sản mã hóa của chính phủ, các sàn giao dịch hoạt động tại Việt Nam, các tổ chức như VIFC (Hiệp hội các nhà đầu tư tài chính Việt Nam).
 - Các sự kiện, hội thảo lớn, chuyển biến và xu hướng quan trọng về tài chính công nghệ (Fintech) tại Việt Nam.
 - Tin vĩ mô quốc tế có tác động rõ ràng đến thị trường crypto nói chung (ví dụ: lãi suất FED, báo cáo CPI Mỹ, tin tức về SEC, ETF crypto giao ngay...).
 - Công nghệ blockchain, hạ tầng kỹ thuật on-chain, Web3 nói chung.
@@ -72,7 +74,7 @@ Một tin KHÔNG được xem là liên quan nếu:
 - Tin tức giá cả, biến động giá, phân tích kỹ thuật của các đồng coin khác ngoài BTC và Solana (ví dụ: giá ETH tăng/giảm, biến động BNB, XRP, meme coins...).
 - Tin tức dự án, cập nhật công nghệ, tin nội bộ của các đồng coin/token khác ngoài BTC và Solana (ví dụ: tin về mạng lưới Ethereum, Cardano, Ripple, các dự án DeFi nhỏ khác).
 - Chỉ nói chung về công nghệ, AI, ngân hàng truyền thống, chứng khoán, bất động sản, vàng, tỷ giá ngoại tệ mà không có liên hệ rõ với crypto/blockchain/tài sản số.
-- Là tin PR, quảng cáo dự án, sự kiện doanh nghiệp nhỏ không có thông tin thị trường đáng kể.
+- Là tin PR, quảng cáo dự án, sự kiện doanh nghiệp/dự án nhỏ lẻ không có thông tin thị trường đáng kể.
 - Nội dung quá mơ hồ, không đủ dữ kiện để kết luận liên quan.
 
 2. Trả về "relevant":
@@ -107,7 +109,7 @@ Một tin KHÔNG được xem là liên quan nếu:
 - Nếu relevant = false, dùng "low".
 
 *LƯU Ý ĐẶC BIỆT*: 
-- Bắt buộc đánh giá mức độ quan trọng là "high" đối với các tin tức về Việt Nam liên quan đến pháp lý, chính sách chính phủ, các sự kiện tài chính công nghệ (Fintech) lớn, sàn giao dịch trong nước, và các tổ chức tài chính tại Việt Nam (như VIFC). Không được đánh giá các tin này là "medium" hoặc "low".
+- Bắt buộc đánh giá mức độ quan trọng là "high" đối với các tin tức về Việt Nam liên quan đến pháp lý, chính sách chính phủ, tài sản số, tài sản ảo, tài sản mã hóa, các sự kiện tài chính công nghệ (Fintech) lớn, sàn giao dịch trong nước, và các tổ chức tài chính tại Việt Nam (như VIFC). Không được đánh giá các tin này là "medium" hoặc "low".
 
 JSON kết quả bắt buộc đúng schema sau:
 
@@ -120,33 +122,49 @@ JSON kết quả bắt buộc đúng schema sau:
 }
 `;
 
-      const model = this.aiClient.getGenerativeModel({
-        model: this.modelName,
-        generationConfig: { responseMimeType: 'application/json' }
-      });
+    for (const modelToTry of modelsToTry) {
+      for (let attempt = 1; attempt <= maxRetries; attempt++) {
+        try {
+          const model = this.aiClient.getGenerativeModel({
+            model: modelToTry,
+            generationConfig: { responseMimeType: 'application/json' }
+          });
 
-      const response = await model.generateContent(prompt);
-      const responseText = response.response.text() || '';
-      const result: AIAnalysisResult = JSON.parse(responseText);
+          const response = await model.generateContent(prompt);
+          const responseText = response.response.text() || '';
+          const result: AIAnalysisResult = JSON.parse(responseText);
 
-      return {
-        relevant: result.relevant,
-        title: result.title || article.title,
-        summary: result.summary || '',
-        category: result.category || 'other',
-        importance: result.importance || 'low'
-      };
-    } catch (err: any) {
-      console.error(`[AI] Error analyzing article "${article.title}":`, err.message);
-      // Fallback in case of API failure
-      return {
-        relevant: true,
-        title: article.title,
-        summary: article.contentSnippet || '',
-        category: 'other',
-        importance: 'low'
-      };
+          return {
+            relevant: result.relevant,
+            title: result.title || article.title,
+            summary: result.summary || '',
+            category: result.category || 'other',
+            importance: result.importance || 'low'
+          };
+        } catch (err: any) {
+          const isRateLimitOr503 = err.message?.includes('503') || err.message?.includes('429') || err.message?.includes('high demand');
+          console.error(`[AI] Attempt ${attempt} with model ${modelToTry} failed for "${article.title}":`, err.message);
+          
+          if (isRateLimitOr503 && attempt < maxRetries) {
+            const delayMs = attempt * 2000;
+            console.log(`[AI] Retrying in ${delayMs}ms...`);
+            await new Promise(r => setTimeout(r, delayMs));
+          } else {
+            break; // Move to next model if available
+          }
+        }
+      }
     }
+
+    console.error(`[AI] All models and retries failed for article "${article.title}". Flagging as analysis error.`);
+    return {
+      relevant: false,
+      title: article.title,
+      summary: '',
+      category: 'other',
+      importance: 'low',
+      error: true
+    };
   }
 }
 

@@ -19,7 +19,6 @@ const aiService = new AIService();
 const telegramService = new TelegramService(db);
 
 let isRunning = false;
-let isFirstCycle = true;
 let checkTimeout: NodeJS.Timeout | null = null;
 
 /**
@@ -70,19 +69,17 @@ async function checkNews() {
 
     if (newArticles.length === 0) {
       console.log('[Orchestrator] No new articles found in this cycle.');
-      isFirstCycle = false; // Ensure flag is cleared even if no articles are found
       isRunning = false;
       return;
     }
 
-    if (isFirstRun || isFirstCycle) {
-      // On the first loop of the run, we silently mark all found articles as processed to avoid spamming
-      console.log(`[Orchestrator] Startup/First cycle: Silently indexing ${newArticles.length} existing articles to database.`);
+    if (isFirstRun) {
+      // Only seed silently when the database is empty. Scheduled single-run jobs must still process new articles.
+      console.log(`[Orchestrator] First run with empty database: silently indexing ${newArticles.length} existing articles.`);
       for (const article of newArticles) {
         await db.add(article.url, article.title, article.source);
       }
       console.log('[Orchestrator] Database synchronization complete. Future news will be sent real-time.');
-      isFirstCycle = false;
       isRunning = false;
       return;
     }
@@ -94,7 +91,34 @@ async function checkNews() {
       return dateA - dateB;
     });
 
+    // Keywords for pre-filtering general news feeds
+    const CRYPTO_KEYWORDS = [
+      'btc', 'bitcoin', 'sol', 'solana', 'crypto', 'blockchain', 'web3', 'rwa', 'stablecoin',
+      'token', 'nft', 'vifc', 'tài sản số', 'tài sản ảo', 'tài sản mã hóa', 'tiền ảo', 'tiền mã hóa',
+      'fintech', 'sandbox', 'bộ tài chính', 'ngân hàng nhà nước', 'sec', 'fed', 'cpi', 'etf',
+      'binance', 'coinbase', 'bybit', 'coindesk', 'cointelegraph', 'decrypt', 'blogtienao', 'coin68',
+      'unlicensed', 'fine', 'fines', 'quy định', 'pháp lý', 'xử phạt', 'sàn giao dịch'
+    ];
+
+    const dedicatedSources = [
+      'CoinDesk', 'Cointelegraph', 'Decrypt', 'BlogTienAo', 'Coin68',
+      'Google News - Tai san ma hoa VN', 'Google News - Vietnam Digital Asset Policy', 'Google News - RWA Tokenization',
+      'Coin68 (TG)', 'VNCointele (TG)', 'Cointelegraph (TG)', 'CoinMarketCap Announcements (TG)',
+      'Cryptoholic Vietnam (TG)', 'Denome Announcements (TG)', 'GFI Research Channel (TG)',
+      'Unfolded (TG)', 'CryptoQuant Official (TG)', 'Ah Boy Ash Reads (TG)', 'Wu Blockchain English (TG)'
+    ];
+
     for (const article of newArticles) {
+      const isDedicated = dedicatedSources.some(ds => article.source.includes(ds));
+      const textToTest = `${article.title} ${article.contentSnippet || ''}`.toLowerCase();
+      const hasKeyword = CRYPTO_KEYWORDS.some(kw => textToTest.includes(kw));
+
+      if (!isDedicated && !hasKeyword) {
+        // Skip non-crypto articles from general sources without wasting AI calls
+        await db.add(article.url, article.title, article.source);
+        continue;
+      }
+
       console.log(`[Orchestrator] Processing: "${article.title}" from [${article.source}]`);
       
       // Analyze with AI (relevance, translation, summary)
@@ -119,9 +143,13 @@ async function checkNews() {
         // Sleep to avoid rate limiting or spamming the chat
         await delay(3000);
       } else {
-        console.log(`[Orchestrator] -> Article is IRRELEVANT or has insufficient importance (${analysis.importance}). Skipping Telegram, adding to DB...`);
-        // Save to DB anyway so we don't process it in subsequent runs
-        await db.add(article.url, article.title, article.source);
+        if (analysis.error) {
+          console.log(`[Orchestrator] -> Analysis failed for "${article.title}" due to AI API errors. Skipping DB commit to retry later.`);
+        } else {
+          console.log(`[Orchestrator] -> Article is IRRELEVANT or has insufficient importance (${analysis.importance}). Skipping Telegram, adding to DB...`);
+          // Save to DB anyway so we don't process it in subsequent runs
+          await db.add(article.url, article.title, article.source);
+        }
       }
     }
 
