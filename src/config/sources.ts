@@ -59,6 +59,22 @@ export const SOURCES: CrawlerConfig[] = [
     rssUrl: "https://news.google.com/rss/search?q=Vietnam+AND+(crypto+OR+blockchain+OR+tokenization+OR+tokenise+OR+tokenize+OR+%22digital+asset%22+OR+VIFC)+when:14d&hl=en-US&gl=US&ceid=US:en"
   },
   {
+    name: "VietnamPlus Business (English)",
+    type: "page",
+    url: "https://en.vietnamplus.vn/business.vnp",
+    selector: "article.story",
+    titleSelector: "h2.story__heading a, a.cms-link",
+    linkSelector: "h2.story__heading a, a.cms-link"
+  },
+  {
+    name: "The Investor Economy",
+    type: "page",
+    url: "https://theinvestor.vn/economy/",
+    selector: "div.story, article, div.item, div.post",
+    titleSelector: "h2 a, h3 a, h4 a, a.title",
+    linkSelector: "h2 a, h3 a, h4 a, a"
+  },
+  {
     name: "VTV Money Finance",
     type: "page",
     url: "https://money.vtv.vn/tai-chinh.htm",
