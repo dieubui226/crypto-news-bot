@@ -75,6 +75,30 @@ export const SOURCES: CrawlerConfig[] = [
     linkSelector: "h2 a, h3 a, h4 a, a"
   },
   {
+    name: "VIFC Da Nang Official Portal",
+    type: "page",
+    url: "https://vifcdanang.vn/",
+    selector: 'a[href*="-bv.htm"]',
+    titleSelector: '',
+    linkSelector: ''
+  },
+  {
+    name: "VnEconomy - Kinh te so",
+    type: "page",
+    url: "https://vneconomy.vn/kinh-te-so.htm",
+    selector: "article.new-item_vertical, article.new-item_horizontal",
+    titleSelector: ".new-item__content a, h3 a",
+    linkSelector: "a"
+  },
+  {
+    name: "VnEconomy - Tai chinh",
+    type: "page",
+    url: "https://vneconomy.vn/tai-chinh.htm",
+    selector: "article.new-item_vertical, article.new-item_horizontal",
+    titleSelector: ".new-item__content a, h3 a",
+    linkSelector: "a"
+  },
+  {
     name: "VTV Money Finance",
     type: "page",
     url: "https://money.vtv.vn/tai-chinh.htm",

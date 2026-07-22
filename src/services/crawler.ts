@@ -91,7 +91,7 @@ export class CrawlerService {
     $(selector).each((_, element) => {
       try {
         const titleEl = $(element).find(titleSelector).first();
-        const title = titleEl.text().trim();
+        const title = titleEl.length ? titleEl.text().trim() : $(element).text().trim();
         
         let link = $(element).find(linkSelector).first().attr('href');
         if (!link && $(element).is('a')) {
