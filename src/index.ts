@@ -102,6 +102,7 @@ async function checkNews() {
 
     const dedicatedSources = [
       'CoinDesk', 'Cointelegraph', 'Decrypt', 'BlogTienAo', 'Coin68',
+      'The Block', 'Blockworks', 'The Tokenist',
       'Google News - Tai san ma hoa VN', 'Google News - Vietnam Digital Asset Policy', 'Google News - RWA Tokenization',
       'Google News - Vietnam Crypto & Fintech (English)',
       'Coin68 (TG)', 'VNCointele (TG)', 'Cointelegraph (TG)', 'CoinMarketCap Announcements (TG)',

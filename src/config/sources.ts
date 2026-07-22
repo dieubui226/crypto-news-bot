@@ -35,6 +35,24 @@ export const SOURCES: CrawlerConfig[] = [
     rssUrl: "https://decrypt.co/feed"
   },
   {
+    name: "The Block",
+    type: "rss",
+    url: "https://www.theblock.co",
+    rssUrl: "https://www.theblock.co/rss.xml"
+  },
+  {
+    name: "Blockworks",
+    type: "rss",
+    url: "https://blockworks.co",
+    rssUrl: "https://blockworks.co/feed/"
+  },
+  {
+    name: "The Tokenist",
+    type: "rss",
+    url: "https://thetokenist.io",
+    rssUrl: "https://thetokenist.io/feed/"
+  },
+  {
     name: "Google News - Tai san ma hoa VN",
     type: "rss",
     url: "https://news.google.com",
