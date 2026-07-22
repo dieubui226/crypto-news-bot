@@ -53,6 +53,12 @@ export const SOURCES: CrawlerConfig[] = [
     rssUrl: "https://news.google.com/rss/search?q=RWA%20OR%20%22Real%20World%20Asset%22%20OR%20%22Real-World%20Asset%22%20OR%20%22token%20h%C3%B3a%20t%C3%A0i%20s%E1%BA%A3n%22%20OR%20%22t%C3%A0i%20s%E1%BA%A3n%20th%E1%BB%B1c%22%20when:1d&hl=vi&gl=VN&ceid=VN:vi"
   },
   {
+    name: "Google News - Vietnam Crypto & Fintech (English)",
+    type: "rss",
+    url: "https://news.google.com",
+    rssUrl: "https://news.google.com/rss/search?q=Vietnam+AND+(crypto+OR+blockchain+OR+tokenization+OR+tokenise+OR+tokenize+OR+%22digital+asset%22+OR+VIFC)+when:14d&hl=en-US&gl=US&ceid=US:en"
+  },
+  {
     name: "VTV Money Finance",
     type: "page",
     url: "https://money.vtv.vn/tai-chinh.htm",
