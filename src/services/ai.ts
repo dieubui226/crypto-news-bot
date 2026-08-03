@@ -103,13 +103,16 @@ Một tin KHÔNG được xem là liên quan nếu:
 - Nếu relevant = false, dùng "other".
 
 6. Đánh giá mức độ quan trọng:
-- "high": có tác động lớn đến thị trường, pháp lý, nhà đầu tư hoặc tổ chức.
-- "medium": đáng chú ý nhưng tác động vừa phải.
-- "low": thông tin phụ, tác động thấp.
+- "high": Chỉ được đánh giá là "high" đối với:
+  + Các tin tức về Việt Nam liên quan đến pháp lý, chính sách chính phủ, tài sản số, tài sản ảo, tài sản mã hóa, các sự kiện tài chính công nghệ (Fintech) lớn, hoạt động hoặc xử phạt các sàn giao dịch trong nước, và các tổ chức tài chính tại Việt Nam (như VIFC/đề án trung tâm tài chính).
+  + Các tin tức quốc tế mang tính chất đột phá hoặc tác động pháp lý cực kỳ nghiêm trọng tầm cỡ toàn cầu ảnh hưởng trực tiếp đến thị trường Việt Nam.
+- "medium": Đáng chú ý nhưng tác động vừa phải. Hầu hết các tin tức vĩ mô quốc tế như quyết định lãi suất của FED, báo cáo chỉ số CPI của Mỹ, biến động dòng vốn ETF crypto, kết quả kinh doanh của các sàn giao dịch nước ngoài (Coinbase, Robinhood...), và các vụ kiện tụng thông thường của SEC phải được đánh giá là "medium" hoặc "low", tuyệt đối KHÔNG được đánh giá là "high".
+- "low": Thông tin phụ, tác động thấp.
 - Nếu relevant = false, dùng "low".
 
 *LƯU Ý ĐẶC BIỆT*: 
 - Bắt buộc đánh giá mức độ quan trọng là "high" đối với các tin tức về Việt Nam liên quan đến pháp lý, chính sách chính phủ, tài sản số, tài sản ảo, tài sản mã hóa, các sự kiện tài chính công nghệ (Fintech) lớn, sàn giao dịch trong nước, và các tổ chức tài chính tại Việt Nam (như VIFC). Không được đánh giá các tin này là "medium" hoặc "low".
+- Các tin tức vĩ mô/chính sách quốc tế thông thường (ví dụ: FED giữ nguyên lãi suất, CPI Mỹ, ETF inflows/outflows, sàn Robinhood báo cáo doanh thu...) KHÔNG được đánh giá là "high". Chỉ đánh giá chúng tối đa là "medium" hoặc "low".
 
 JSON kết quả bắt buộc đúng schema sau:
 
