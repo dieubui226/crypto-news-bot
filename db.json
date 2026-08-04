@@ -5512,5 +5512,11 @@
     "title": "- Về vụ việc ColdCard, cộng đồng đang thảo luận câu hỏi: Vì sao lỗ hổng tạo seed phrase có độ ngẫu nhiên thấp không bị phát hiện suốt nhiều năm? 🔍- Một phần nguyên nhân là mã nguồn mở (open source) không đồng nghĩa với việc mã sẽ luôn được ai đó kiểm tra kỹ. ✅- Ai cũng có thể xem mã, nhưng điều đó không chắc rằng họ thực sự sẽ đọc và rà soát toàn bộ. Đa số lập trình viên thường chỉ tập trung vào: thêm tính năng mới, sửa lỗi dễ nhận ra, và xem các phần mã họ quan tâm. 🧠- Ít người thực hiện kiểm toán chuyên sâu về mật mã học, đặc biệt là các bước liên quan đến entropy và seed phrase. 🛡️- Cộng đồng chú ý khi nhiều người đào lại một bài đăng của ColdCard từ năm 2021, nêu khái niệm “retirement attack”:  - Nhà phát triển cố tình cài lỗi vào quá trình tạo entropy để sau này có thể khôi phục và đánh cắp ví người dùng. 🎭💸- Điều trớ trêu là bài đăng này mô tả rất sát dạng lỗ hổng mà sau đó được phát hiện trong firmware của ColdCard. 😳- Tuy nhiên, bài đăng cũ không phải là bằng chứng cho thấy lỗ hổng được cài một cách cố ý—nó chỉ mô tả một dạng tấn công đã được biết đến trong lĩnh vực bảo mật. 📌🔗 Nguồn: https://x.com/COLDCARDwallet/status/1447213375398846473",
     "source": "VNCointele (TG)",
     "processedAt": "2026-08-04T17:01:40.877Z"
+  },
+  {
+    "url": "https://cafef.vn/phat-minh-pin-moi-co-the-cuu-ca-chau-au-duoc-lam-tu-cat-va-da-nghien-khong-can-dat-hiem-cat-giam-160-tan-co2-188260804194907111.chn",
+    "title": "Phát minh pin mới có thể 'cứu' cả châu Âu: Được làm từ cát và đá nghiền, không cần đất hiếm, cắt giảm 160 tấn CO2",
+    "source": "CafeF Tai Chinh Quoc Te",
+    "processedAt": "2026-08-04T17:26:13.247Z"
   }
 ]
