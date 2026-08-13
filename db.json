@@ -16182,5 +16182,11 @@
     "title": "Trezor reports data from 14K users exposed through shipping provider",
     "source": "Cointelegraph",
     "processedAt": "2026-08-13T15:32:34.804Z"
+  },
+  {
+    "url": "https://t.me/cryptoholicvietnam/24818",
+    "title": "🚨 BREAKING: Trezor lại dính phốt lộ data!Đối tác vận chuyển ShipMonk bị hack, lộ thông tin gần 14.000 khách hàng mua ví cứng Trezor gần đây.📌 Ai bị ảnh hưởng?Khách nhận hàng từ 10/5 đến 8/8/2026Ở: Mỹ, Anh, Thụy Điển, Colombia, Brazil, Ý, Bồ Đào Nha📌 Dữ liệu bị lộ:11.742 người: Họ tên + địa chỉ nhà + SĐT + email1.947 người: Họ tên + thành phố + email✅ Tin vui: Thiết bị Trezor, seed phrase và hệ thống của Trezor vẫn an toàn 100%. Không mất coin.⚠️ Tin xấu: Scammer sẽ dùng data này để phishing cực kỳ nguy hiểm (gọi điện, nhắn tin, gửi mail giả Trezor rất giống thật).👉 Bạn cần làm gì?Kiểm tra email từ help@trezor.ioKhông nhận được mail = bạn an toànTuyệt đối không bao giờ nhập seed vào bất kỳ website nào.Cảnh giác mọi cuộc gọi/email lạĐây là lần đầu tiên Trezor lộ cả số điện thoại và địa chỉ nhà kể từ năm 2013.",
+    "source": "Cryptoholic Vietnam (TG)",
+    "processedAt": "2026-08-13T15:40:04.982Z"
   }
 ]
