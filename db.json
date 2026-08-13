@@ -16440,5 +16440,41 @@
     "title": "Forecasts for $1 million bitcoin price likely look too ambitious, key ratio suggests",
     "source": "CoinDesk",
     "processedAt": "2026-08-13T17:46:16.600Z"
+  },
+  {
+    "url": "https://t.me/unfolded/20259",
+    "title": "Tether completes its first full financial audit by KPMG U.S. which resulted in an unqualified clean opinion, marking the highest result possible — link | AI comment",
+    "source": "Unfolded (TG)",
+    "processedAt": "2026-08-13T18:01:45.650Z"
+  },
+  {
+    "url": "https://t.me/wublockchainenglish/25552",
+    "title": "USENIX Security '26 Study Identifies 65,000+ High-Risk Crypto Addresses Linked to $574.8M in LossesA study presented at USENIX Security '26 identified 65,340 high-risk cryptocurrency addresses involved in abuse across Ethereum and BNB Chain, with estimated losses exceeding $574.8 million. The addresses were linked to the loss of 126,982.94 ETH and 17,726.7 BNB.Researchers identified two attack vectors that directly caused about $15.7 million in losses. One involved the misuse of contract accounts and deterministic contract addresses, while the other exploited EIP-7702 by redirecting compromised accounts to malicious code that could transfer funds. The study analyzed historical data from GitHub repositories and extracted more than 16.3 million unique private keys to identify affected addresses, with a reported detection accuracy of 99.11%. — link",
+    "source": "Wu Blockchain English (TG)",
+    "processedAt": "2026-08-13T18:01:46.823Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBYOUt1bzM5aklEM19wZ1VoclY3OE1Wa2V6Vk9fajAzYm00UW9rUWdOaEJMa0hxRGx1NHBfSVJOdEJXQWRkWkpLN3JkUHZ6anhKYlNKY0VOLWo3aHFEamhv?oc=5",
+    "title": "Giá EQUITY BROKERS: Biểu đồ giá, Giá trị vốn hóa thị trường & Tin tức hôm nay về EQUITY/USD - CoinGecko",
+    "source": "Google News - RWA Tokenization",
+    "processedAt": "2026-08-13T18:01:48.079Z"
+  },
+  {
+    "url": "https://cointelegraph.com/news/blockchain-association-backs-custodia-in-supreme-court-fight-over-fed-master-account?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "title": "Crypto group backs Custodia in Supreme Court battle over Fed access",
+    "source": "Cointelegraph",
+    "processedAt": "2026-08-13T18:01:49.184Z"
+  },
+  {
+    "url": "https://decrypt.co/375567/crypto-group-fed-banking-access-squeeze-firms",
+    "title": "Crypto Group Warns Fed Could Use Banking Access to Squeeze Digital Asset Firms",
+    "source": "Decrypt",
+    "processedAt": "2026-08-13T18:01:49.856Z"
+  },
+  {
+    "url": "https://www.theblock.co/news/regulation/2026-08-13-citigroup-ceo-fraser-on-clarity-act-we-would-like-to-see-good-bill-go-stablecoin-reward-issues-simmer-411751",
+    "title": "Citigroup CEO Fraser on Clarity Act: ‘We would like to see a good bill go through,’ as stablecoin reward issues simmer",
+    "source": "The Block",
+    "processedAt": "2026-08-13T18:01:50.515Z"
   }
 ]
