@@ -9,17 +9,36 @@ export interface AIAnalysisResult {
   importance?: 'high' | 'medium' | 'low';
 }
 
+/** Why a Gemini call failed, which decides whether retrying can help at all. */
+export type AIErrorKind = 'quota' | 'unavailable' | 'notFound' | 'other';
+
+const DEFAULT_MODELS = ['gemini-3.5-flash', 'gemini-3.5-flash-lite'];
+const MAX_ATTEMPTS_PER_MODEL = 2;
+/** Beyond this, the quota window is too far off to be worth blocking the run. */
+const MAX_RETRY_DELAY_MS = 30000;
+
 export class AIService {
   private aiClient: GoogleGenerativeAI | null = null;
-  private modelName: string = 'gemini-3.5-flash';
+  private models: string[];
+  /** Models that answered 404 in this process; retrying them only burns time. */
+  private deadModels: Set<string> = new Set();
+  /** Models that ran out of quota; skipped for the rest of the run instead of re-failing per article. */
+  private exhaustedModels: Set<string> = new Set();
+  /** True once every model is out of quota, so the caller can stop the run early. */
+  private quotaExhausted = false;
 
   constructor() {
+    this.models = (process.env.GEMINI_MODELS || DEFAULT_MODELS.join(','))
+      .split(',')
+      .map(m => m.trim())
+      .filter(Boolean);
+
     const apiKey = process.env.GEMINI_API_KEY;
     if (apiKey && apiKey !== 'your_gemini_api_key_here') {
       try {
         // Initialize the client
         this.aiClient = new GoogleGenerativeAI(apiKey);
-        console.log(`[AI] Service initialized using model: ${this.modelName}`);
+        console.log(`[AI] Service initialized. Model chain: ${this.models.join(' -> ')}`);
       } catch (err) {
         console.error('[AI] Failed to initialize Gemini API Client:', err);
       }
@@ -28,11 +47,57 @@ export class AIService {
     }
   }
 
+  /** True when every model has run out of quota for now. */
+  get isQuotaExhausted(): boolean {
+    return this.quotaExhausted;
+  }
+
+  /**
+   * Maps a Gemini SDK error message onto a retry strategy.
+   */
+  private classifyError(message: string): AIErrorKind {
+    if (message.includes('404') || message.includes('is not found') || message.includes('no longer available')) {
+      return 'notFound';
+    }
+    if (message.includes('429') || message.includes('RESOURCE_EXHAUSTED') || message.includes('quota')) {
+      return 'quota';
+    }
+    if (message.includes('503') || message.includes('500') || message.includes('high demand') || message.includes('overloaded')) {
+      return 'unavailable';
+    }
+    return 'other';
+  }
+
+  /**
+   * Reads the server-suggested cooldown, e.g. "retryDelay": "27s".
+   */
+  private parseRetryDelayMs(message: string): number | null {
+    const match = message.match(/"?retryDelay"?\s*:\s*"?(\d+(?:\.\d+)?)s/);
+    return match ? Math.round(parseFloat(match[1]) * 1000) : null;
+  }
+
+  /** A daily cap will not recover during this run, so waiting for it is pointless. */
+  private isDailyQuota(message: string): boolean {
+    return message.includes('PerDay') || message.includes('per day');
+  }
+
+  private failure(article: Article, errorKind: AIErrorKind): AIAnalysisResult & { error: boolean; errorKind: AIErrorKind } {
+    return {
+      relevant: false,
+      title: article.title,
+      summary: '',
+      category: 'other',
+      importance: 'low',
+      error: true,
+      errorKind
+    };
+  }
+
   /**
    * Processes a crawled article: determines relevance, translates, and summarizes.
-   * Retries on 503/429 errors with fallback models.
+   * Retries transient failures, and gives up immediately on quota or retired models.
    */
-  async analyzeArticle(article: Article): Promise<AIAnalysisResult & { error?: boolean }> {
+  async analyzeArticle(article: Article): Promise<AIAnalysisResult & { error?: boolean; errorKind?: AIErrorKind }> {
     if (!this.aiClient) {
       // Pass-through mode: all articles are considered relevant
       return {
@@ -44,8 +109,9 @@ export class AIService {
       };
     }
 
-    const modelsToTry = ['gemini-3.5-flash', 'gemini-1.5-flash'];
-    const maxRetries = 2;
+    if (this.quotaExhausted) {
+      return this.failure(article, 'quota');
+    }
 
     const prompt = `
 Bạn là một trợ lý AI chuyên phân tích tin tức về thị trường tài sản số, bao gồm crypto, blockchain, Web3, token hóa tài sản, RWA (Real World Asset), stablecoin, quy định pháp lý, fintech, kinh tế vĩ mô và các sự kiện có thể ảnh hưởng đến thị trường crypto.
@@ -126,8 +192,16 @@ JSON kết quả bắt buộc đúng schema sau:
 }
 `;
 
-    for (const modelToTry of modelsToTry) {
-      for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    const usableModels = this.models.filter(m => !this.deadModels.has(m) && !this.exhaustedModels.has(m));
+    if (usableModels.length === 0) {
+      console.error('[AI] No usable models left: every configured model is retired or out of quota. Check GEMINI_MODELS.');
+      return this.failure(article, this.deadModels.size === this.models.length ? 'notFound' : 'quota');
+    }
+
+    let lastKind: AIErrorKind = 'other';
+
+    for (const modelToTry of usableModels) {
+      for (let attempt = 1; attempt <= MAX_ATTEMPTS_PER_MODEL; attempt++) {
         try {
           const model = this.aiClient.getGenerativeModel({
             model: modelToTry,
@@ -146,29 +220,50 @@ JSON kết quả bắt buộc đúng schema sau:
             importance: result.importance || 'low'
           };
         } catch (err: any) {
-          const isRateLimitOr503 = err.message?.includes('503') || err.message?.includes('429') || err.message?.includes('high demand');
-          console.error(`[AI] Attempt ${attempt} with model ${modelToTry} failed for "${article.title}":`, err.message);
-          
-          if (isRateLimitOr503 && attempt < maxRetries) {
-            const delayMs = attempt * 2000;
-            console.log(`[AI] Retrying in ${delayMs}ms...`);
-            await new Promise(r => setTimeout(r, delayMs));
-          } else {
-            break; // Move to next model if available
+          const message = err.message || String(err);
+          const kind = this.classifyError(message);
+          lastKind = kind;
+          console.error(`[AI] Attempt ${attempt} with model ${modelToTry} failed (${kind}) for "${article.title}":`, message);
+
+          if (kind === 'notFound') {
+            // The model has been retired, so never call it again in this process.
+            this.deadModels.add(modelToTry);
+            break;
           }
+
+          if (kind === 'quota') {
+            const isDaily = this.isDailyQuota(message);
+            const suggestedDelay = this.parseRetryDelayMs(message);
+            if (!isDaily && suggestedDelay !== null && suggestedDelay <= MAX_RETRY_DELAY_MS && attempt < MAX_ATTEMPTS_PER_MODEL) {
+              console.log(`[AI] Rate limited on ${modelToTry}. Waiting ${suggestedDelay}ms as suggested by the API...`);
+              await new Promise(r => setTimeout(r, suggestedDelay));
+              continue;
+            }
+            // Every later article would hit the same wall, so stop calling this model this run.
+            this.exhaustedModels.add(modelToTry);
+            console.warn(`[AI] ${modelToTry} is out of ${isDaily ? 'daily' : 'short-term'} quota. Skipping it for the rest of this run.`);
+            break;
+          }
+
+          if (kind === 'unavailable' && attempt < MAX_ATTEMPTS_PER_MODEL) {
+            const delayMs = attempt * 2000;
+            console.log(`[AI] ${modelToTry} temporarily unavailable. Retrying in ${delayMs}ms...`);
+            await new Promise(r => setTimeout(r, delayMs));
+            continue;
+          }
+
+          break; // Malformed response or unknown error: fall through to the next model
         }
       }
     }
 
+    if (this.models.every(m => this.deadModels.has(m) || this.exhaustedModels.has(m))) {
+      this.quotaExhausted = true;
+      console.error('[AI] Quota exhausted on every model. Remaining articles are left untouched for the next run.');
+    }
+
     console.error(`[AI] All models and retries failed for article "${article.title}". Flagging as analysis error.`);
-    return {
-      relevant: false,
-      title: article.title,
-      summary: '',
-      category: 'other',
-      importance: 'low',
-      error: true
-    };
+    return this.failure(article, lastKind);
   }
 }
 

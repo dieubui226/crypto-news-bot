@@ -11,6 +11,8 @@ dotenv.config();
 
 const pollIntervalMinutes = parseInt(process.env.POLL_INTERVAL_MINUTES || '5', 10);
 const dbPath = process.env.DB_PATH || 'db.json';
+// Caps AI calls per run so a large backlog cannot burn the whole daily quota in one cycle.
+const maxArticlesPerRun = parseInt(process.env.MAX_ARTICLES_PER_RUN || '40', 10);
 
 // Initialize services
 const db = new JSONDatabase(dbPath);
@@ -110,6 +112,9 @@ async function checkNews() {
       'Unfolded (TG)', 'CryptoQuant Official (TG)', 'Ah Boy Ash Reads (TG)', 'Wu Blockchain English (TG)'
     ];
 
+    let analyzedCount = 0;
+    let deferredCount = 0;
+
     for (const article of newArticles) {
       const isDedicated = dedicatedSources.some(ds => article.source.includes(ds));
       const textToTest = `${article.title} ${article.contentSnippet || ''}`.toLowerCase();
@@ -120,6 +125,13 @@ async function checkNews() {
         await db.add(article.url, article.title, article.source);
         continue;
       }
+
+      // Leave the rest of the backlog untouched so the next run can pick it up.
+      if (aiService.isQuotaExhausted || analyzedCount >= maxArticlesPerRun) {
+        deferredCount++;
+        continue;
+      }
+      analyzedCount++;
 
       console.log(`[Orchestrator] Processing: "${article.title}" from [${article.source}]`);
       
@@ -153,6 +165,13 @@ async function checkNews() {
           await db.add(article.url, article.title, article.source);
         }
       }
+    }
+
+    if (deferredCount > 0) {
+      const reason = aiService.isQuotaExhausted ? 'AI quota exhausted' : `per-run limit of ${maxArticlesPerRun} reached`;
+      console.log(`[Orchestrator] Analyzed ${analyzedCount} articles. Deferred ${deferredCount} to the next run (${reason}).`);
+    } else {
+      console.log(`[Orchestrator] Analyzed ${analyzedCount} articles. No backlog left.`);
     }
 
     // Auto-clean database articles older than 14 days
