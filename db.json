@@ -18129,5 +18129,35 @@
     "title": "Phát hiện một người ăn xin sở hữu 1,2 tỷ đồng tiền mặt",
     "source": "CafeF Tai Chinh Quoc Te",
     "processedAt": "2026-08-14T09:46:37.585Z"
+  },
+  {
+    "url": "https://vneconomy.vn/tich-hop-4-chuong-trinh-muc-tieu-quoc-gia-thu-gon-dau-moi-day-manh-phan-cap.htm",
+    "title": "Tích hợp 4 Chương trình mục tiêu quốc gia: Thu gọn đầu mối, đẩy mạnh phân cấp",
+    "source": "VnEconomy - Kinh te so",
+    "processedAt": "2026-08-14T10:01:21.424Z"
+  },
+  {
+    "url": "https://vneconomy.vn/blog-chung-khoan-tiec-tan-1299966.htm",
+    "title": "Blog chứng khoán: “Tiệc” tan",
+    "source": "VnEconomy - Kinh te so",
+    "processedAt": "2026-08-14T10:01:21.433Z"
+  },
+  {
+    "url": "https://t.me/CoinMarketCapAnnouncements/15155",
+    "title": "LATEST: 📊 Only 281 of 1,343 EU crypto firms gained MiCA authorization before the July 1 deadline, leaving 1,062 to exit or restructure, per TRM Labs.",
+    "source": "CoinMarketCap Announcements (TG)",
+    "processedAt": "2026-08-14T10:01:57.288Z"
+  },
+  {
+    "url": "https://t.me/wublockchainenglish/25568",
+    "title": "Ethereum L1 to Drop Poseidon for SHA or BLAKE as Quantum-Safe Roadmap AdvancesEthereum Foundation researcher Justin Drake said Ethereum’s L1 cryptography roadmap will move from Poseidon to traditional hash functions such as SHA or BLAKE. Poseidon is designed for efficient use in SNARK-based zero-knowledge proofs, but advances in binary-field SNARKs now allow traditional hashes to be proven efficiently, reducing the need for specialized SNARK-friendly hashes.The shift aligns with Vitalik Buterin’s emphasis on quantum security and privacy. Drake said the plan points to a production-grade leanVM in 2027, followed by deployments across Ethereum’s consensus, data and execution layers in 2028. — link",
+    "source": "Wu Blockchain English (TG)",
+    "processedAt": "2026-08-14T10:01:58.121Z"
+  },
+  {
+    "url": "https://decrypt.co/375619/kalshi-ordered-to-block-washington-bets-days-after-cftc-backed-it",
+    "title": "Kalshi Ordered to Block Washington Bets Days After CFTC Backed It",
+    "source": "Decrypt",
+    "processedAt": "2026-08-14T10:01:58.893Z"
   }
 ]
