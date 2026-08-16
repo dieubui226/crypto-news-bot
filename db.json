@@ -21743,5 +21743,35 @@
     "source": "Google News - Tai san ma hoa VN",
     "processedAt": "2026-08-16T12:45:56.031Z",
     "summary": "• Hiện chưa xác định được thời gian vận hành chính thức của sàn giao dịch tài sản mã hóa tại Việt Nam.\n• Thông tin liên quan đến tiến độ triển khai sàn giao dịch tài sản mã hóa vẫn đang chờ các bước tiếp theo từ cơ quan chức năng."
+  },
+  {
+    "url": "https://t.me/ahboyashreads/24506",
+    "title": "⚠️ Another hardware wallet data breach Safepal experienced an authorization flaw involving unauthorized access to customer order information information for ~40k customers Source",
+    "source": "Ah Boy Ash Reads (TG)",
+    "processedAt": "2026-08-16T13:01:15.179Z"
+  },
+  {
+    "url": "https://t.me/wublockchainenglish/25593",
+    "title": "SafePal Discloses Order Data Breach Affecting Nearly 40,000 CustomersCrypto wallet provider SafePal disclosed a security incident involving an authorization flaw in an order-tracking plugin that allowed unauthorized access to customer order information. Approximately 39,798 customers who placed orders between March 2, 2025 and April 11, 2026 were affected, with exposed data including names, email addresses, shipping addresses, phone numbers and purchase details. SafePal said seed phrases, private keys, wallet passwords, payment information and government-issued ID numbers were not affected, and no evidence was found that wallet access or customer funds were compromised. — link",
+    "source": "Wu Blockchain English (TG)",
+    "processedAt": "2026-08-16T13:01:16.216Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5TbUtBX2cwNkVUNlZvVGV2bXZSMXhmMmhvdHZBYkhqSUJsenk3T3JEal9HUE0wTHJrWTNGRlpjS2JWT1NsX0hLdWJmTkhWcVRVUWc?oc=5",
+    "title": "Giá WOFL: Biểu đồ giá theo thời gian thực, Giá trị vốn hóa thị trường & Tin tức hôm nay về WOFL/USD - CoinGecko",
+    "source": "Google News - RWA Tokenization",
+    "processedAt": "2026-08-16T13:01:17.447Z"
+  },
+  {
+    "url": "https://cointelegraph.com/news/defillama-delayed-app-launch-fake-phishing-apps-apple?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "title": "DefiLlama delayed mobile launch over phishing apps on Apple Store, founder says",
+    "source": "Cointelegraph",
+    "processedAt": "2026-08-16T13:01:18.185Z"
+  },
+  {
+    "url": "https://www.coindesk.com/news-analysis/2026/08/14/the-stablecoin-yield-clash-that-won-t-go-away-has-banks-crypto-battling-over-tradition",
+    "title": "The stablecoin yield clash that won't go away has banks, crypto battling over tradition",
+    "source": "CoinDesk",
+    "processedAt": "2026-08-16T13:01:19.027Z"
   }
 ]
