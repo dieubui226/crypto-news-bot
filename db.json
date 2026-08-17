@@ -1,29 +1,5 @@
 [
   {
-    "url": "https://vneconomy.vn/vietinbank-capital-nang-ty-le-so-huu-tai-pet-len-19.htm",
-    "title": "VietinBank Capital nâng tỷ lệ sở hữu tại PET lên 19%",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-03T14:16:08.901Z"
-  },
-  {
-    "url": "https://vneconomy.vn/nha-dau-tu-ca-nhan-tranh-thu-chot-loi-ban-rong-hon-1500-ty.htm",
-    "title": "Nhà đầu tư cá nhân tranh thủ chốt lời, bán ròng hơn 1.500 tỷ",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-03T14:16:08.903Z"
-  },
-  {
-    "url": "https://vneconomy.vn/du-bao-moi-nhat-ve-30-co-phieu-lot-ro-ftse-geis.htm",
-    "title": "Dự báo mới nhất về 30 cổ phiếu lọt rổ FTSE GEIS",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-03T14:16:08.906Z"
-  },
-  {
-    "url": "https://vneconomy.vn/con-trai-chu-tich-msb-tran-anh-tuan-chi-322-ty-mua-20-trieu-co-phieu.htm",
-    "title": "Con trai Chủ tịch MSB Trần Anh Tuấn chi 322 tỷ mua 20 triệu cổ phiếu",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-03T14:16:08.908Z"
-  },
-  {
     "url": "https://vneconomy.vn/thu-tuong-le-minh-hung-don-luc-hoan-thien-the-che-thuc-day-tang-truong-hai-con-so.htm",
     "title": "Thủ tướng Lê Minh Hưng: Dồn lực hoàn thiện thể chế, thúc đẩy tăng trưởng hai con số",
     "source": "VnEconomy - Tai chinh",
@@ -20168,5 +20144,36 @@
     "title": "How a bug in Coldcard’s code went unnoticed for years, leading to $100 million in hacked funds",
     "source": "CoinDesk",
     "processedAt": "2026-08-17T14:03:25.315Z"
+  },
+  {
+    "url": "https://en.vietnamplus.vn/reference-exchange-rate-up-25-vnd-at-weeks-beginning-post350163.vnp",
+    "title": "<img src=\"https://mediaen.vietnamplus.vn/images/FW624qGUhoG17AFeObPOS-FS_KeAbrPykBLhkIat5cGGcPUov6P_Kz5WuHqBHUJW/reference.jpg.avif\" srcset=\"https://mediaen.vietnamplus.vn/images/FW624qGUhoG17AFeObPOS-FS_KeAbrPykBLhkIat5cGGcPUov6P_Kz5WuHqBHUJW/reference.jpg.avif 1x, https://mediaen.vietnamplus.vn/images/b4_GwCAbe-bvjFaNCss71OFS_KeAbrPykBLhkIat5cGGcPUov6P_Kz5WuHqBHUJW/reference.jpg.avif 2x\" alt=\"The State Bank of Vietnam set the daily reference exchange rate at 25,586 VND/USD on August 17. (Photo: VNA)\" class=\"image-fallback\">",
+    "source": "VietnamPlus Business (English)",
+    "processedAt": "2026-08-17T14:16:02.333Z"
+  },
+  {
+    "url": "https://t.me/vncointele/27672",
+    "title": "🇺🇸 TIN MỚI: Bộ Tài chính Mỹ đề xuất các quy định về stablecoin theo Đạo luật GENIUS, mở thời gian 60 ngày để công chúng đóng góp ý kiến.Tin tức | Thị trường | YouTube",
+    "source": "VNCointele (TG)",
+    "processedAt": "2026-08-17T14:16:07.449Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQejhqalZmTHI1RW1zMUdVWndxd0RRSHFYdThZSENabTAwVTE5VTc5OC1OcXNIb25haWhXNHVGNjQ0cGZCRWFoemFiZVBQTXpyS2k2NkcxYW1hSktoRDkySVZieE9xb1d3NlJOOXhIVE4zWHRNc1o3UGg3ZUpTWnZfOXhEb1IzckNtNWliQjN0N0w3ajlPZlZHaENPSXo?oc=5",
+    "title": "Token hóa tài sản thực: mở thêm kênh huy động vốn - Trung tâm Nội dung số và Truyền thông",
+    "source": "Google News - RWA Tokenization",
+    "processedAt": "2026-08-17T14:16:13.256Z",
+    "summary": "• Token hóa tài sản thực (RWA) giúp mở ra các kênh huy động vốn mới.\n• Mang lại tiềm năng phát triển cho thị trường tài sản số và công nghệ blockchain."
+  },
+  {
+    "url": "https://www.coindesk.com/markets/2026/08/17/tom-lee-s-bitmine-now-owns-4-8-of-ethereum-supply-after-latest-eth-purchase",
+    "title": "Tom Lee's Bitmine now owns 4.8% of Ethereum supply after latest ETH purchase",
+    "source": "CoinDesk",
+    "processedAt": "2026-08-17T14:16:16.879Z"
+  },
+  {
+    "url": "https://www.coindesk.com/opinion/2026/08/17/the-coldcard-hack-proves-reputation-is-not-a-security-model",
+    "title": "The Coldcard hack proves reputation is not a security model",
+    "source": "CoinDesk",
+    "processedAt": "2026-08-17T14:16:18.102Z"
   }
 ]
