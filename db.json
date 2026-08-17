@@ -1,23 +1,5 @@
 [
   {
-    "url": "https://vneconomy.vn/nghien-cuu-co-che-dinh-danh-dien-tu-mot-lan-cho-giao-dich-xuyen-bien-gioi.htm",
-    "title": "Nghiên cứu cơ chế định danh điện tử một lần cho giao dịch xuyên biên giới",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-03T11:01:29.848Z"
-  },
-  {
-    "url": "https://vneconomy.vn/hai-phong-se-thu-hoi-hon-500ha-dat-cho-95-du-an.htm",
-    "title": "Hải Phòng sẽ thu hồi hơn 500ha đất cho 95 dự án",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-03T11:01:29.855Z"
-  },
-  {
-    "url": "https://vneconomy.vn/25-quoc-gia-san-xuat-ca-phe-lon-nhat-the-gioi-viet-nam-xep-thu-hai.htm",
-    "title": "25 quốc gia sản xuất cà phê lớn nhất thế giới, Việt Nam xếp thứ hai",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-03T11:01:29.857Z"
-  },
-  {
     "url": "https://vneconomy.vn/huy-dong-von-tai-tp-ho-chi-minh-va-tp-dong-nai-dat-hon-61-trieu-ti-dong-sau-6-thang.htm",
     "title": "Huy động vốn tại TP. Hồ Chí Minh và TP. Đồng Nai đạt hơn 6,1 triệu tỉ đồng sau 6 tháng",
     "source": "VnEconomy - Tai chinh",
@@ -19829,5 +19811,35 @@
     "title": "XRP giảm xuống dưới 1 USD khi các chuyên gia nhắc lại 470 lời cảnh báo “tử thần” của Bitcoin.",
     "source": "BlogTienAo",
     "processedAt": "2026-08-17T10:46:01.739Z"
+  },
+  {
+    "url": "https://t.me/CoinMarketCapAnnouncements/15266",
+    "title": "LATEST: 📊 Bitcoin would need an estimated $15T in additional capital to reach $1M by 2030, roughly 25% of the US stock market, according to 10x Research's Markus Thielen.",
+    "source": "CoinMarketCap Announcements (TG)",
+    "processedAt": "2026-08-17T11:01:33.999Z"
+  },
+  {
+    "url": "https://t.me/cryptoholicvietnam/24833",
+    "title": "🛠️ Vitalik công bố lộ trình Ethereum mới: StrawmapLần đầu tiên sau nhiều năm, Vitalik Buterin thay đổi hoàn toàn cách mô tả roadmap Ethereum. Thay vì các tầng quen thuộc như Scourge, Verge, Purge, ông giới thiệu Strawmap – một bản dự thảo được tổ chức lại theo ba lớp chính: Consensus, Data và Execution.Mục tiêu định lượng cụ thể:• Layer 1 hướng tới ~10.000 TPS• Layer 2 hướng tới ~10 triệu TPS• Thời gian finality của L1 chỉ còn vài giây• Khả năng kháng máy tính lượng tửĐây là tín hiệu cho thấy Ethereum đang bước vào giai đoạn tối ưu quyết liệt, cân bằng giữa mở rộng và phân quyền, đồng thời chuẩn bị cho rủi ro công nghệ dài hạn.📎 Nguồn: @TDragon2706 | 🔗 Xem bài gốc",
+    "source": "Cryptoholic Vietnam (TG)",
+    "processedAt": "2026-08-17T11:01:34.855Z"
+  },
+  {
+    "url": "https://cointelegraph.com/news/bitmart-account-founder-explain-repayment-plan?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "title": "BitMart account demands founder explain funds status, Xia calls claims ‘fabricated’",
+    "source": "Cointelegraph",
+    "processedAt": "2026-08-17T11:01:44.071Z"
+  },
+  {
+    "url": "https://www.coindesk.com/business/2026/08/17/bitpanda-fined-eur70-000-in-austria-s-first-published-mica-enforcement-case",
+    "title": "Bitpanda fined €70,000 in Austria’s first published MiCA enforcement case",
+    "source": "CoinDesk",
+    "processedAt": "2026-08-17T11:01:45.153Z"
+  },
+  {
+    "url": "https://blogtienao.com/nha-sang-lap-strategy-dang-noi-gi-ve-bitcoin/",
+    "title": "Nhà sáng lập Strategy đang nói gì về Bitcoin?",
+    "source": "BlogTienAo",
+    "processedAt": "2026-08-17T11:01:46.090Z"
   }
 ]
