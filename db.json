@@ -1,23 +1,5 @@
 [
   {
-    "url": "https://en.vietnamplus.vn/government-proposes-special-mechanisms-to-unblock-apec-2027-projects-in-phu-quoc-post349389.vnp",
-    "title": "<img src=\"https://mediaen.vietnamplus.vn/images/156eb6e2a1948681b5ec015e39b3ce4b4be877e78b91f7e6fa128e3b2951c3e222540c41aba92f0cd7a2d98383c24e8e/vnanet-apec.jpg.avif\" srcset=\"https://mediaen.vietnamplus.vn/images/156eb6e2a1948681b5ec015e39b3ce4b4be877e78b91f7e6fa128e3b2951c3e222540c41aba92f0cd7a2d98383c24e8e/vnanet-apec.jpg.avif 1x, https://mediaen.vietnamplus.vn/images/6f8fc6c0201b7be6ef8c568d0acb3bd44be877e78b91f7e6fa128e3b2951c3e222540c41aba92f0cd7a2d98383c24e8e/vnanet-apec.jpg.avif 2x\" alt=\"The construction site of the APEC Conference Centre in Phu Quoc special zone, An Giang province. (Photo: VNA)\" class=\"image-fallback\">",
-    "source": "VietnamPlus Business (English)",
-    "processedAt": "2026-08-03T18:46:02.389Z"
-  },
-  {
-    "url": "https://vneconomy.vn/vn-index-tang-27-diem-va-xu-huong-hoi-phuc-co-the-tiep-dien.htm",
-    "title": "VN-Index tăng 27 điểm và xu hướng hồi phục có thể tiếp diễn",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-03T18:46:16.040Z"
-  },
-  {
-    "url": "https://vneconomy.vn/xuat-khau-nong-lam-thuy-san-phan-dau-vuot-74-ty-usd.htm",
-    "title": "Xuất khẩu nông lâm thủy sản phấn đấu vượt 74 tỷ USD",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-03T18:46:16.043Z"
-  },
-  {
     "url": "https://en.vietnamplus.vn/offshore-wind-poised-to-power-vietnams-marine-economy-post347689.vnp",
     "title": "Offshore wind poised to power Vietnam's marine economy",
     "source": "VietnamPlus Business (English)",
@@ -20507,5 +20489,47 @@
     "title": "Solana’s Pump Token Leads Crypto Market Gainers as Chart Paints Golden Cross",
     "source": "Decrypt",
     "processedAt": "2026-08-17T18:45:58.272Z"
+  },
+  {
+    "url": "https://en.vietnamplus.vn/na-president-urges-safeguards-against-turning-corporate-bond-management-into-safety-certificate-post350184.vnp",
+    "title": "<img src=\"https://mediaen.vietnamplus.vn/images/FW624qGUhoG17AFeObPOSzqnUiFbftcPg_6CDXIfMsfJDOPDQruFLGbaiQ-MrjEXweX0SV0xTa_C19c56M0fHw/vnanet-na-president.jpg.avif\" srcset=\"https://mediaen.vietnamplus.vn/images/FW624qGUhoG17AFeObPOSzqnUiFbftcPg_6CDXIfMsfJDOPDQruFLGbaiQ-MrjEXweX0SV0xTa_C19c56M0fHw/vnanet-na-president.jpg.avif 1x, https://mediaen.vietnamplus.vn/images/b4_GwCAbe-bvjFaNCss71DqnUiFbftcPg_6CDXIfMsfJDOPDQruFLGbaiQ-MrjEXweX0SV0xTa_C19c56M0fHw/vnanet-na-president.jpg.avif 2x\" alt=\"National Assembly President Tran Thanh Man speaks at the 5th session of the NA Standing Committee on August 17. (Photo: VNA)\" class=\"image-fallback\">",
+    "source": "VietnamPlus Business (English)",
+    "processedAt": "2026-08-17T19:01:22.259Z"
+  },
+  {
+    "url": "https://en.vietnamplus.vn/vietnams-fdi-inflows-surge-58-to-38-billion-usd-in-seven-months-post349387.vnp",
+    "title": "Vietnam's FDI inflows surge 58% to 38 billion USD in seven months",
+    "source": "VietnamPlus Business (English)",
+    "processedAt": "2026-08-17T19:01:22.272Z"
+  },
+  {
+    "url": "https://vneconomy.vn/tong-giam-doc-pnj-mua-thanh-cong-1-trieu-co-phieu.htm",
+    "title": "Tổng Giám đốc PNJ mua thành công 1 triệu cổ phiếu",
+    "source": "VnEconomy - Tai chinh",
+    "processedAt": "2026-08-17T19:01:22.311Z"
+  },
+  {
+    "url": "https://vneconomy.vn/bo-y-te-can-nghien-cuu-tong-the-khi-giam-tuoi-huong-tro-cap-huu-tri.htm",
+    "title": "Bộ Y tế: Cần nghiên cứu tổng thể khi giảm tuổi hưởng trợ cấp hưu trí",
+    "source": "VnEconomy - Tai chinh",
+    "processedAt": "2026-08-17T19:01:22.323Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1JbnY4a3B5RklpQXZCZFlmNWI3cFJycllwV2FTTC1jS1RKcWI0MHJydVVNSUxzN0NpeVJSM1pFSFYyUXZ6OFBTUy1xRWNDRFlFb3VzVklSRURPX0lxYXozOXln0gFnQVVfeXFMUEdueWQ5VTdONmhrckJnYTk5aXhzSE1iYWZzN0Q0ZTA1ZmxEc2o4TldyeHZIMHJyeDJ0X3RNalFDeWpSZzllZFhpaWEtZEFKcjlxUkJ5cG82UVJYTHZVSkJzMDdMejZJbw?oc=5",
+    "title": "Theo truyền thông nước ngoài: ONDO tăng trở lại 5%, vùng giá 0.35 đến 0.38 USD trở thành ngưỡng kháng cự quan trọng - Bitget",
+    "source": "Google News - RWA Tokenization",
+    "processedAt": "2026-08-17T19:01:26.444Z"
+  },
+  {
+    "url": "https://cointelegraph.com/news/binance-uk-launch-plans-fca-license?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "title": "Binance to plan UK relaunch with FCA license application: Report",
+    "source": "Cointelegraph",
+    "processedAt": "2026-08-17T19:01:27.505Z"
+  },
+  {
+    "url": "https://www.coindesk.com/markets/2026/08/17/saylor-says-share-buyback-isn-t-a-priority-as-it-builds-its-usd4-8-billion-cash-reserve-though-a-possibility",
+    "title": "Saylor says share buyback isn’t priority as Strategy builds $4.8 billion cash reserve",
+    "source": "CoinDesk",
+    "processedAt": "2026-08-17T19:01:28.820Z"
   }
 ]
