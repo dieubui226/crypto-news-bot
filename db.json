@@ -1,23 +1,5 @@
 [
   {
-    "url": "https://en.vietnamplus.vn/vietnams-import-export-turnover-up-28-in-first-seven-months-post349386.vnp",
-    "title": "<img src=\"https://mediaen.vietnamplus.vn/images/7d1b1ad3fc9563dcff6a3a0b9636850c7f68f7c9b58c7dcf42e41fe3c028fae51e4873adc56ef9c32db1cdec8aae9bd4/vnanet-trade.jpg.avif\" srcset=\"https://mediaen.vietnamplus.vn/images/7d1b1ad3fc9563dcff6a3a0b9636850c7f68f7c9b58c7dcf42e41fe3c028fae51e4873adc56ef9c32db1cdec8aae9bd4/vnanet-trade.jpg.avif 1x, https://mediaen.vietnamplus.vn/images/9208427127649c9760468496aed1bd787f68f7c9b58c7dcf42e41fe3c028fae51e4873adc56ef9c32db1cdec8aae9bd4/vnanet-trade.jpg.avif 2x\" alt=\"Import and export cargo handled at MPC Port in Hai Phong city. (Photo: VNA)\" class=\"image-fallback\">",
-    "source": "VietnamPlus Business (English)",
-    "processedAt": "2026-08-03T15:01:32.969Z"
-  },
-  {
-    "url": "https://vnexpress.net/thanh-lap-mang-luoi-chuyen-gia-ai-viet-nam-toan-cau-5104814.html",
-    "title": "Thành lập Mạng lưới chuyên gia AI Việt Nam toàn cầu",
-    "source": "VnExpress So Hoa",
-    "processedAt": "2026-08-03T15:06:31.089Z"
-  },
-  {
-    "url": "https://cafef.vn/bai-hoc-tu-chuyen-ke-nghiep-lvmh-bernard-arnault-phu-nhan-ran-nut-gia-dinh-nhung-bao-cao-tai-chinh-cua-chinh-cong-ty-lai-ke-chuyen-khac-18826080321474929.chn",
-    "title": "Bài học từ chuyện kế nghiệp LVMH: Bernard Arnault phủ nhận \"rạn nứt\" gia đình, nhưng báo cáo tài chính của chính công ty lại kể chuyện khác",
-    "source": "CafeF Tai Chinh Quoc Te",
-    "processedAt": "2026-08-03T15:06:33.369Z"
-  },
-  {
     "url": "https://cafef.vn/gia-dau-giam-gan-5-188260803215212095.chn",
     "title": "Giá dầu giảm gần 5%",
     "source": "CafeF Tai Chinh Quoc Te",
@@ -20218,5 +20200,41 @@
     "title": "Một cú ngã phơi bày hiện thực của công nghệ Trung Quốc: Vốn dĩ chẳng hoàn hảo như quảng cáo?",
     "source": "CafeF Tai Chinh Quoc Te",
     "processedAt": "2026-08-17T15:01:30.915Z"
+  },
+  {
+    "url": "https://t.me/vncointele/27673",
+    "title": "- 🇺🇸 Tổng thống Trump dự kiến gặp lãnh đạo các công ty crypto và prediction market lớn tại Nhà Trắng vào thứ Tư, gồm Coinbase, Ripple, Gemini, Robinhood, Polymarket và Kalshi.- Chủ tịch SEC Paul Atkins và CFTC Michael Selig cũng sẽ tham dự.- 🎯 Nội dung chính: quy định crypto, cấu trúc thị trường và prediction market, trong bối cảnh dự luật CLARITY vẫn đình trệ tại Quốc hội.- 📅 Ngày hôm sau, CFTC sẽ tổ chức phiên họp đầu tiên của Ủy ban Cố vấn Đổi mới mới.",
+    "source": "VNCointele (TG)",
+    "processedAt": "2026-08-17T15:16:04.591Z"
+  },
+  {
+    "url": "https://t.me/CoinMarketCapAnnouncements/15281",
+    "title": "LATEST: 📊 Billionaire Mark Cuban says chips will become \"the new crypto\" as an asset class.",
+    "source": "CoinMarketCap Announcements (TG)",
+    "processedAt": "2026-08-17T15:16:05.895Z"
+  },
+  {
+    "url": "https://t.me/ahboyashreads/24523",
+    "title": "Harmony hackers continue to mint ONE tokens on-chain, with the total supply exceeding 2.3 trillion tokens (150 times the normal total supply).  Source",
+    "source": "Ah Boy Ash Reads (TG)",
+    "processedAt": "2026-08-17T15:16:06.760Z"
+  },
+  {
+    "url": "https://t.me/wublockchainenglish/25611",
+    "title": "U.S. Treasury Proposes GENIUS Act Rules for Stablecoin Issuers and Foreign StablecoinsThe U.S. Treasury issued proposed rules to implement key provisions of the GENIUS Act, clarifying when stablecoin issuers must obtain a federal or state license and when foreign-issued stablecoins may be offered in the U.S. Beginning January 18, 2027, entities generally may not issue payment stablecoins in the U.S. without an appropriate license. From July 18, 2028, digital asset service providers generally may not offer payment stablecoins to U.S. users unless they are issued by licensed issuers. Treasury is seeking public comments within 60 days. — link",
+    "source": "Wu Blockchain English (TG)",
+    "processedAt": "2026-08-17T15:16:07.901Z"
+  },
+  {
+    "url": "https://cafef.vn/video-can-canh-ukraine-lien-tiep-tap-kich-kho-hang-lon-tren-khap-nuoc-nga-188260817200633182.chn",
+    "title": "Video cận cảnh Ukraine liên tiếp tập kích kho hàng lớn trên khắp nước Nga",
+    "source": "CafeF Tai Chinh Quoc Te",
+    "processedAt": "2026-08-17T15:16:07.912Z"
+  },
+  {
+    "url": "https://www.theblock.co/news/ecosystems/2026-08-17-harmony-plans-pre-attack-rollback-after-exploiter-forged-3-trillion-one-tokens-411976",
+    "title": "Harmony plans pre-attack rollback after exploiter forged 3 trillion ONE tokens",
+    "source": "The Block",
+    "processedAt": "2026-08-17T15:16:08.655Z"
   }
 ]
