@@ -1,11 +1,5 @@
 [
   {
-    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1mTWNUZEZTMl9kR0lnWDJUd1VCRnVUZzc5UXhNRG9DSE9iWXZNT3o0OFY0M05wMlRIdE9KdXFLbk5QM09OWkZ0RUtvRDcwck8xVkRn?oc=5",
-    "title": "1 VND to VES | Convert Vietnamese Dong to VEST - WEEX",
-    "source": "Google News - Vietnam Crypto & Fintech (English)",
-    "processedAt": "2026-08-04T22:51:37.494Z"
-  },
-  {
     "url": "https://cafef.vn/gia-vang-se-di-dau-ve-dau-sau-6-thang-roi-tu-dinh-chuyen-gia-du-doan-bat-ngo-da-bung-no-chua-cham-dut-188260804200542936.chn",
     "title": "Giá vàng sẽ đi đâu về đâu sau 6 tháng rơi từ đỉnh, chuyên gia dự đoán bất ngờ: Đà \"bùng nổ\" chưa chấm dứt",
     "source": "CafeF Tai Chinh Quoc Te",
@@ -22458,5 +22452,11 @@
     "title": "Mozilla Tests an AI 'Smart Window' in Firefox—But Only If You Opt In",
     "source": "Decrypt",
     "processedAt": "2026-08-18T22:41:34.221Z"
+  },
+  {
+    "url": "https://decrypt.co/375923/pennsylvania-ai-data-centers-backlash",
+    "title": "Pennsylvania Cracks Down on AI Data Centers as Backlash Grows",
+    "source": "Decrypt",
+    "processedAt": "2026-08-18T22:59:24.720Z"
   }
 ]
