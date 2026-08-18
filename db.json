@@ -1,11 +1,5 @@
 [
   {
-    "url": "https://cafef.vn/trung-quoc-thu-hoach-thanh-cong-lua-vu-tru-tren-tram-khong-gian-188260804162510851.chn",
-    "title": "Trung Quốc thu hoạch thành công lúa vũ trụ trên trạm không gian",
-    "source": "CafeF Tai Chinh Quoc Te",
-    "processedAt": "2026-08-04T11:40:19.379Z"
-  },
-  {
     "url": "https://vneconomy.vn/blog-chung-khoan-dieu-chinh-trong-phien-ap-luc-ban-van-rat-nhe.htm",
     "title": "Blog chứng khoán: Điều chỉnh trong phiên, áp lực bán vẫn rất nhẹ",
     "source": "VnEconomy - Kinh te so",
@@ -21493,5 +21487,24 @@
     "title": "The 'crack' in the energy market is wider than ever. Bitcoin might feel it.",
     "source": "CoinDesk",
     "processedAt": "2026-08-18T11:31:24.869Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOX1VrRGpPeGd0aS03LWMzMUlza3FxTDRCaTdHZXVhSFpqaDBDSUJQaUpvY1ppNnNVRzFLVTloeENfeUJ3dmxTZGIybHRTTlNTRjMyTGpkaDBkY04wU3NqbERCTThoSDltc0dvamV6UmEtYWk1ZU1mbzRhaUFlaDhMMHVZNm44TGxZQWFBX2JGckRvLWFrMlh2b0g0RG5Wd3VLU1dsY09KUQ?oc=5",
+    "title": "VIFC seeks to unlock international capital for Vietnam’s economy - Vietnam+ (VietnamPlus)",
+    "source": "Google News - Vietnam Crypto & Fintech (English)",
+    "processedAt": "2026-08-18T11:46:07.168Z",
+    "summary": "• VIFC nỗ lực mở khóa nguồn vốn quốc tế nhằm phục vụ cho sự phát triển kinh tế của Việt Nam.\n• Hoạt động liên quan đến các tổ chức tài chính tại Việt Nam trong việc thu hút vốn đầu tư và phát triển thị trường tài chính công nghệ."
+  },
+  {
+    "url": "https://cafef.vn/kinh-te-lao-dao-vi-quay-lung-voi-moscow-va-vien-tro-ukraine-chinh-tri-gia-nuoc-chau-au-keu-goi-quay-lai-lam-an-voi-nga-doi-eu-ho-tro-tien-188260818162947105.chn",
+    "title": "Kinh tế lao đao vì ‘quay lưng' với Moscow và viện trợ Ukraine, chính trị gia nước châu Âu kêu gọi quay lại làm ăn với Nga, đòi EU hỗ trợ tiền",
+    "source": "CafeF Tai Chinh Quoc Te",
+    "processedAt": "2026-08-18T11:46:10.184Z"
+  },
+  {
+    "url": "https://decrypt.co/375843/chainalysis-sues-us-government-ice-contract-trm-labs",
+    "title": "Chainalysis Sues US Government Over $94.6M ICE Contract Handed to Rival TRM Labs",
+    "source": "Decrypt",
+    "processedAt": "2026-08-18T11:46:11.232Z"
   }
 ]
