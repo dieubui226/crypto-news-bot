@@ -1,11 +1,5 @@
 [
   {
-    "url": "https://vietnamfinance.vn/232-trieu-tai-khoan-ngan-hang-90-trieu-dien-thoai-mo-ra-thi-truong-bao-hiem-nghin-ty-d148493.html",
-    "title": "232 triệu tài khoản",
-    "source": "VietnamFinance",
-    "processedAt": "2026-08-04T10:16:02.999Z"
-  },
-  {
     "url": "https://cafef.vn/vi-sao-den-bay-gio-nguoi-ta-van-chua-tim-thay-may-bay-mh370-188260804161202187.chn",
     "title": "Vì sao đến bây giờ người ta vẫn chưa tìm thấy máy bay MH370?",
     "source": "CafeF Tai Chinh Quoc Te",
@@ -21372,5 +21366,36 @@
     "title": "3 tháng m ấ t 10 t ỷ USD, các công ty DAT b ắ t đầ u quay l ạ i lý trí - odaily.news",
     "source": "Google News - Tai san ma hoa VN",
     "processedAt": "2026-08-18T10:01:56.866Z"
+  },
+  {
+    "url": "https://t.me/cryptoquant_official/3751",
+    "title": "CryptoQuant Alpha isn't just crypto data anymore.You can now query computed KRX equity indicators directly through the API.Example:SK hynix → KRX:000660 → PBR band → Python → dashboardWe put a short walkthrough on the Vibe Quants Discord showing how to:→ fetch SK hynix data→ load it into pandas→ visualize the indicator→ turn it into a research dashboardThis is where APIs get interesting, not staring at one chart, but making the data programmable.👉 Full tutorial in Vibe Quants.@cryptoquant_official",
+    "source": "CryptoQuant Official (TG)",
+    "processedAt": "2026-08-18T10:16:06.971Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPX3FabHVXYm1fcEJBbUdnU0o4enY3OXc5THp1LWJmdWpka2FvY0UzUFZob2JfRHZLYW1PODc0Rk5Uclk5eEFkdTJicmxCOEtzNkpOVnhBR21IeXNfOUFlRmljNXhKSkQ3VjFMZXN6bVNSVTBPaUhYN044clFWb0o2OA?oc=5",
+    "title": "Ensuring a unified regulatory framework for IFC - Vietnam Economic Times",
+    "source": "Google News - Vietnam Crypto & Fintech (English)",
+    "processedAt": "2026-08-18T10:16:08.619Z",
+    "summary": "• Việt Nam đang hướng tới việc đảm bảo một khung pháp lý thống nhất cho Trung tâm Tài chính Quốc tế (IFC).\n• Vấn đề xây dựng hành lang pháp lý đồng bộ đóng vai trò then chốt trong việc thu hút đầu tư và phát triển thị trường tài chính, công nghệ. \n• Tin tức có liên quan đến định hướng chính sách và quản lý nhà nước về tài chính tại Việt Nam."
+  },
+  {
+    "url": "https://cafef.vn/druzhkovka-ruc-lua-nga-tuyen-bo-chi-con-25-km-ong-putin-tung-don-dap-tra-kho-tin-mot-nuoc-co-the-phai-cau-cuu-moscow-188260818145253367.chn",
+    "title": "Druzhkovka rực lửa, Nga tuyên bố chỉ còn 2,5 km - Ông Putin tung đòn đáp trả khó tin, một nước có thể phải \"cầu cứu\" Moscow",
+    "source": "CafeF Tai Chinh Quoc Te",
+    "processedAt": "2026-08-18T10:16:11.637Z"
+  },
+  {
+    "url": "https://www.coindesk.com/markets/2026/08/18/bitcoin-scored-a-rare-win-over-s-and-p-500-on-monday",
+    "title": "Bitcoin scores a rare win over S&P 500 with 2.6% rise versus 0.5% fall",
+    "source": "CoinDesk",
+    "processedAt": "2026-08-18T10:16:12.179Z"
+  },
+  {
+    "url": "https://cafef.vn/nang-nong-ky-luc-425c-o-han-quoc-khoai-tay-nhu-bi-luoc-chin-trong-long-dat-gan-1-trieu-vat-nuoi-chet-188260818170146037.chn",
+    "title": "Nắng nóng kỷ lục 42,5°C ở Hàn Quốc: Khoai tây như bị 'luộc chín' trong lòng đất, gần 1 triệu vật nuôi chết",
+    "source": "CafeF Tai Chinh Quoc Te",
+    "processedAt": "2026-08-18T10:16:12.190Z"
   }
 ]
