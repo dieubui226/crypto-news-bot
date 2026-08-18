@@ -1,11 +1,5 @@
 [
   {
-    "url": "https://t.me/vncointele/27431",
-    "title": "🔥 MỚI NHẤT: $2.2T Wells Fargo sẽ triển khai tiền gửi được mã hóa (tokenized deposits) cho khách hàng doanh nghiệp vào mùa thu này.",
-    "source": "VNCointele (TG)",
-    "processedAt": "2026-08-04T19:31:34.949Z"
-  },
-  {
     "url": "https://decrypt.co/374865/blackrock-tokenized-money-market-funds-solana-ethereum",
     "title": "BlackRock Launches Tokenized Money Market Funds on Solana, Ethereum",
     "source": "Decrypt",
@@ -22337,5 +22331,11 @@
     "title": "SEC proposes new crypto offering rules as Congress stalls on digital asset legislation",
     "source": "The Block",
     "processedAt": "2026-08-18T19:31:16.776Z"
+  },
+  {
+    "url": "https://cointelegraph.com/news/cypherpunk-zcash-mining-winklevoss-capital-zec?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "title": "Cypherpunk launches Zcash mining fleet controlling 18% of network hashrate",
+    "source": "Cointelegraph",
+    "processedAt": "2026-08-18T19:46:23.214Z"
   }
 ]
