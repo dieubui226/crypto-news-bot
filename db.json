@@ -1,17 +1,5 @@
 [
   {
-    "url": "https://cafef.vn/vi-sao-den-bay-gio-nguoi-ta-van-chua-tim-thay-may-bay-mh370-188260804161202187.chn",
-    "title": "Vì sao đến bây giờ người ta vẫn chưa tìm thấy máy bay MH370?",
-    "source": "CafeF Tai Chinh Quoc Te",
-    "processedAt": "2026-08-04T10:25:58.816Z"
-  },
-  {
-    "url": "https://vnexpress.net/robot-hinh-nguoi-tu-treo-thang-5105186.html",
-    "title": "Robot hình người tự trèo thang",
-    "source": "VnExpress So Hoa",
-    "processedAt": "2026-08-04T10:40:13.056Z"
-  },
-  {
     "url": "https://cafef.vn/trung-quoc-thu-hoach-thanh-cong-lua-vu-tru-tren-tram-khong-gian-188260804162510851.chn",
     "title": "Trung Quốc thu hoạch thành công lúa vũ trụ trên trạm không gian",
     "source": "CafeF Tai Chinh Quoc Te",
@@ -21409,5 +21397,23 @@
     "title": "Hạn hán khiến mực nước tại hai hồ chứa lớn nhất của Mỹ xuống thấp kỷ lục",
     "source": "CafeF Tai Chinh Quoc Te",
     "processedAt": "2026-08-18T10:19:01.211Z"
+  },
+  {
+    "url": "https://vneconomy.vn/ra-mat-khong-gian-trinh-dien-cong-nghe-va-doi-moi-sang-tao-thanh-pho-daegu-han-quoc-tai-da-nang.htm",
+    "title": "Ra mắt Không gian trình diễn công nghệ và đổi mới sáng tạo thành phố Daegu (Hàn Quốc) tại Đà Nẵng",
+    "source": "VnEconomy - Kinh te so",
+    "processedAt": "2026-08-18T10:46:06.884Z"
+  },
+  {
+    "url": "https://www.theblock.co/news/defi/2026-08-18-curve-founder-fatf-pressure-could-make-defi-safer-412059",
+    "title": "Curve founder says FATF pressure could make DeFi safer and more decentralized",
+    "source": "The Block",
+    "processedAt": "2026-08-18T10:46:08.115Z"
+  },
+  {
+    "url": "https://www.coindesk.com/markets/2026/08/18/bitcoin-pauses-at-usd64-000-as-rising-yields-oil-drag-equities-lower",
+    "title": "Bitcoin pauses at $64,000 as rising yields, oil drag equities lower",
+    "source": "CoinDesk",
+    "processedAt": "2026-08-18T10:46:08.978Z"
   }
 ]
