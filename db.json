@@ -1,77 +1,5 @@
 [
   {
-    "url": "https://vneconomy.vn/gian-hoan-mien-giam-hang-loat-thue-phi-ho-tro-nguoi-dan-va-doanh-nghiep.htm",
-    "title": "Giãn, hoãn, miễn giảm hàng loạt thuế phí hỗ trợ người dân và doanh nghiệp",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-05T03:31:15.475Z"
-  },
-  {
-    "url": "https://vneconomy.vn/ninh-binh-hinh-thanh-khong-gian-du-lich-quy-mo-lon-voi-3-vung-sinh-thai-nui-bien-dong-bang.htm",
-    "title": "Ninh Bình: Hình thành không gian du lịch quy mô lớn với 3 vùng sinh thái núi - biển - đồng bằng",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-05T03:31:15.500Z"
-  },
-  {
-    "url": "https://vneconomy.vn/cat-giam-giay-phep-cho-thue-lai-lao-dong-giam-thu-tuc-tang-trach-nhiem.htm",
-    "title": "Cắt giảm giấy phép cho thuê lại lao động: Giảm thủ tục, tăng trách nhiệm",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-05T03:31:15.503Z"
-  },
-  {
-    "url": "https://vneconomy.vn/quang-tri-quy-tap-13-hai-cot-liet-si-hi-sinh-nam-1972-tai-khu-vuc-nam-hai-lang.htm",
-    "title": "Quảng Trị: Quy tập 13 hài cốt liệt sĩ hi sinh năm 1972 tại khu vực Nam Hải Lăng",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-05T03:31:15.506Z"
-  },
-  {
-    "url": "https://vneconomy.vn/lam-dong-dinh-hinh-mo-hinh-kinh-te-xanh-theo-cau-truc-cao-nguyen-trung-du-duyen-hai.htm",
-    "title": "Lâm Đồng: Định hình mô hình kinh tế xanh theo cấu trúc \"cao nguyên - trung du - duyên hải\"",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-05T03:31:15.509Z"
-  },
-  {
-    "url": "https://vneconomy.vn/trien-vong-kinh-te-nua-cuoi-nam-2026-bien-so-rui-ro-va-bai-toan-khoi-thong-nguon-von.htm",
-    "title": "Triển vọng kinh tế nửa cuối năm 2026: Biến số rủi ro và bài toán khơi thông nguồn vốn",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-05T03:31:15.515Z"
-  },
-  {
-    "url": "https://vneconomy.vn/gia-dau-diesel-tro-thanh-bai-toan-kho-voi-tong-thong-trump.htm",
-    "title": "Giá dầu diesel trở thành bài toán khó với Tổng thống Trump",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-05T03:31:15.518Z"
-  },
-  {
-    "url": "https://vnexpress.net/openai-to-nguoc-apple-co-quy-trinh-quan-ly-thong-tin-long-leo-5105273.html",
-    "title": "OpenAI tố ngược Apple có quy trình quản lý thông tin lỏng lẻo",
-    "source": "VnExpress So Hoa",
-    "processedAt": "2026-08-05T03:42:00.923Z"
-  },
-  {
-    "url": "https://cafef.vn/bao-my-khong-quan-nga-manh-nhat-chau-au-18826080509425421.chn",
-    "title": "Báo Mỹ: Không quân Nga mạnh nhất châu Âu",
-    "source": "CafeF Tai Chinh Quoc Te",
-    "processedAt": "2026-08-05T03:42:03.123Z"
-  },
-  {
-    "url": "https://en.vietnamplus.vn/domestic-consumption-tourism-fuel-vietnams-economic-growth-in-seven-months-post349456.vnp",
-    "title": "<img src=\"https://mediaen.vietnamplus.vn/images/7d1b1ad3fc9563dcff6a3a0b9636850c6c10444b9e404f4f20173cea664c5248b1dd314561ccb2b13cbae810cfdb6758/vnanet-dl1.jpg.avif\" srcset=\"https://mediaen.vietnamplus.vn/images/7d1b1ad3fc9563dcff6a3a0b9636850c6c10444b9e404f4f20173cea664c5248b1dd314561ccb2b13cbae810cfdb6758/vnanet-dl1.jpg.avif 1x, https://mediaen.vietnamplus.vn/images/9208427127649c9760468496aed1bd786c10444b9e404f4f20173cea664c5248b1dd314561ccb2b13cbae810cfdb6758/vnanet-dl1.jpg.avif 2x\" alt=\"Visitors explore products showcased through social media platforms. (Photo: VNA)\" class=\"image-fallback\">",
-    "source": "VietnamPlus Business (English)",
-    "processedAt": "2026-08-05T03:45:59.480Z"
-  },
-  {
-    "url": "https://en.vietnamplus.vn/mastering-vaccine-technology-for-stronger-disease-prevention-post349503.vnp",
-    "title": "<img src=\"https://mediaen.vietnamplus.vn/images/39888cb62408889382aa62c1c3482f1894269440269bd382443671e1e8aac66e9ecc4506b7dfbbbcf20d8f888fbfc37703a91f0e635241d876a9b173ce529224/vnanet-vac-xin.jpg.avif\" srcset=\"https://mediaen.vietnamplus.vn/images/39888cb62408889382aa62c1c3482f1894269440269bd382443671e1e8aac66e9ecc4506b7dfbbbcf20d8f888fbfc37703a91f0e635241d876a9b173ce529224/vnanet-vac-xin.jpg.avif 1x, https://mediaen.vietnamplus.vn/images/d0743a006cef129529866b9498868dba94269440269bd382443671e1e8aac66e9ecc4506b7dfbbbcf20d8f888fbfc37703a91f0e635241d876a9b173ce529224/vnanet-vac-xin.jpg.avif 2x\" alt=\"Mastering vaccine technology for stronger disease prevention\" class=\"image-fallback\">",
-    "source": "VietnamPlus Business (English)",
-    "processedAt": "2026-08-05T03:46:01.832Z"
-  },
-  {
-    "url": "https://vneconomy.vn/abbank-tang-toc-chien-luoc-von-tiep-tuc-ke-hoach-nang-quy-mo-von-dieu-le-len-gan-27000-ty-dong.htm",
-    "title": "ABBank tăng tốc chiến lược vốn, tiếp tục kế hoạch nâng quy mô vốn điều lệ lên gần 27.000 tỷ đồng",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-05T03:46:01.835Z"
-  },
-  {
     "url": "https://en.vietnamplus.vn/resolution-10-nqtw-changes-measure-of-fdi-success-hsbc-post349462.vnp",
     "title": "<img src=\"https://mediaen.vietnamplus.vn/images/7d1b1ad3fc9563dcff6a3a0b9636850c6c10444b9e404f4f20173cea664c52484f708c4963b604d5b758f4c0579c5814/vnanet-hcm-city.jpg.avif\" srcset=\"https://mediaen.vietnamplus.vn/images/7d1b1ad3fc9563dcff6a3a0b9636850c6c10444b9e404f4f20173cea664c52484f708c4963b604d5b758f4c0579c5814/vnanet-hcm-city.jpg.avif 1x, https://mediaen.vietnamplus.vn/images/9208427127649c9760468496aed1bd786c10444b9e404f4f20173cea664c52484f708c4963b604d5b758f4c0579c5814/vnanet-hcm-city.jpg.avif 2x\" alt=\"A view of the Hyosung chemical plant, a Korean-invested project in Tan Phuoc ward, Ho Chi Minh City (Photo: VNA)\" class=\"image-fallback\">",
     "source": "VietnamPlus Business (English)",
@@ -22674,5 +22602,84 @@
     "title": "Kalshi files to launch perpetual futures tied to US stock index, copper",
     "source": "The Block",
     "processedAt": "2026-08-19T03:28:24.929Z"
+  },
+  {
+    "url": "https://t.me/cointelegraph/71682",
+    "title": "🇺🇸 PAUL ATKINS: “Regulation Crypto Assets provide issuers of those investment contracts with a clear path to comply with federal securities laws within those parameters.”News | Markets | YouTube",
+    "source": "Cointelegraph (TG)",
+    "processedAt": "2026-08-19T03:45:56.248Z"
+  },
+  {
+    "url": "https://t.me/gfi_research_Channel/11438",
+    "title": "🚨 SEC ĐỀ XUẤT KHUNG LUẬT CRYPTO MỚI — THỊ TRƯỜNG SẼ BỊ ẢNH HƯỞNG THẾ NÀO?🌟SEC vừa đề xuất “Regulation Crypto Assets”, tạo một khung riêng cho các dự án crypto huy động vốn tại Mỹ, trong lúc CLARITY Act vẫn đang bị trì hoãn.📌 Một số điểm chính:✅ Dự án có thể được miễn đăng ký chứng khoán khi huy động tối đa $5M trong 4 năm.✅Có thể huy động tới $75M/12 tháng nếu đáp ứng yêu cầu công bố thông tin và báo cáo.✅SEC đề xuất “safe harbor” có điều kiện, mở đường để một số token không còn bị xem là chứng khoán sau khi dự án hoàn thành các cam kết phát triển.👉 Nếu được thông qua, các dự án tại Mỹ có thể có đường đi pháp lý rõ ràng hơn để huy động vốn, giảm phần nào rủi ro pháp lý và thúc đẩy innovation. Đổi lại, dự án sẽ phải minh bạch thông tin và tuân thủ nhiều hơn, khiến những dự án yếu về pháp lý hoặc thiếu minh bạch gặp khó khăn. Tuy nhiên, đây mới chỉ là đề xuất, SEC còn mở 60 ngày để lấy ý kiến, chưa thể xem đây là luật chính thức😌👉 Xem bài viết chi tiết tại đây.Disclaim: Thông tin tham khảo - không phải lời khuyên đầu tư.",
+    "source": "GFI Research Channel (TG)",
+    "processedAt": "2026-08-19T03:45:57.852Z"
+  },
+  {
+    "url": "https://t.me/ahboyashreads/24542",
+    "title": "Ex-financial analyst sentenced to probation after telling ChatGPT about plans to harm his exSource",
+    "source": "Ah Boy Ash Reads (TG)",
+    "processedAt": "2026-08-19T03:45:58.495Z"
+  },
+  {
+    "url": "https://t.me/ahboyashreads/24543",
+    "title": "The rollbit files - alleges that Rollbit systematically allows free deposits and play only to seize profitable balances through shifting pretexts (multi-accounting, restricted-region rules, AML concerns, or profitability itself)There were also numerous public user reports of evidence of ongoing fund misappropriationSource",
+    "source": "Ah Boy Ash Reads (TG)",
+    "processedAt": "2026-08-19T03:45:59.529Z"
+  },
+  {
+    "url": "https://t.me/ahboyashreads/24544",
+    "title": "DePIN networks keep paying cheaters who fake work (Helium lost $25-40M to fraud nodes)To stop this, use a \"deterrence ratio” that tells designers exactly how big the penalties (losing locked money or getting a worse reputation score) need to be so that honest work always pays better than cheatingSource",
+    "source": "Ah Boy Ash Reads (TG)",
+    "processedAt": "2026-08-19T03:46:00.507Z"
+  },
+  {
+    "url": "https://t.me/ahboyashreads/24545",
+    "title": "VanEck says the bottom is basically in - 8 of 12 capitulation signals, vol down to to 27%, and BTC holding ~$63.5k with cycle history pointing to accumulation starting Sep-NovThe catch: long-term holders reduced their positions by 356k BTC over 30 days, pushing the supply share held longer than a year below 60% for the first time in monthsSource",
+    "source": "Ah Boy Ash Reads (TG)",
+    "processedAt": "2026-08-19T03:46:01.681Z"
+  },
+  {
+    "url": "https://t.me/ahboyashreads/24546",
+    "title": "The SEC has issued a crypto-asset regulatory proposal to allow projects to sell tokens to retail investors (ICO-style)Also a path for qualifying tokens to exit the investment-contract regime after the issuer completes or ends promised workSource",
+    "source": "Ah Boy Ash Reads (TG)",
+    "processedAt": "2026-08-19T03:46:02.562Z"
+  },
+  {
+    "url": "https://t.me/ahboyashreads/24547",
+    "title": "“Tokenization supercycle”—> real-time settlement, 24/7 trading, and greater investor control, but the US needs to modernize regulations so Americans can access these innovationsSource",
+    "source": "Ah Boy Ash Reads (TG)",
+    "processedAt": "2026-08-19T03:46:03.392Z"
+  },
+  {
+    "url": "https://t.me/ahboyashreads/24548",
+    "title": "⚠️ Maya Protocol exploited for $1.7m, exploited funds were sent to Bitcoin address Source",
+    "source": "Ah Boy Ash Reads (TG)",
+    "processedAt": "2026-08-19T03:46:04.242Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE53Z1FrUVltQ3VKNndtY2xMcURNTTJkemN2NDRFb0tocWJnN2JXQTYyeVF5MFNWeUw3Z3ptcV85Zmp2Q2NocUp3TmRBZU9yVWZLZ00tZXY2VHM4dElMSERSVnYyMjc?oc=5",
+    "title": "Thông tin chuyên sâu của Seba1988(@Aaronsilva88) - Binance",
+    "source": "Google News - RWA Tokenization",
+    "processedAt": "2026-08-19T03:46:04.883Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRzdQV2lpUmM0Q0V6T0dVbjVfaHdFQ25QRU9zSW1KU25wZEx3QWpaRklnVHZoLU9XdjYzbXFoZFJoa3NrR201UlZva2szRVVXbG8tLXB1ampjaDZCUzdKZXFrOVQzSi1WbGtVMFdiU2lrdV9NVFdSRHBUaS1FaFNOMEU5cTZLRFRzT0xkanAyeW1VSDZKYk1fQklzQ1RBRHZBS0E?oc=5",
+    "title": "CEO XPlace bàn về việc dùng tài sản mã hóa làm vật thế chấp tín dụng - Một Thế Giới",
+    "source": "Google News - Tai san ma hoa VN",
+    "processedAt": "2026-08-19T03:46:06.297Z",
+    "summary": "• CEO XPlace thảo luận về triển vọng sử dụng tài sản mã hóa làm tài sản thế chấp cho các khoản vay tín dụng.\n• Vấn đề này liên quan đến việc ứng dụng tài sản số trong hệ thống tài chính và tín dụng tại thị trường Việt Nam."
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVzkxWG9ocEdsMzZ0WUNPSlNELVJ4MW13ZG55d2xUcGEyaUJjZUJMa2dHWlBIZWExbFNaSzhIQklTY1A2b0RZcUp4SDdyWTlFZUl3YllUS21GZnVqbktqTnJ6QUNoZzJMS21IeEQtQlBzdDdaMlU2cm9scVAyRTRfSjJKU1NiemgtS2ZLY2Jmd0FtQnltR3R6ZGdPSndVWS1JM3dj0gGfAUFVX3lxTE91OVI4cjlYcjl4LThzUGlsM2RpSEZVQ0J3MTF2NVprLXc1U3N3ZHRYYzNYY2YtYUFRWTBYd29CU0hacXZla0VDZlBCVzk4VTFEc1B3WkU4Snp5c3Z2WTVfR2VLNWNnTkdhNkZMdExpX1pWN21xS1I1R3g0YlAyTGItNC1ET19EX1JGZzVPNmpaMFhSRFA1Qkd5UE9QeEItVQ?oc=5",
+    "title": "SEC đề xuất quy định riêng cho ngành tài sản mã hóa - Tin nhanh chứng khoán",
+    "source": "Google News - Tai san ma hoa VN",
+    "processedAt": "2026-08-19T03:46:10.162Z"
+  },
+  {
+    "url": "https://cafef.vn/khoan-sau-day-bien-phat-hien-cot-dau-khi-cao-hon-600-met-ngoai-khoi-188260819100647644.chn",
+    "title": "Khoan sâu đáy biển, phát hiện cột dầu khí cao hơn 600 mét ngoài khơi",
+    "source": "CafeF Tai Chinh Quoc Te",
+    "processedAt": "2026-08-19T03:46:10.177Z"
   }
 ]
