@@ -1,11 +1,5 @@
 [
   {
-    "url": "https://vneconomy.vn/canh-bao-el-nino-dang-tiep-tuc-manh-len-keo-theo-cac-hien-tuong-thoi-tiet-cuc-doan.htm",
-    "title": "Cảnh báo El Nino đang tiếp tục mạnh lên, kéo theo các hiện tượng thời tiết cực đoan",
-    "source": "VnEconomy - Kinh te so",
-    "processedAt": "2026-08-05T17:16:06.126Z"
-  },
-  {
     "url": "https://vnexpress.net/bong-den-soi-dot-van-phat-sang-sau-125-nam-5105486.html",
     "title": "Bóng đèn sợi đốt vẫn phát sáng sau 125 năm",
     "source": "VnExpress So Hoa",
@@ -24091,5 +24085,29 @@
     "title": "‘Ethereum không nên bị trừng phạt vì sự tăng trưởng’: Người sáng lập Aave chỉ trích EIP mới",
     "source": "BlogTienAo",
     "processedAt": "2026-08-19T17:01:38.664Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSHZRTkF2LTNWb0NKdHhZdnFsUUhlUkxVU2FMb2xQM0FkU2tGNXNFRXM5TmtwVFJyWEdsdVJpd3ZlaEdJZl9weTNRbWNzQUdWbmp3S2xWQ1oybkZJNmVhQXZaMUd0aFBDZVFWMVY2aEgxXzJfaWFnQm1faXRDUmNFdXg5M0JTOVNrejhn?oc=5",
+    "title": "'Vương quốc hạnh phúc' đặt cược vào Bitcoin - tech.zingnews.vn",
+    "source": "Google News - Tai san ma hoa VN",
+    "processedAt": "2026-08-19T17:15:54.581Z"
+  },
+  {
+    "url": "https://cointelegraph.com/news/occ-head-jonathan-gould-genius-rules-november?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "title": "OCC head promises final GENIUS rules by November",
+    "source": "Cointelegraph",
+    "processedAt": "2026-08-19T17:16:02.068Z"
+  },
+  {
+    "url": "https://cafef.vn/phat-hien-khoi-be-tong-1540-tan-duoc-nhac-bong-len-khong-trung-chuan-bi-mo-tuyen-duong-thuy-rut-ngan-560-km-188260819223001946.chn",
+    "title": "Phát hiện khối bê tông 1.540 tấn được 'nhấc bổng' lên không trung, chuẩn bị mở tuyến đường thủy rút ngắn 560 km",
+    "source": "CafeF Tai Chinh Quoc Te",
+    "processedAt": "2026-08-19T17:16:02.084Z"
+  },
+  {
+    "url": "https://www.theblock.co/news/regulation/2026-08-19-occ-races-to-finalize-genius-act-stablecoin-rules-by-november-412240",
+    "title": "OCC races to finalize GENIUS Act stablecoin rules by November",
+    "source": "The Block",
+    "processedAt": "2026-08-19T17:16:25.883Z"
   }
 ]
