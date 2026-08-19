@@ -23995,5 +23995,53 @@
     "title": "Nhà sáng tạo game Sam Blackshear rời Mysten Labs, tương lai của SUI sẽ ra sao?",
     "source": "BlogTienAo",
     "processedAt": "2026-08-19T16:31:10.198Z"
+  },
+  {
+    "url": "https://t.me/vncointele/27709",
+    "title": "🔥 TIN MỚI: OCC cho biết quy định cuối cùng của Đạo luật GENIUS sẽ được ban hành trước tháng 11.",
+    "source": "VNCointele (TG)",
+    "processedAt": "2026-08-19T16:45:52.356Z"
+  },
+  {
+    "url": "https://t.me/wublockchainenglish/25647",
+    "title": "Rapid7 Uncovers Operation ASTERIX: Attackers Used AI to Develop Crypto Phishing Tools and Malicious Wallet AppsCybersecurity firm Rapid7 disclosed Operation ASTERIX, a cryptocurrency fraud campaign that used roughly 885,000 phone numbers, crypto account-validation tools, phishing emails, vishing calls, and counterfeit Trezor, Ledger, and Exodus wallet apps to target crypto users and steal recovery phrases. In one German dataset, the operators identified 43,066 CryptoCom accounts from 316,002 phone numbers, then enriched confirmed targets with personal details to make support impersonation more convincing.Rapid7 also found that the operators used GitHub Copilot and Claude Code to process target data, develop and debug malicious software, and build phishing infrastructure. After Claude refused requests related to code obfuscation, the operator switched to Kimi and attempted to bypass its safety controls with a custom jailbreak prompt, though Rapid7 could not confirm whether the attempt succeeded. — link",
+    "source": "Wu Blockchain English (TG)",
+    "processedAt": "2026-08-19T16:45:53.379Z"
+  },
+  {
+    "url": "https://cointelegraph.com/news/standard-chartered-hsbc-execute-first-live-transaction-on-swift-blockchain-ledger?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "title": "StanChart, HSBC execute first live transaction on Swift blockchain ledger",
+    "source": "Cointelegraph",
+    "processedAt": "2026-08-19T16:45:54.137Z"
+  },
+  {
+    "url": "https://decrypt.co/375952/coinbase-base-ai-agents-startup-accelerator",
+    "title": "Coinbase's Base Is Betting Big on AI Agents With $100K Startup Accelerator",
+    "source": "Decrypt",
+    "processedAt": "2026-08-19T16:45:54.929Z"
+  },
+  {
+    "url": "https://blogtienao.com/bitgo-chuyen-74-ty-usd-wbtc-sang-chuong-trinh-ccip-cua-chainlink-mo-rong-vi-the-dan-dau-ve-giao-dich-da-chuoi/",
+    "title": "BitGo chuyển 7,4 tỷ USD WBTC sang chương trình CCIP của Chainlink, mở rộng vị thế dẫn đầu về giao dịch đa chuỗi",
+    "source": "BlogTienAo",
+    "processedAt": "2026-08-19T16:45:55.702Z"
+  },
+  {
+    "url": "https://blogtienao.com/dao-luat-clarity-dieu-gi-thuc-su-dang-can-tro-cuoc-bo-phieu/",
+    "title": "Đạo luật CLARITY: Điều gì thực sự đang cản trở cuộc bỏ phiếu",
+    "source": "BlogTienAo",
+    "processedAt": "2026-08-19T16:45:56.448Z"
+  },
+  {
+    "url": "https://blogtienao.com/jake-claver-defi-dang-dung-truoc-nga-ba-duong/",
+    "title": "Jake Claver: DeFi đang đứng trước ngã ba đường",
+    "source": "BlogTienAo",
+    "processedAt": "2026-08-19T16:45:57.294Z"
+  },
+  {
+    "url": "https://blogtienao.com/nga-ban-hanh-quy-dinh-sau-rong-ve-tien-dien-tu/",
+    "title": "Nga ban hành quy định sâu rộng về tiền điện tử",
+    "source": "BlogTienAo",
+    "processedAt": "2026-08-19T16:45:58.102Z"
   }
 ]
