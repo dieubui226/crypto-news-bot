@@ -1,23 +1,5 @@
 [
   {
-    "url": "https://vneconomy.vn/tu-thuong-cang-sai-gon-den-trung-tam-tai-chinh-quoc-te-nhin-tu-vietcombank-tower.htm",
-    "title": "Từ thương cảng Sài Gòn đến trung tâm tài chính quốc tế nhìn từ Vietcombank Tower",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-05T06:16:01.982Z"
-  },
-  {
-    "url": "https://vneconomy.vn/tu-mot-den-sau-nha-may-zero-carbon-saint-gobain-nhan-rong-mo-hinh-san-xuat-xanh-quy-mo-lon.htm",
-    "title": "Từ một đến sáu nhà máy Zero Carbon: Saint-Gobain nhân rộng mô hình sản xuất xanh quy mô lớn",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-05T06:16:01.992Z"
-  },
-  {
-    "url": "https://vneconomy.vn/bo-noi-vu-de-xuat-hai-phuong-an-nghi-tet-nguyen-dan-2027-co-the-keo-dai-den-10-ngay.htm",
-    "title": "Bộ Nội vụ đề xuất hai phương án nghỉ Tết Nguyên đán 2027, có thể kéo dài đến 10 ngày",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-05T06:16:01.994Z"
-  },
-  {
     "url": "https://cafef.vn/mon-do-choi-truyen-thong-day-huawei-vao-khung-hoang-truyen-thong-188260805103749213.chn",
     "title": "Món đồ chơi truyền thống đẩy Huawei vào khủng hoảng truyền thông",
     "source": "CafeF Tai Chinh Quoc Te",
@@ -22817,5 +22799,59 @@
     "source": "Google News - Tai san ma hoa VN",
     "processedAt": "2026-08-19T06:01:28.286Z",
     "summary": "• Cập nhật các quy định mới nhất về thuế tiền mã hóa tại Việt Nam\n• Những điều nhà đầu tư cần biết về nghĩa vụ thuế đối với tài sản số trong nước"
+  },
+  {
+    "url": "https://vneconomy.vn/tong-thong-trump-hoan-ap-thue-quan-50-len-canada.htm",
+    "title": "Tổng thống Trump hoãn áp thuế quan 50% lên Canada",
+    "source": "VnEconomy - Tai chinh",
+    "processedAt": "2026-08-19T06:16:17.792Z"
+  },
+  {
+    "url": "https://vneconomy.vn/tai-dinh-hinh-mo-hinh-tang-truong-tu-nhieu-hon-sang-tot-hon.htm",
+    "title": "Tái định hình mô hình tăng trưởng: Từ “nhiều hơn” sang “tốt hơn”",
+    "source": "VnEconomy - Tai chinh",
+    "processedAt": "2026-08-19T06:16:17.802Z"
+  },
+  {
+    "url": "https://vneconomy.vn/tay-ban-nha-va-bo-dao-nha-hai-diem-nong-cua-khung-hoang-nha-o-nghiem-trong-tai-eu.htm",
+    "title": "Tây Ban Nha và Bồ Đào Nha: Hai “điểm nóng” của khủng hoảng nhà ở nghiêm trọng tại EU",
+    "source": "VnEconomy - Tai chinh",
+    "processedAt": "2026-08-19T06:16:17.812Z"
+  },
+  {
+    "url": "https://vneconomy.vn/thi-truong-uu-tien-vi-the-ban-chi-nen-mua-khi-dong-tien-tang-manh.htm",
+    "title": "Thị trường ưu tiên vị thế bán, chỉ nên mua khi dòng tiền tăng mạnh?",
+    "source": "VnEconomy - Tai chinh",
+    "processedAt": "2026-08-19T06:16:17.825Z"
+  },
+  {
+    "url": "https://vneconomy.vn/thi-truong-tat-thanh-khoan-sac-do-tran-ngap.htm",
+    "title": "Thị trường “tắt” thanh khoản, sắc đỏ tràn ngập",
+    "source": "VnEconomy - Tai chinh",
+    "processedAt": "2026-08-19T06:16:17.836Z"
+  },
+  {
+    "url": "https://vneconomy.vn/nang-nang-suat-mo-rong-du-dia-tang-truong.htm",
+    "title": "Nâng năng suất, mở rộng dư địa tăng trưởng",
+    "source": "VnEconomy - Tai chinh",
+    "processedAt": "2026-08-19T06:16:17.846Z"
+  },
+  {
+    "url": "https://vneconomy.vn/gia-dau-diesel-tang-manh-gay-suc-ep-len-toan-bo-nen-kinh-te-my.htm",
+    "title": "Giá dầu diesel tăng mạnh gây sức ép lên toàn bộ nền kinh tế Mỹ",
+    "source": "VnEconomy - Tai chinh",
+    "processedAt": "2026-08-19T06:16:17.857Z"
+  },
+  {
+    "url": "https://vnexpress.net/ban-nang-cap-macos-tahoe-lam-lo-airpods-trang-bi-camera-5110576.html",
+    "title": "Bản nâng cấp macOS Tahoe làm lộ AirPods trang bị camera",
+    "source": "VnExpress So Hoa",
+    "processedAt": "2026-08-19T06:16:17.867Z"
+  },
+  {
+    "url": "https://cafef.vn/tin-vui-lon-voi-cuba-mot-doanh-nghiep-vua-khai-thac-duoc-kho-bau-10000-tan-188260819111325031.chn",
+    "title": "Tin vui lớn với Cuba: Một doanh nghiệp vừa khai thác được “kho báu” 10.000 tấn",
+    "source": "CafeF Tai Chinh Quoc Te",
+    "processedAt": "2026-08-19T06:16:17.877Z"
   }
 ]
