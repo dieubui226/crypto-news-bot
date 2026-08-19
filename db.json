@@ -1,23 +1,5 @@
 [
   {
-    "url": "https://vnexpress.net/anh-ve-tinh-he-lo-thuyen-keo-ten-lua-starship-vao-bo-5105036.html",
-    "title": "Ảnh vệ tinh hé lộ thuyền kéo tên lửa Starship vào bờ",
-    "source": "VnExpress So Hoa",
-    "processedAt": "2026-08-05T07:41:48.321Z"
-  },
-  {
-    "url": "https://cafef.vn/bao-nga-vach-tran-man-thoi-phong-cua-trung-quoc-ve-cai-goi-la-mat-troi-vo-tan-phat-dien-mai-mai-188260805140417792.chn",
-    "title": "Báo Nga vạch trần màn thổi phồng của Trung Quốc về cái gọi là “mặt trời vô tận\" phát điện mãi mãi",
-    "source": "CafeF Tai Chinh Quoc Te",
-    "processedAt": "2026-08-05T07:41:50.542Z"
-  },
-  {
-    "url": "https://cafef.vn/my-dinh-ngay-cong-bo-thoa-thuan-voi-iran-va-oman-ve-eo-bien-hormuz-188260805134412156.chn",
-    "title": "Mỹ định ngày công bố thỏa thuận với Iran và Oman về eo biển Hormuz",
-    "source": "CafeF Tai Chinh Quoc Te",
-    "processedAt": "2026-08-05T07:41:54.935Z"
-  },
-  {
     "url": "https://cafef.vn/han-quoc-hieu-truong-bi-truy-to-vi-dung-chuyen-cuoi-con-trai-de-nhan-tien-mung-tu-dong-nghiep-188260805141115589.chn",
     "title": "Hàn Quốc: Hiệu trưởng bị truy tố vì dựng chuyện cưới con trai để nhận tiền mừng từ đồng nghiệp",
     "source": "CafeF Tai Chinh Quoc Te",
@@ -22879,5 +22861,41 @@
     "title": "Tokenization là con đường tốt nhất để hiện đại hóa tài chính Mỹ, theo CEO Robinhood - BeInCrypto",
     "source": "Google News - RWA Tokenization",
     "processedAt": "2026-08-19T07:32:53.973Z"
+  },
+  {
+    "url": "https://vneconomy.vn/viet-nam-co-can-luat-choi-rieng-cho-kinh-te-tam-thap-de-bat-kip-cuoc-dua-moi.htm",
+    "title": "Việt Nam có cần “luật chơi” riêng cho kinh tế tầm thấp để bắt kịp cuộc đua mới?",
+    "source": "VnEconomy - Kinh te so",
+    "processedAt": "2026-08-19T07:46:02.293Z"
+  },
+  {
+    "url": "https://vneconomy.vn/dong-von-nang-hang-vao-dot-dau-150-trieu-usd-chua-du-lon-diem-danh-ba-co-phieu-hut-tien-nhat.htm",
+    "title": "Dòng vốn nâng hạng vào đợt đầu 150 triệu USD chưa đủ lớn, điểm danh ba cổ phiếu hút tiền nhất",
+    "source": "VnEconomy - Kinh te so",
+    "processedAt": "2026-08-19T07:46:02.322Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNam9CTGkxLVpXUkd3LXVrM1VJRE9DZF80Y0VXTklYVnV3aUFUNktzaFNkR3NTYkJSVVZSVF91NkJJeVRrTENrR1kzajdPMHFfQjJCOTNtcUxHQlFFQmFaVDVWd1dtenlkUUZlZlJ5RnlZdEZNVUpXbklKS2dBczJUaGtuTUFreFN6NllITHdRMTRFQQ?oc=5",
+    "title": "Solana (SOLUSD) Biến động gia tăng vào 18 thg 8: Những điều bạn cần biết - TradingKey",
+    "source": "Google News - RWA Tokenization",
+    "processedAt": "2026-08-19T07:46:04.585Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWHM2d3dBM2FwcWJMLXU4X2VMalhQLVBSdGFjcHJ4VlpqOF9hRUJTdldkZ3Q4MDJiUmpyLUdXTE1WalZQZHVCYVIzMmNWU1lYVnFxQWp0OGMtcnJSZ0ZPZENDc0UzeUNwMkVyQUl1WmI0M2ExOG1ZazRlYWxMWXpudXBfX1plR0F6OHZoeVJ1R2NWX1lVeUU4TUJIUm1qMk5mdWtxV0hkRk5aRUdlQXp6aEQ4VWc5Nmt1V0x2MTB3Vk1zVVFXSlpJ?oc=5",
+    "title": "Trinasolar Powers 10MWh Solar and Storage Project in Phu Quoc, Vietnam - blockchain.news",
+    "source": "Google News - Vietnam Crypto & Fintech (English)",
+    "processedAt": "2026-08-19T07:46:07.383Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOMDhqVXFJdy1SNlZMSFJuQkxOWjRYQ3BKWjhRMndGQ0w3UTVsTndleXc4bjZMWXVMZkltVmI2UllUcHMtb1diWDJQakhrVko1a2JHemFGZlEya1Z2cTd5N25NR3p3SGsxb2JfNnpLQlBrTlZxTm5VYzNlSnFhWnFLZkFPbUtGQXBpRV9ZN0JtTUhmQmZoaXZONHhtYUFqTmFVU016QXQwNlk1RG0zOGN1a1NhVDhIbmdSQUZzRm9MaV9hbWxHUkd6M2lrWk44V1ZI?oc=5",
+    "title": "SEC đề xuất khung gọi vốn bằng crypto mới, bổ sung miễn đăng ký và safe harbor - 디지털투데이",
+    "source": "Google News - Tai san ma hoa VN",
+    "processedAt": "2026-08-19T07:46:11.607Z"
+  },
+  {
+    "url": "https://cafef.vn/gan-1-5-thanh-nien-that-nghiep-sinh-vien-ra-truong-rai-hang-tram-don-xin-viec-ma-chi-duoc-1-2-cong-ty-phan-hoi-tinh-canh-buon-tai-nen-kinh-te-lon-nhat-chau-a-188260819144126143.chn",
+    "title": "Gần 1/5 thanh niên thất nghiệp, sinh viên ra trường rải hàng trăm đơn xin việc mà chỉ được 1-2 công ty phản hồi: Tình cảnh buồn tại nền kinh tế lớn nhất châu Á",
+    "source": "CafeF Tai Chinh Quoc Te",
+    "processedAt": "2026-08-19T07:46:11.622Z"
   }
 ]
