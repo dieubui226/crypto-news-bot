@@ -1,41 +1,5 @@
 [
   {
-    "url": "https://vneconomy.vn/thieu-hut-bo-nho-hp-asus-va-acer-dung-chip-nho-trung-quoc.htm",
-    "title": "Thiếu hụt bộ nhớ, HP, Asus và Acer dùng chip nhớ Trung Quốc",
-    "source": "VnEconomy - Kinh te so",
-    "processedAt": "2026-08-05T02:46:04.173Z"
-  },
-  {
-    "url": "https://vneconomy.vn/yeg-duoc-chap-thuan-chao-ban-25-trieu-co-phieu-rieng-le.htm",
-    "title": "YEG được chấp thuận chào bán 25 triệu cổ phiếu riêng lẻ",
-    "source": "VnEconomy - Kinh te so",
-    "processedAt": "2026-08-05T02:46:04.188Z"
-  },
-  {
-    "url": "https://vneconomy.vn/dong-yen-yeu-co-the-giup-loi-nhuan-hoat-dong-cua-toyota-tang-them-3-ty-usd.htm",
-    "title": "Đồng yên yếu có thể giúp lợi nhuận hoạt động của Toyota tăng thêm 3 tỷ USD",
-    "source": "VnEconomy - Kinh te so",
-    "processedAt": "2026-08-05T02:46:04.191Z"
-  },
-  {
-    "url": "https://vneconomy.vn/doanh-thu-spacex-tang-hon-90-gia-co-phieu-van-lao-doc.htm",
-    "title": "Doanh thu SpaceX tăng hơn 90%, giá cổ phiếu vẫn lao dốc",
-    "source": "VnEconomy - Kinh te so",
-    "processedAt": "2026-08-05T02:46:04.198Z"
-  },
-  {
-    "url": "https://vneconomy.vn/tu-do-chia-se-huong-di-moi-cua-nganh-hang-xa-xi.htm",
-    "title": "\"Tủ đồ chia sẻ\": Hướng đi mới của ngành hàng xa xỉ",
-    "source": "VnEconomy - Kinh te so",
-    "processedAt": "2026-08-05T02:46:04.201Z"
-  },
-  {
-    "url": "https://en.vietnamplus.vn/vietjet-offers-golden-week-of-promotions-making-travel-dreams-come-true-with-tickets-from-0-vnd-post349454.vnp",
-    "title": "<img src=\"https://mediaen.vietnamplus.vn/images/7d1b1ad3fc9563dcff6a3a0b9636850c53a25e6ba960a623fab50f97b6a4a30a406a1496b16fcd02402193d29dbcd452/tau-bay-vietjet.jpg.avif\" srcset=\"https://mediaen.vietnamplus.vn/images/7d1b1ad3fc9563dcff6a3a0b9636850c53a25e6ba960a623fab50f97b6a4a30a406a1496b16fcd02402193d29dbcd452/tau-bay-vietjet.jpg.avif 1x, https://mediaen.vietnamplus.vn/images/9208427127649c9760468496aed1bd7853a25e6ba960a623fab50f97b6a4a30a406a1496b16fcd02402193d29dbcd452/tau-bay-vietjet.jpg.avif 2x\" alt=\"Illustrative image (Photo: Vietjet)\" class=\"image-fallback\">",
-    "source": "VietnamPlus Business (English)",
-    "processedAt": "2026-08-05T03:01:41.569Z"
-  },
-  {
     "url": "https://cafef.vn/vi-sao-nguoi-my-chuong-mua-sam-online-nhung-trung-tam-thuong-mai-van-song-khoe-188260805084731539.chn",
     "title": "Vì sao người Mỹ chuộng mua sắm online nhưng trung tâm thương mại vẫn sống khỏe?",
     "source": "CafeF Tai Chinh Quoc Te",
@@ -22596,5 +22560,17 @@
     "title": "Nga gọi thành tựu của mình là \"độc nhất vô nhị\", chuyên gia: Việc đánh giá toàn diện vẫn còn quá sớm",
     "source": "CafeF Tai Chinh Quoc Te",
     "processedAt": "2026-08-19T02:46:02.283Z"
+  },
+  {
+    "url": "https://t.me/cryptoholicvietnam/24838",
+    "title": "🚀 Uniswap tích hợp 190+ Robinhood Stock TokensUniswap công bố 190+ Robinhood Stock Tokens đã live trên Uniswap Protocol, Apps và API — tokenized equities giao dịch onchain toàn cầu, tự lưu ký, 24/7.Đây là bước mở rộng RWA cổ phiếu lên Ethereum, có thể kéo thêm thanh khoản và khối lượng giao dịch cho Uniswap. ETH hưởng lợi gián tiếp qua phí gas tăng khi nhu cầu giao dịch tài sản mã hóa này tăng.📎 Nguồn: @Uniswap | 🔗 Xem bài gốc",
+    "source": "Cryptoholic Vietnam (TG)",
+    "processedAt": "2026-08-19T03:01:49.683Z"
+  },
+  {
+    "url": "https://t.me/wublockchainenglish/25634",
+    "title": "BounceBit Launches Borobudur Credit LayerBounceBit launched Borobudur, a credit layer enabling Franklin Templeton’s BENJI and CeDeFi strategy positions to access 0% interest, BB-denominated credit while continuing to generate yield. The release brings crypto-native strategies and tokenized money market fund assets into a unified credit framework, expanding BB’s role across BounceBit’s capital infrastructure. — link",
+    "source": "Wu Blockchain English (TG)",
+    "processedAt": "2026-08-19T03:01:50.557Z"
   }
 ]
