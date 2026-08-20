@@ -1,11 +1,5 @@
 [
   {
-    "url": "https://cafef.vn/phat-hien-2-thung-cac-tong-chua-24-ty-dong-tien-mat-bi-vut-ben-ve-duong-cao-toc-18826080611423088.chn",
-    "title": "Phát hiện 2 thùng các-tông chứa 24 tỷ đồng tiền mặt bị vứt bên vệ đường cao tốc",
-    "source": "CafeF Tai Chinh Quoc Te",
-    "processedAt": "2026-08-06T05:58:12.136Z"
-  },
-  {
     "url": "https://vneconomy.vn/canada-ra-soat-thue-chong-ban-pha-gia-va-tro-cap-doi-voi-ghe-boc-dem-nhap-khau-tu-viet-nam.htm",
     "title": "Canada rà soát thuế chống bán phá giá và trợ cấp đối với ghế bọc đệm nhập khẩu từ Việt Nam",
     "source": "VnEconomy - Tai chinh",
@@ -24843,5 +24837,23 @@
     "title": "\"Tiếng động lạ\" trước khi trực thăng chở cặp đôi mới cưới gặp nạn, 3 người tử vong",
     "source": "CafeF Tai Chinh Quoc Te",
     "processedAt": "2026-08-20T05:54:13.602Z"
+  },
+  {
+    "url": "https://t.me/vncointele/27718",
+    "title": "- Trong hệ sinh thái Ethereum, Nethermind rời vai trò xác thực cho LayerZero và chuyển hoạt động cross-chain sang Chainlink.- Nethermind sẽ ngừng vận hành DVN của LayerZero, đồng thời trở thành node operator và đối tác công nghệ của Chainlink.- DVN là các đơn vị độc lập chịu trách nhiệm xác thực dữ liệu khi truyền giữa các blockchain trong hệ sinh thái LayerZero.- Về dài hạn, Nethermind sẽ tập trung hoạt động cross-chain vào Chainlink CCIP, trong bối cảnh nhu cầu ứng dụng blockchain trong lĩnh vực tài chính ngày càng tăng. 🔗💼",
+    "source": "VNCointele (TG)",
+    "processedAt": "2026-08-20T06:01:22.006Z"
+  },
+  {
+    "url": "https://t.me/CoinMarketCapAnnouncements/15467",
+    "title": "LATEST: 🏦 HSBC and Standard Chartered completed the first live interbank transaction on Swift's new blockchain-based ledger.",
+    "source": "CoinMarketCap Announcements (TG)",
+    "processedAt": "2026-08-20T06:01:22.713Z"
+  },
+  {
+    "url": "https://cointelegraph.com/markets/hype-price-jumps-trump-hyperliquid-us-access?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "title": "HYPE jumps 20% as Trump signals legal US path for Hyperliquid",
+    "source": "Cointelegraph",
+    "processedAt": "2026-08-20T06:01:23.245Z"
   }
 ]
