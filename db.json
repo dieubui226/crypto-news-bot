@@ -1,41 +1,5 @@
 [
   {
-    "url": "https://vnexpress.net/benh-vien-dau-tien-phau-thuat-ung-thu-voi-hai-robot-tai-viet-nam-5105852.html",
-    "title": "Bệnh viện đầu tiên phẫu thuật ung thư với hai robot tại Việt Nam",
-    "source": "VnExpress So Hoa",
-    "processedAt": "2026-08-06T04:13:06.814Z"
-  },
-  {
-    "url": "https://vneconomy.vn/thu-tuong-yeu-cau-thao-go-diem-nghen-ve-an-ninh-mang-va-du-lieu-ca-nhan.htm",
-    "title": "Thủ tướng yêu cầu tháo gỡ điểm nghẽn về an ninh mạng và dữ liệu cá nhân",
-    "source": "VnEconomy - Kinh te so",
-    "processedAt": "2026-08-06T04:15:59.322Z"
-  },
-  {
-    "url": "https://vneconomy.vn/xuat-khau-dau-tho-my-lao-doc-do-ton-kho-giam-manh-va-san-luong-chung-lai.htm",
-    "title": "Xuất khẩu dầu thô Mỹ lao dốc do tồn kho giảm mạnh và sản lượng chững lại",
-    "source": "VnEconomy - Kinh te so",
-    "processedAt": "2026-08-06T04:15:59.342Z"
-  },
-  {
-    "url": "https://vneconomy.vn/du-lich-thai-lan-lai-doi-mat-voi-khung-hoang-niem-tin-moi.htm",
-    "title": "Du lịch Thái Lan lại đối mặt với khủng hoảng niềm tin mới",
-    "source": "VnEconomy - Kinh te so",
-    "processedAt": "2026-08-06T04:15:59.345Z"
-  },
-  {
-    "url": "https://vneconomy.vn/iran-va-oman-dat-thoa-thuan-ve-eo-bien-hormuz.htm",
-    "title": "Iran và Oman đạt thỏa thuận về eo biển Hormuz",
-    "source": "VnEconomy - Kinh te so",
-    "processedAt": "2026-08-06T04:15:59.348Z"
-  },
-  {
-    "url": "https://vneconomy.vn/thanh-hoa-khan-truong-lam-ro-nguyen-nhan-nuoc-suoi-xu-doi-mau.htm",
-    "title": "Thanh Hóa khẩn trương làm rõ nguyên nhân nước suối Xú đổi màu",
-    "source": "VnEconomy - Kinh te so",
-    "processedAt": "2026-08-06T04:15:59.355Z"
-  },
-  {
     "url": "https://cafef.vn/tong-thong-nga-putin-bat-ngo-cai-to-hang-ngu-chi-huy-quan-doi-188260806110836505.chn",
     "title": "Tổng thống Nga Putin bất ngờ cải tổ hàng ngũ chỉ huy quân đội",
     "source": "CafeF Tai Chinh Quoc Te",
@@ -24682,5 +24646,11 @@
     "title": "🔥 BULLISH: Around $190 BILLION has been added to the crypto market cap in the past 24 hours.News | Markets | YouTube",
     "source": "Cointelegraph (TG)",
     "processedAt": "2026-08-20T04:05:12.010Z"
+  },
+  {
+    "url": "https://www.coindesk.com/markets/2026/08/20/ether-jumps-18-to-usd2-250-as-bitcoin-tops-usd69-000-in-broad-crypto-rally",
+    "title": "Ether jumps 18% to $2,250 as bitcoin tops $69,000 in broad crypto rally",
+    "source": "CoinDesk",
+    "processedAt": "2026-08-20T04:16:00.373Z"
   }
 ]
