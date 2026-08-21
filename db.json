@@ -1,11 +1,5 @@
 [
   {
-    "url": "https://cafef.vn/co-nga-keo-len-o-chernigovka-5-lu-doan-kiev-rut-lui-hang-tram-ten-lua-khong-the-toi-ukraine-sau-tuyen-bo-tu-ong-trump-188260807203014812.chn",
-    "title": "Cờ Nga kéo lên ở Chernigovka, 5 lữ đoàn Kiev rút lui - Hàng trăm tên lửa không thể tới Ukraine sau tuyên bố từ ông Trump",
-    "source": "CafeF Tai Chinh Quoc Te",
-    "processedAt": "2026-08-07T13:59:35.300Z"
-  },
-  {
     "url": "https://cafef.vn/ukraine-tang-toc-nga-khong-dung-yen-cuoc-dua-ai-nhanh-hon-dang-dien-ra-o-mot-mat-tran-khac-188260807192508191.chn",
     "title": "Ukraine tăng tốc, Nga không đứng yên: Cuộc đua ai nhanh hơn đang diễn ra ở một mặt trận khác",
     "source": "CafeF Tai Chinh Quoc Te",
@@ -26915,5 +26909,23 @@
     "title": "Iran không nao núng trước lời đe dọa trừng phạt của Mỹ",
     "source": "CafeF Tai Chinh Quoc Te",
     "processedAt": "2026-08-21T13:45:51.853Z"
+  },
+  {
+    "url": "https://en.vietnamplus.vn/overseas-vietnamese-in-cambodia-malaysia-celebrate-vietnams-national-day-post350546.vnp",
+    "title": "<img src=\"https://mediaen.vietnamplus.vn/images/UYToKQFUe3xqwv0c5qvXVkMDGqDLBioZIyVrlXhweAEuajApE2z7krF7gntpvtEMow548Cnj2KK6PsSbYpzVrEN-GNNx19Nu33UlL-2TJzU/vnanet-potal-dai-su-quan-viet-nam-t.jpg.avif\" srcset=\"https://mediaen.vietnamplus.vn/images/UYToKQFUe3xqwv0c5qvXVkMDGqDLBioZIyVrlXhweAEuajApE2z7krF7gntpvtEMow548Cnj2KK6PsSbYpzVrEN-GNNx19Nu33UlL-2TJzU/vnanet-potal-dai-su-quan-viet-nam-t.jpg.avif 1x, https://mediaen.vietnamplus.vn/images/Ubn1-pV3HGWKGN-rAI_BoUMDGqDLBioZIyVrlXhweAEuajApE2z7krF7gntpvtEMow548Cnj2KK6PsSbYpzVrEN-GNNx19Nu33UlL-2TJzU/vnanet-potal-dai-su-quan-viet-nam-t.jpg.avif 2x\" alt=\"Overseas Vietnamese in Cambodia, Malaysia celebrate Vietnam’s National Day \" class=\"image-fallback\">",
+    "source": "VietnamPlus Business (English)",
+    "processedAt": "2026-08-21T14:01:18.466Z"
+  },
+  {
+    "url": "https://t.me/wublockchainenglish/25681",
+    "title": "Rust Supply Chain Attack Hits Widely Used Crates With Solana Ecosystem ExposureSecurity researchers including SlowMist, Socket and StepSecurity reported a coordinated supply chain attack affecting arrayref@0.3.10, internment@0.8.7 and append-only-vec@0.1.9. The malicious releases introduced a typosquatted proc-macro1 dependency whose build script downloaded and executed a remote payload during Cargo builds, meaning simply compiling an affected dependency could compromise a developer or CI host.Rust’s security team removed the malicious releases and locked the maintainer account, saying the maintainer’s machine or publishing credentials were likely compromised. arrayref is widely used across the Rust ecosystem, including dependency chains involving Solana-related components, though this does not mean those downstream projects were compromised. — link",
+    "source": "Wu Blockchain English (TG)",
+    "processedAt": "2026-08-21T14:01:22.768Z"
+  },
+  {
+    "url": "https://cointelegraph.com/news/solana-cuts-blockchain-slot-time-350-milliseconds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "title": "Solana cuts blockchain slot time to 350 milliseconds",
+    "source": "Cointelegraph",
+    "processedAt": "2026-08-21T14:02:12.006Z"
   }
 ]
