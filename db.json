@@ -1,11 +1,5 @@
 [
   {
-    "url": "https://vnexpress.net/pgs-ha-dinh-duc-trong-ky-uc-to-truong-lai-dat-rua-ho-guom-5106619.html",
-    "title": "PGS Hà Đình Đức trong ký ức tổ trưởng lai dắt rùa Hồ Gươm",
-    "source": "VnExpress So Hoa",
-    "processedAt": "2026-08-07T15:14:26.101Z"
-  },
-  {
     "url": "https://cafef.vn/ukraine-tap-kich-crimea-pha-huy-he-thong-phong-khong-15-trieu-usd-cua-nga-188260807220333832.chn",
     "title": "Ukraine tập kích Crimea, phá hủy hệ thống phòng không 15 triệu USD của Nga",
     "source": "CafeF Tai Chinh Quoc Te",
@@ -26957,5 +26951,35 @@
     "title": "Bitcoin Climbs Higher as $1.2 Billion in Shorts Liquidated",
     "source": "Decrypt",
     "processedAt": "2026-08-21T15:01:24.600Z"
+  },
+  {
+    "url": "https://t.me/cointelegraph/71725",
+    "title": "Can crypto put a market price on attention?Trendle is turning narrative momentum into perpetual markets, allowing traders to go long or short as interest around a topic rises or falls.Its Attention Indexes track activity across X, Reddit and YouTube, with the Monad-based platform already recording $1.4M+ in closed-beta volume.👉 Read more: https://cointelegraph.com/sponsored/the-attention-economy-has-no-market-price-while-crypto-is-building-one[Brought to you by Trendle]News | Markets | YouTube",
+    "source": "Cointelegraph (TG)",
+    "processedAt": "2026-08-21T15:15:56.564Z"
+  },
+  {
+    "url": "https://t.me/ahboyashreads/24579",
+    "title": "In just the past 2 days, Circle and Tether have minted $3B in stablecoinsSource",
+    "source": "Ah Boy Ash Reads (TG)",
+    "processedAt": "2026-08-21T15:15:57.460Z"
+  },
+  {
+    "url": "https://t.me/ahboyashreads/24580",
+    "title": "Ken Griffin says Citadel unwound more than 80% of risk tied to Situational Awareness portfolioSource",
+    "source": "Ah Boy Ash Reads (TG)",
+    "processedAt": "2026-08-21T15:15:58.246Z"
+  },
+  {
+    "url": "https://t.me/wublockchainenglish/25682",
+    "title": "YZi Labs-backed BounceBit to permanently shut down its L1 after 286.5M BB exploitBounceBit said an attacker exploited a protocol-level authorization flaw in its Evmos-based chain, moving approximately 286.5 million BB from nine mainnet accounts without authorization. The project raised $6 million in a 2024 seed round co-led by Blockchain Capital and Breyer Capital, with participation from OKX Ventures and HTX Ventures, and later received a separate investment from Binance Labs (now YZi Labs).BounceBit will permanently sunset BounceBit Chain and reissue BB as a BEP-20 token on BNB Chain based on a pre-exploit snapshot. The 286.5 million BB moved by the attacker will not carry over to the new token. No private keys or wallets were compromised, and its CeDeFi, Prime and RWA products were unaffected. — link",
+    "source": "Wu Blockchain English (TG)",
+    "processedAt": "2026-08-21T15:15:59.282Z"
+  },
+  {
+    "url": "https://cafef.vn/vi-sao-o-my-nuoc-ngot-lai-re-hon-nuoc-loc-dong-chai-188260821202225604.chn",
+    "title": "Vì sao ở Mỹ nước ngọt lại rẻ hơn nước lọc đóng chai?",
+    "source": "CafeF Tai Chinh Quoc Te",
+    "processedAt": "2026-08-21T15:15:59.297Z"
   }
 ]
