@@ -1,17 +1,5 @@
 [
   {
-    "url": "https://vnexpress.net/my-phat-hien-mo-kim-loai-quy-khong-lo-5106055.html",
-    "title": "Mỹ phát hiện mỏ kim loại quý khổng lồ",
-    "source": "VnExpress So Hoa",
-    "processedAt": "2026-08-07T07:58:32.339Z"
-  },
-  {
-    "url": "https://cafef.vn/nang-nong-khac-nghiet-dao-lon-cuoc-song-o-han-quoc-188260807143635324.chn",
-    "title": "Nắng nóng khắc nghiệt đảo lộn cuộc sống ở Hàn Quốc",
-    "source": "CafeF Tai Chinh Quoc Te",
-    "processedAt": "2026-08-07T07:58:34.482Z"
-  },
-  {
     "url": "https://vneconomy.vn/gia-vang-trong-nuoc-di-nguoc-gia-the-gioi-1299338.htm",
     "title": "Giá vàng trong nước đi ngược giá thế giới",
     "source": "VnEconomy - Tai chinh",
@@ -26442,5 +26430,23 @@
     "title": "Phát hiện biến đổi bất thường tại 2.344 huyện của Trung Quốc sau khi điện mặt trời và điện gió được phủ kín",
     "source": "CafeF Tai Chinh Quoc Te",
     "processedAt": "2026-08-21T07:46:04.900Z"
+  },
+  {
+    "url": "https://vneconomy.vn/ban-rat-it-thi-truong-dao-chieu-tich-cuc.htm",
+    "title": "Bán rất ít, thị trường đảo chiều tích cực",
+    "source": "VnEconomy - Tai chinh",
+    "processedAt": "2026-08-21T08:01:17.690Z"
+  },
+  {
+    "url": "https://cafef.vn/fbi-chan-am-muu-danh-bom-toa-nha-lap-phap-bang-new-york-188260821140433727.chn",
+    "title": "FBI chặn âm mưu đánh bom tòa nhà lập pháp bang New York",
+    "source": "CafeF Tai Chinh Quoc Te",
+    "processedAt": "2026-08-21T08:01:17.703Z"
+  },
+  {
+    "url": "https://cointelegraph.com/markets/bitcoin-etfs-ether-etfs-largest-inflow-october?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "title": "Bitcoin ETFs draw $608M as Ether ETFs see largest inflow since October",
+    "source": "Cointelegraph",
+    "processedAt": "2026-08-21T08:01:21.350Z"
   }
 ]
