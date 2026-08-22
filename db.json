@@ -1,17 +1,5 @@
 [
   {
-    "url": "https://vneconomy.vn/da-dang-hinh-thuc-tiep-can-trong-bai-toan-an-cu.htm",
-    "title": "Đa dạng hình thức tiếp cận trong bài toán an cư",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-08T13:31:17.363Z"
-  },
-  {
-    "url": "https://vneconomy.vn/ha-noi-de-xuat-gia-han-thu-tuc-khoi-cong-6-du-an-lon.htm",
-    "title": "Hà Nội đề xuất gia hạn thủ tục khởi công 6 dự án lớn",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-08T13:31:17.367Z"
-  },
-  {
     "url": "https://cafef.vn/cha-cua-lionel-messi-qua-doi-o-tuoi-68-188260808205529209.chn",
     "title": "Cha của Lionel Messi qua đời ở tuổi 68",
     "source": "CafeF Tai Chinh Quoc Te",
@@ -27777,5 +27765,17 @@
     "title": "Kalshi off-limits in multiple states as prediction markets, CFTC team up for battle",
     "source": "CoinDesk",
     "processedAt": "2026-08-22T13:31:12.607Z"
+  },
+  {
+    "url": "https://cointelegraph.com/magazine/mica-is-coming-for-defi-vaults-but-regulation-will-be-difficult?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "title": "MiCA is coming for DeFi vaults, but regulation will be difficult",
+    "source": "Cointelegraph",
+    "processedAt": "2026-08-22T13:42:55.181Z"
+  },
+  {
+    "url": "https://decrypt.co/376271/chatgpt-web-ai-written-pew",
+    "title": "A Third of the Post-ChatGPT Web Is AI-Written, Pew Finds",
+    "source": "Decrypt",
+    "processedAt": "2026-08-22T13:42:55.797Z"
   }
 ]
