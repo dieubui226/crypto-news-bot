@@ -1,11 +1,5 @@
 [
   {
-    "url": "https://vneconomy.vn/nghi-dinh-3022026nd-cp-hoan-thien-khung-phap-ly-thi-truong-giao-dich-hang-hoa.htm",
-    "title": "Nghị định 302/2026/NĐ-CP: Hoàn thiện khung pháp lý thị trường giao dịch hàng hóa",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-09T21:37:13.346Z"
-  },
-  {
     "url": "https://vnexpress.net/giam-doc-youtube-khong-nen-tach-tre-khoi-moi-truong-so-5105645.html",
     "title": "Giám đốc YouTube: 'Không nên tách trẻ khỏi môi trường số'",
     "source": "VnExpress So Hoa",
@@ -28627,5 +28621,11 @@
     "title": "iShares 3-7 Year Treasury Bond ETF (Ondo Tokenized) - CryptoRank",
     "source": "Google News - Vietnam Crypto & Fintech (English)",
     "processedAt": "2026-08-23T21:31:12.810Z"
+  },
+  {
+    "url": "https://www.theblock.co/news/defi/2026-08-23-defi-lending-protocol-term-finance-loses-an-estimated-8-5-million-to-governance-exploit-412543",
+    "title": "DeFi lending protocol Term Finance loses an estimated $8.5 million to governance exploit",
+    "source": "The Block",
+    "processedAt": "2026-08-23T21:57:07.550Z"
   }
 ]
