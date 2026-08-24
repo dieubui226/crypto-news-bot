@@ -1,17 +1,5 @@
 [
   {
-    "url": "https://cafef.vn/phat-hien-tau-trung-quoc-dai-122-met-nang-gan-14000-tan-di-chuyen-lien-tuc-ve-phia-bac-thuc-hien-nhiem-vu-quan-trong-toan-cau-188260810103233525.chn",
-    "title": "Phát hiện tàu Trung Quốc dài 122 mét, nặng gần 14.000 tấn di chuyển liên tục về phía bắc, thực hiện nhiệm vụ quan trọng toàn cầu",
-    "source": "CafeF Tai Chinh Quoc Te",
-    "processedAt": "2026-08-10T04:13:30.639Z"
-  },
-  {
-    "url": "https://vnexpress.net/bo-khoa-hoc-va-cong-nghe-muon-day-manh-nghien-cuu-doi-moi-sang-tao-voi-australia-5107233.html",
-    "title": "Bộ Khoa học và Công nghệ muốn đẩy mạnh nghiên cứu, đổi mới sáng tạo với Australia",
-    "source": "VnExpress So Hoa",
-    "processedAt": "2026-08-10T04:13:30.648Z"
-  },
-  {
     "url": "https://cafef.vn/phap-bi-loai-trung-quoc-lap-tuc-de-mat-toi-du-an-metro-ngam-dai-nhat-tai-mot-quoc-gia-dong-nam-a-188260810111336827.chn",
     "title": "Pháp bị loại, Trung Quốc lập tức 'để mắt' tới dự án metro ngầm dài nhất tại một quốc gia Đông Nam Á",
     "source": "CafeF Tai Chinh Quoc Te",
@@ -28847,5 +28835,65 @@
     "title": "‘Nếu mất Canada, Mỹ còn người bạn nào?’",
     "source": "CafeF Tai Chinh Quoc Te",
     "processedAt": "2026-08-24T04:01:29.910Z"
+  },
+  {
+    "url": "https://vneconomy.vn/vib-ap-dung-lai-suat-co-dinh-5-nam-cho-vay-mua-nha.htm",
+    "title": "VIB áp dụng lãi suất cố định 5 năm cho vay mua nhà",
+    "source": "VnEconomy - Tai chinh",
+    "processedAt": "2026-08-24T04:15:51.842Z"
+  },
+  {
+    "url": "https://vneconomy.vn/samsung-electronics-du-chi-ky-luc-gan-80-ty-usd-cho-co-dong.htm",
+    "title": "Samsung Electronics dự chi kỷ lục gần 80 tỷ USD cho cổ đông",
+    "source": "VnEconomy - Tai chinh",
+    "processedAt": "2026-08-24T04:15:51.863Z"
+  },
+  {
+    "url": "https://vneconomy.vn/vpbank-dong-hanh-cung-doanh-nghiep-dai-loan-don-chu-ky-dau-tu-moi-tai-viet-nam.htm",
+    "title": "VPBank đồng hành cùng doanh nghiệp Đài Loan đón chu kỳ đầu tư mới tại Việt Nam",
+    "source": "VnEconomy - Tai chinh",
+    "processedAt": "2026-08-24T04:15:51.888Z"
+  },
+  {
+    "url": "https://vneconomy.vn/ap-luc-thoat-hang-cua-to-chuc-trong-nuoc-truoc-le-tuyet-doi-khong-duoc-dung-margin.htm",
+    "title": "\"Áp lực thoát hàng của tổ chức trong nước trước lễ, tuyệt đối không được dùng margin\"",
+    "source": "VnEconomy - Tai chinh",
+    "processedAt": "2026-08-24T04:15:51.931Z"
+  },
+  {
+    "url": "https://vneconomy.vn/cang-thang-thuong-mai-voi-canada-co-the-gay-ton-that-lon-cho-kinh-te-my.htm",
+    "title": "Căng thẳng thương mại với Canada có thể gây tổn thất lớn cho kinh tế Mỹ",
+    "source": "VnEconomy - Tai chinh",
+    "processedAt": "2026-08-24T04:15:51.946Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPQ2tQNjlSQndfTGpaT3ZDV01zSDgzdDZrbXpkYi0yczVNQlNGa1FfUTVMWlpqbUl3eFNXZV9NMEZ6VlVWOTZ3cDhQbDc0RXl3WDZtZGVXc1VNbThPRXRIUEF4VGhLN1dHRkdEY0JqM25FSTM2WWlaeFpqVEs1alJfRGkyRzBJVllpWkpRSWtGWkRUOVlqUEllTGUwdnhmWDVCRTdZUUczWk1YcW41Y01iZG5ZZ3ZMNUIwamdjaTVJb0QySHdvQlVUaGxkWkhiRmwxZzB4Y2NtSQ?oc=5",
+    "title": "Standard Chartered: Dự báo Bitcoin 100.000 USD cuối 2026 có thể quá thấp - Investing.com Việt Nam",
+    "source": "Google News - Tai san ma hoa VN",
+    "processedAt": "2026-08-24T04:15:52.963Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZndYcGlBZTIwdnAxTU8yT3V4U1ZEUWJuaDItZXRZd1JtdWRicU1lY0hnbjgyei10aDFYUFY4REFLcGdoOGQxcEM3azNxUjJDeTdtMlhwNThlZ0pMeWZ4ZFhKemdxay1hWEVDejlmVE95QnJ5RWVYUEU4ZmY5bVhwMFZPNVlUUmpyell5eXFtMDBWX1BLOW43TGpNcXZkZml5NXNIUjJFYkJQa1B2MTNxN2RGMDBWZW44eUF5bUdPbDE?oc=5",
+    "title": "Báo cáo Tiền ảo tháng 08/2026 (Kỳ 2): Thử thách kháng cự dài hạn sẽ thành công? Theo Vietstock - Investing.com Việt Nam",
+    "source": "Google News - Tai san ma hoa VN",
+    "processedAt": "2026-08-24T04:15:53.591Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE91MTZWakJXekUwcXkyNHRCUFNuakdXNjh5UFQyZ0VyaFF2MFRXOFluczFfeXk5bGctYXR0cFVqV1pvbl8wMlZwdnJLekJlNTFOdlJabzI1RVdITmtfLVJpVTNJQVg3ektPUVZZcUJMZ2RTRmVWLVprRVhR?oc=5",
+    "title": "Zondacrypto, The Latest Reminder of Crypto Risks - Kompas.id",
+    "source": "Google News - Vietnam Crypto & Fintech (English)",
+    "processedAt": "2026-08-24T04:15:54.383Z"
+  },
+  {
+    "url": "https://cointelegraph.com/news/term-finance-8-5m-vault-governance-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "title": "Term Finance loses estimated $8.5M in vault governance exploit",
+    "source": "Cointelegraph",
+    "processedAt": "2026-08-24T04:15:55.132Z"
+  },
+  {
+    "url": "https://cafef.vn/vua-phat-hien-mo-khi-tu-nhien-lon-ky-luc-voi-tru-luong-hon-212-ty-met-khoi-nam-trong-khu-vuc-rong-9700-km2-188260824100311392.chn",
+    "title": "Vừa phát hiện mỏ khí tự nhiên lớn kỷ lục với trữ lượng hơn 212 tỷ mét khối, nằm trong khu vực rộng 9.700 km2",
+    "source": "CafeF Tai Chinh Quoc Te",
+    "processedAt": "2026-08-24T04:15:55.147Z"
   }
 ]
