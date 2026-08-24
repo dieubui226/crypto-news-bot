@@ -1,23 +1,5 @@
 [
   {
-    "url": "https://vietnamfinance.vn/tin-dung-gdp-cua-viet-nam-phinh-len-155-cao-gap-3-lan-nhom-cung-hang-d148743.html",
-    "title": "155%",
-    "source": "VietnamFinance",
-    "processedAt": "2026-08-10T00:16:00.735Z"
-  },
-  {
-    "url": "https://vnexpress.net/iphone-17-duoc-du-doan-tang-gia-tuan-nay-5107122.html",
-    "title": "iPhone 17 được dự đoán tăng giá tuần này",
-    "source": "VnExpress So Hoa",
-    "processedAt": "2026-08-10T00:28:04.999Z"
-  },
-  {
-    "url": "https://cafef.vn/israel-thang-thung-bac-bo-ke-hoach-hoa-binh-dai-gaza-cua-tong-thong-my-188260810064903751.chn",
-    "title": "Israel thẳng thừng bác bỏ kế hoạch hòa bình Dải Gaza của Tổng thống Mỹ",
-    "source": "CafeF Tai Chinh Quoc Te",
-    "processedAt": "2026-08-10T00:28:05.007Z"
-  },
-  {
     "url": "https://cafef.vn/lam-phat-trung-quoc-ha-nhiet-trong-thang-7-188260810065134524.chn",
     "title": "Lạm phát Trung Quốc hạ nhiệt trong tháng 7",
     "source": "CafeF Tai Chinh Quoc Te",
@@ -28675,5 +28657,30 @@
     "title": "Máy bay MH370 đã được tìm thấy sau hơn 12 năm mất tích?",
     "source": "CafeF Tai Chinh Quoc Te",
     "processedAt": "2026-08-24T00:15:58.459Z"
+  },
+  {
+    "url": "https://vneconomy.vn/7-truong-hop-he-thong-thong-tin-se-bi-chan-truy-cap-tu-viet-nam.htm",
+    "title": "7 trường hợp hệ thống thông tin sẽ bị chặn truy cập từ Việt Nam",
+    "source": "VnEconomy - Kinh te so",
+    "processedAt": "2026-08-24T00:31:05.154Z"
+  },
+  {
+    "url": "https://vneconomy.vn/hoan-thien-quy-dinh-so-huu-tri-tue-de-theo-kip-ai-tai-san-so-va-blockchain.htm",
+    "title": "Hoàn thiện quy định sở hữu trí tuệ để theo kịp AI, tài sản số và blockchain",
+    "source": "VnEconomy - Kinh te so",
+    "processedAt": "2026-08-24T00:31:09.062Z",
+    "summary": "• Đề xuất hoàn thiện các quy định pháp lý về sở hữu trí tuệ tại Việt Nam.\n• Tập trung vào việc bắt kịp các xu hướng công nghệ mới như trí tuệ nhân tạo (AI), tài sản số và blockchain."
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8zNEczZzdodTNZNW9KbmZRdFpaZlNzSVBELW1qQ21jX0pFZ1owY045RFpQaGhYeUhqQkVtYkwzZ0hPWHpkWDBpYklMeEZfdlpERmdha1RXNFlMV2M4VThoUnpYWkg?oc=5",
+    "title": "Thông tin chuyên sâu của 小恐龙说趋势(@btc902238) - Binance",
+    "source": "Google News - Tai san ma hoa VN",
+    "processedAt": "2026-08-24T00:31:14.735Z"
+  },
+  {
+    "url": "https://cafef.vn/thuy-si-dan-dau-bang-xep-hang-chi-so-quoc-gia-thinh-vuong-nhat-the-gioi-188260824064213693.chn",
+    "title": "Thụy Sĩ dẫn đầu bảng xếp hạng chỉ số quốc gia thịnh vượng nhất thế giới",
+    "source": "CafeF Tai Chinh Quoc Te",
+    "processedAt": "2026-08-24T00:31:14.749Z"
   }
 ]
