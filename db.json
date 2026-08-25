@@ -1,35 +1,5 @@
 [
   {
-    "url": "https://vneconomy.vn/f88-chi-ban-duoc-50-tong-luong-co-phieu-dang-ky.htm",
-    "title": "F88 chỉ bán được 50% tổng lượng cổ phiếu đăng ký",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-11T07:31:20.501Z"
-  },
-  {
-    "url": "https://vneconomy.vn/dong-tien-tiet-kiem-cua-nguoi-dan-dang-dinh-hinh-lai-thi-truong-chung-khoan-chau-a.htm",
-    "title": "Dòng tiền tiết kiệm của người dân đang định hình lại thị trường chứng khoán châu Á",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-11T07:31:20.507Z"
-  },
-  {
-    "url": "https://vneconomy.vn/thanh-khoan-thap-tam-ly-nha-dau-tu-van-than-trong.htm",
-    "title": "Thanh khoản thấp, tâm lý nhà đầu tư vẫn thận trọng",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-11T07:31:20.512Z"
-  },
-  {
-    "url": "https://cafef.vn/funan-techo-duoc-trung-quoc-bom-von-co-tien-trien-nhieu-cu-dan-campuchia-doc-kenh-dao-van-phai-cho-188260811122510142.chn",
-    "title": "Funan Techo được Trung Quốc 'bơm' vốn, có tiến triển: Nhiều cư dân Campuchia dọc kênh đào vẫn phải chờ",
-    "source": "CafeF Tai Chinh Quoc Te",
-    "processedAt": "2026-08-11T07:44:03.265Z"
-  },
-  {
-    "url": "https://vneconomy.vn/thang-du-ngan-sach-gan-470-nghin-ty-dong-nhung-ap-luc-tai-khoa-van-hien-huu.htm",
-    "title": "Thặng dư ngân sách gần 470 nghìn tỷ đồng nhưng áp lực tài khóa vẫn hiện hữu",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-11T07:46:03.318Z"
-  },
-  {
     "url": "https://en.vietnamplus.vn/reference-exchange-rate-up-25-vnd-on-august-11-post349834.vnp",
     "title": "<img src=\"https://mediaen.vietnamplus.vn/images/7d1b1ad3fc9563dcff6a3a0b9636850c8930b6c5d8fcd1c7f24a9677598f4dd327e825aaec6e5c1d7cc91e38f6a45668/ty-gia-1.jpg.avif\" srcset=\"https://mediaen.vietnamplus.vn/images/7d1b1ad3fc9563dcff6a3a0b9636850c8930b6c5d8fcd1c7f24a9677598f4dd327e825aaec6e5c1d7cc91e38f6a45668/ty-gia-1.jpg.avif 1x, https://mediaen.vietnamplus.vn/images/9208427127649c9760468496aed1bd788930b6c5d8fcd1c7f24a9677598f4dd327e825aaec6e5c1d7cc91e38f6a45668/ty-gia-1.jpg.avif 2x\" alt=\"With the current trading band of +/- 5%, the ceiling rate applicable for commercial banks during the day is 26,792 VND/USD, and the floor rate 24,240 VND/USD. (Photo: VNA)\" class=\"image-fallback\">",
     "source": "VietnamPlus Business (English)",
@@ -30495,5 +30465,36 @@
     "title": "LATEST: 📊 A Bitcoin Policy Institute survey of 1,000 US voters found that framing BTC as digital gold was the one of the least effective messaging strategies, while emphasizing personal control resonated most.",
     "source": "CoinMarketCap Announcements (TG)",
     "processedAt": "2026-08-25T07:31:15.712Z"
+  },
+  {
+    "url": "https://t.me/wublockchainenglish/25729",
+    "title": "Ethereum Developers Propose Post-Quantum Deposit Contract to Phase Out BLSEthereum developers have proposed a new post-quantum-ready deposit contract that would support variable-length public keys and credential metadata, using scheme identifiers to distinguish cryptographic systems while reserving Scheme 0 for existing BLS deposits. The design would replace the legacy deposit contract’s Merkle-tree mechanism with execution-layer requests based on EIP-7685 and introduce an irreversible migration switch that could first enable, then permanently disable, new BLS deposits as Ethereum transitions toward post-quantum signatures. — link",
+    "source": "Wu Blockchain English (TG)",
+    "processedAt": "2026-08-25T07:45:53.314Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPR3Yyd3J5Z0hKVW5PYXk4dW1sSFlnVi13T3MzR3BmSnFXY0xZVWIxX01mTTNzODF0ak9uWUhVc0Z6SExlMm05dkJ3cFpYOHFmMHlrb1BFeFc1Rl9VYUxSMDhvTDV3ZkNJZ1Npb1A0ek1KU2txaS1iSEJEU1lJR2xNMlAzdGJVUXhaaFhmRmpKMHFwSzdoUk1SclBjQUtHelhwYWw1aU01UTlPSFZX?oc=5",
+    "title": "Quốc hội luật hóa 15 dấu hiệu đáng ngờ trong giao dịch tài sản mã hóa - Cổng thông tin đài tiếng nói Việt Nam",
+    "source": "Google News - Tai san ma hoa VN",
+    "processedAt": "2026-08-25T07:45:58.573Z",
+    "summary": "• Quốc hội tiến hành luật hóa 15 dấu hiệu đáng ngờ liên quan đến các giao dịch tài sản mã hóa.\n• Bước đi này nhằm thiết lập khung pháp lý chặt chẽ hơn trong việc giám sát, phòng chống rửa tiền và quản lý tài sản mã hóa tại Việt Nam."
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQOFFzSUxNSnVtNVRkbG1DaTlZZFZ5NnBSd1F6TE1sQW1FTERtTDdjYTlsZWdDcXI1VWFybXRoQTVGeHZBN2NkbTcwZVdVUFkzRmZHcDBZMDEyd0F5a2Fud0JtYjFSR2RVbzdITUljUUZybWZub0c2OUNzZTB4a0x1eHlCdGllU2FkeF9DZkhxMXI?oc=5",
+    "title": "CryptoUK công bố chế độ A&D mới cho giao dịch Cryptoasset - Coinfomania",
+    "source": "Google News - Tai san ma hoa VN",
+    "processedAt": "2026-08-25T07:46:02.682Z"
+  },
+  {
+    "url": "https://www.coindesk.com/markets/2026/08/25/governments-defending-prices-against-fundamentals-always-lose-billionaire-investor-druckenmiller-says",
+    "title": "Treasury’s bond buyback plan fights the market and heightens the danger, billionaire Druckenmiller says",
+    "source": "CoinDesk",
+    "processedAt": "2026-08-25T07:46:03.216Z"
+  },
+  {
+    "url": "https://www.coindesk.com/business/2026/08/25/live-updates-bitcoin-etfs-draw-a-seventh-straight-day-of-inflows-as-the-rally-holds-above-usd80-000",
+    "title": "Live updates: Bitcoin ETFs draw a seventh straight day of inflows as the rally holds above $80,000",
+    "source": "CoinDesk",
+    "processedAt": "2026-08-25T07:46:04.077Z"
   }
 ]
