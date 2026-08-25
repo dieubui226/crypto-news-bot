@@ -1,11 +1,5 @@
 [
   {
-    "url": "https://cafef.vn/phat-hien-5-tui-bong-chua-hon-6-ty-dong-tien-mat-tren-mai-nha-188260811140757989.chn",
-    "title": "Phát hiện 5 túi bóng chứa hơn 6 tỷ đồng tiền mặt trên mái nhà",
-    "source": "CafeF Tai Chinh Quoc Te",
-    "processedAt": "2026-08-11T08:28:23.327Z"
-  },
-  {
     "url": "https://vnexpress.net/viet-nam-australia-se-tang-cuong-hop-tac-ve-ai-cong-nghe-so-5107868.html",
     "title": "Việt Nam - Australia sẽ tăng cường hợp tác về AI, công nghệ số",
     "source": "VnExpress So Hoa",
@@ -30637,5 +30631,30 @@
     "title": "Tại sao Đại học Draper lại đầu tư 70.000 USD vào chương trình tăng tốc học tập trực tiếp - Bitcoin News",
     "source": "Google News - RWA Tokenization",
     "processedAt": "2026-08-25T08:16:08.100Z"
+  },
+  {
+    "url": "https://t.me/cryptoholicvietnam/24886",
+    "title": "Monad công bố bước đầu tiên hướng tới an ninh hậu lượng tử + chương trình mua lại 60 triệu USDHôm 24/8/2026, Keone Hon giới thiệu đề xuất Flexible and Upgradeable Account Authentication.Vấn đề: Chữ ký ECDSA hiện tại sẽ bị máy tính lượng tử phá. Nâng cấp thường phải đổi địa chỉ ví → chuyển hết tài sản, gián đoạn DeFi.Giải pháp Monad:•  Địa chỉ ví giữ nguyên.•  Có thể thêm/đổi/nghỉ hưu chữ ký (kể cả chống lượng tử như ML-DSA) bất cứ lúc nào trên cùng địa chỉ.Lợi ích ngay: Khôi phục tài khoản khi mất khóa, hỗ trợ đa chữ ký – passkey – social recovery, tương thích ví cũ.Tin bổ sung:•  Vài ngày trước, Foundation hoàn tất chương trình mua lại tối đa 60 triệu USD $MON bị khóa của quỹ đầu tư sớm. Gần như tất cả quỹ từ chối bán.•  Ngày 24/11/2026 sẽ unlock lượng lớn: khoảng 16,6 tỷ $MON (~16,6% tổng cung) từ team, nhà đầu tư và treasury – đợt cliff lớn nhất sau 1 năm khóa.",
+    "source": "Cryptoholic Vietnam (TG)",
+    "processedAt": "2026-08-25T08:31:11.701Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNb2ZHczdJV1BDbDJVQWllSUpaVUlpUXkzUDdfVlBFSkRVYTJJTGtUSVZZaHd2US1lSk1vNVNjc0NCYlRVLUc3LU9mMlR6dFVUdldnNDNHeVRKcWg3Qzd6dXhzSmc4TGlETWM5ajRWR0pPMHoweFVHWnZMU3hIU0xTb2xqX2NvYmFLbVBMT3ZsRFNCOUtI?oc=5",
+    "title": "Chính thức đưa dịch vụ tài sản mã hóa vào diện phòng, chống rửa tiền - Vietnam.vn",
+    "source": "Google News - Tai san ma hoa VN",
+    "processedAt": "2026-08-25T08:31:13.044Z",
+    "summary": "• Dịch vụ tài sản mã hóa chính thức được đưa vào diện phòng, chống rửa tiền tại Việt Nam.\n• Đánh dấu bước tiến mới trong việc quản lý và giám sát pháp lý đối với tài sản số trong nước."
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOaW55YXFQMWxQTHF2b1B1d0hqOU01VVNLcF9tQ3hsVVpwTTFQY0JkOXRkQlRRZ01KYWRhNGNxcncyYjR3WEFoam9WdDNCaWhmSlNJZHpZQWdsOWhkUWwzdHBkTUcxM0daMU9PWGtYaUJzbmdGVmkwZDdYajgyVjFGaFE1dXhSYnVHS3ZRVENoeWNQSHdrV0VGVzhmZVJZcmZlM2puVFdaSHUwbHJZYXgtNHBhMF8taDRDcmNV?oc=5",
+    "title": "Ngân hàng Anh chặn hoặc trì hoãn 40% giao dịch đến sàn tiền mã hóa - 디지털투데이",
+    "source": "Google News - Tai san ma hoa VN",
+    "processedAt": "2026-08-25T08:31:16.967Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZ19UeXpVYVcyMVU2cllKQjlsSFkzVXNPODNwbzFfWkRIVFdaVTRmVk10VDBMWC1fZzJlbU1lNmdtSnhNTUJrbTJodkQyQWdZal9Lck00MVBMYl9jX2NiM2xYNkw3SjBGRmFYMVM1ZDZWYVFOTGJzYkFsY3JldkZoMy1xaHJxTUxpcWgxVHdmbXlkV2E5MVQ1N25zSVRzdHN0YjBMRmFwakFDTmRTclVHZUNuQWU4Zw?oc=5",
+    "title": "Tất cả người dân có tài khoản thanh toán chú ý quy định mới nhất đã áp dụng - CafeF",
+    "source": "Google News - Tai san ma hoa VN",
+    "processedAt": "2026-08-25T08:31:17.442Z"
   }
 ]
