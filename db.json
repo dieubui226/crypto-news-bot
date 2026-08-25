@@ -1,17 +1,5 @@
 [
   {
-    "url": "https://vietnamfinance.vn/ban-30-sieu-thi-o-thai-lan-len-ke-hoach-xay-30-tttm-tai-viet-nam-aeon-tham-vong-dan-dau-tren-thi-truong-100-trieu-dan-d148822.html",
-    "title": "30 TTTM",
-    "source": "VietnamFinance",
-    "processedAt": "2026-08-11T05:31:18.104Z"
-  },
-  {
-    "url": "https://cafef.vn/chay-kinh-hoang-tai-kho-chua-19-trieu-lit-hoa-chat-o-han-quoc-vao-0h-dem-hon-230-nguoi-cung-90-phuong-tien-cuu-hoa-duoc-huy-dong-188260811121857082.chn",
-    "title": "Cháy kinh hoàng tại kho chứa 1,9 triệu lít hóa chất ở Hàn Quốc vào 0h đêm: Hơn 230 người cùng 90 phương tiện cứu hỏa được huy động",
-    "source": "CafeF Tai Chinh Quoc Te",
-    "processedAt": "2026-08-11T05:41:40.773Z"
-  },
-  {
     "url": "https://en.vietnamplus.vn/us-semiconductor-push-offers-vietnam-opportunities-policy-challenges-post349790.vnp",
     "title": "<img src=\"https://mediaen.vietnamplus.vn/images/7d1b1ad3fc9563dcff6a3a0b9636850c0d13d132e176a1660eb8e17ab9b58b91815d11f22dfa45fb7ca63f7536726654/vnanet-us.jpg.avif\" srcset=\"https://mediaen.vietnamplus.vn/images/7d1b1ad3fc9563dcff6a3a0b9636850c0d13d132e176a1660eb8e17ab9b58b91815d11f22dfa45fb7ca63f7536726654/vnanet-us.jpg.avif 1x, https://mediaen.vietnamplus.vn/images/9208427127649c9760468496aed1bd780d13d132e176a1660eb8e17ab9b58b91815d11f22dfa45fb7ca63f7536726654/vnanet-us.jpg.avif 2x\" alt=\"Semiconductor products, chips and components displayed at a ceremony to launch a national centre for semiconductor chip pilot production support in Hanoi on June 26. (Photo: VNA) \" class=\"image-fallback\">",
     "source": "VietnamPlus Business (English)",
@@ -30449,5 +30437,60 @@
     "title": "Bitcoin tops $80,000, solana jumps 8% but rally now runs into overbought warning",
     "source": "CoinDesk",
     "processedAt": "2026-08-25T05:31:13.431Z"
+  },
+  {
+    "url": "https://vneconomy.vn/huong-dan-thay-doi-noi-dang-ky-kham-chua-benh-bao-hiem-y-te-ban-dau.htm",
+    "title": "Hướng dẫn thay đổi nơi đăng ký khám chữa bệnh bảo hiểm y tế ban đầu",
+    "source": "VnEconomy - Kinh te so",
+    "processedAt": "2026-08-25T05:45:54.255Z"
+  },
+  {
+    "url": "https://vneconomy.vn/phat-trien-cong-nghiep-van-hoa-de-xuat-co-che-ho-tro-va-thu-hut-dau-tu-da-dang-hoa-nguon-luc-tai-chinh.htm",
+    "title": "Phát triển công nghiệp văn hóa: Đề xuất cơ chế hỗ trợ và thu hút đầu tư, đa dạng hóa nguồn lực tài chính",
+    "source": "VnEconomy - Kinh te so",
+    "processedAt": "2026-08-25T05:45:54.379Z"
+  },
+  {
+    "url": "https://vneconomy.vn/quoc-hoi-thong-qua-luat-dau-tu-sua-doi-chuyen-manh-tu-tien-kiem-sang-hau-kiem-loai-bo-rao-can-khong-can-thiet.htm",
+    "title": "Quốc hội thông qua Luật Đầu tư sửa đổi, chuyển mạnh từ \"tiền kiểm\" sang \"hậu kiểm\", loại bỏ rào cản không cần thiết",
+    "source": "VnEconomy - Kinh te so",
+    "processedAt": "2026-08-25T05:45:54.396Z"
+  },
+  {
+    "url": "https://vneconomy.vn/tru-lon-keo-vn-index-vuot-can-1800-diem-thi-truong-chua-dong-thuan.htm",
+    "title": "Trụ lớn kéo VN-Index vượt cản 1800 điểm, thị trường chưa đồng thuận",
+    "source": "VnEconomy - Kinh te so",
+    "processedAt": "2026-08-25T05:45:54.410Z"
+  },
+  {
+    "url": "https://vneconomy.vn/bi-my-ap-thue-quan-50-doi-voi-o-to-canada-tuyen-bo-khong-quay-lai-ban-dam-phan.htm",
+    "title": "Bị Mỹ áp thuế quan 50% đối với ô tô, Canada tuyên bố không quay lại bàn đàm phán",
+    "source": "VnEconomy - Kinh te so",
+    "processedAt": "2026-08-25T05:45:54.425Z"
+  },
+  {
+    "url": "https://cointelegraph.com/news/us-targets-iran-crypto-sector-100m-oil-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "title": "US targets Iran’s crypto sector, cites over $100M in oil-linked payments",
+    "source": "Cointelegraph",
+    "processedAt": "2026-08-25T05:45:57.563Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNaDZ1dWZhc3hwSnVvbklSeGZESzRxbnBNcGcySGUyRUFPUWxLaERhYk14OFB1c2tDLXBOTnVXd1JXUmdtOHRxWlpqb3gwdXVaNkl5NWc2X1JlUTB6TlNCa0h1ZWlZOFlaWEtfVkFhU095OWJZZ0daQmVVRG9TU01Ec3Zn?oc=5",
+    "title": "Vietnam tightens rules on crypto transactions - Borneo Bulletin",
+    "source": "Google News - Vietnam Crypto & Fintech (English)",
+    "processedAt": "2026-08-25T05:45:59.263Z",
+    "summary": "• Việt Nam đang siết chặt các quy định đối với giao dịch tiền mã hóa.\n• Động thái này phản ánh nỗ lực quản lý nhà nước chặt chẽ hơn đối với tài sản số trong nước."
+  },
+  {
+    "url": "https://cafef.vn/nuoc-nao-rong-nhat-the-gioi-188260825111907358.chn",
+    "title": "Nước nào rộng nhất thế giới?",
+    "source": "CafeF Tai Chinh Quoc Te",
+    "processedAt": "2026-08-25T05:46:02.279Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1La21XcWJtVTFqbkJLMkZaQlhXYzBDZ1RoTXNfVU5xU1dOYVAtQVFWdHVDRXozbGVGdVBndXFhX1RwRkd4UTRBb0dzRG41a3YycmFqQnNOY3VDX2c?oc=5",
+    "title": "Số liệu thống kê của Kuru: Thị trường, Khối lượng giao dịch và Trust Score - CoinGecko",
+    "source": "Google News - RWA Tokenization",
+    "processedAt": "2026-08-25T05:46:03.149Z"
   }
 ]
