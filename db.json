@@ -1,11 +1,5 @@
 [
   {
-    "url": "https://vnexpress.net/rac-ai-noi-cong-so-5107718.html",
-    "title": "'Rác AI' nơi công sở",
-    "source": "VnExpress So Hoa",
-    "processedAt": "2026-08-12T23:14:39.157Z"
-  },
-  {
     "url": "https://vneconomy.vn/bo-tai-chinh-de-xuat-dieu-chinh-chinh-sach-tin-dung-cho-hoc-sinh-sinh-vien.htm",
     "title": "Bộ Tài chính đề xuất điều chỉnh chính sách tín dụng cho học sinh, sinh viên",
     "source": "VnEconomy - Kinh te so",
@@ -33162,5 +33156,29 @@
     "title": "Russian Influence Network Used ChatGPT to Masquerade as Academic Experts",
     "source": "Decrypt",
     "processedAt": "2026-08-26T23:01:31.738Z"
+  },
+  {
+    "url": "https://t.me/CoinMarketCapAnnouncements/15856",
+    "title": "LATEST: ⚡ DeFi Development Corp has launched State of Solana, a free public dashboard tracking Solana network, staking and validator metrics.",
+    "source": "CoinMarketCap Announcements (TG)",
+    "processedAt": "2026-08-26T23:16:09.152Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWlQwYnVCSTJWSTItbUM2T0pYQkl6Sjk2b2V4RFBxbnBjZzdiTUdfa0Q4MVN5NThkMnpQUm04Tzc3aGJja01DWHVtQTY3ZEhFMnNUd3lpZGMxM1h1Z0dVZFpURjhnSm0yVlQ4SmpUVVNjYlFVVUN4RTFnWm4zWXVEQmtCa2c5dDNSR2Jxb3F1anZKQUxOX1Y2VG1GMTd3WjZnb21Ucg?oc=5",
+    "title": "3 chính sách kinh tế nổi bật có hiệu lực từ tháng 9 - congdankhuyenhoc.vn",
+    "source": "Google News - Tai san ma hoa VN",
+    "processedAt": "2026-08-26T23:16:10.058Z"
+  },
+  {
+    "url": "https://www.coindesk.com/news-analysis/2026/08/26/sec-resurrecting-u-s-crypto-custody-rule-the-previous-administration-failed-to-land",
+    "title": "SEC resurrecting U.S. crypto custody rule the previous administration failed to land",
+    "source": "CoinDesk",
+    "processedAt": "2026-08-26T23:16:11.005Z"
+  },
+  {
+    "url": "https://cafef.vn/dinh-cao-xay-dung-trung-quoc-tung-co-may-dao-ham-ky-luc-the-gioi-chinh-thuc-thong-xe-sieu-ham-2-tang-xuyen-con-song-dai-thu-2-dat-nuoc-188260826234329009.chn",
+    "title": "Đỉnh cao xây dựng Trung Quốc: Tung cỗ máy đào hầm kỷ lục thế giới, chính thức thông xe siêu hầm 2 tầng xuyên con sông dài thứ 2 đất nước",
+    "source": "CafeF Tai Chinh Quoc Te",
+    "processedAt": "2026-08-26T23:16:11.021Z"
   }
 ]
