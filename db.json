@@ -1,35 +1,5 @@
 [
   {
-    "url": "https://en.vietnamplus.vn/vietnamese-party-leader-attends-funeral-service-for-top-lao-legislator-post349979.vnp",
-    "title": "<img src=\"https://mediaen.vietnamplus.vn/images/5184e82901547b7c6ac2fd1ce6abd7566bb435ef2dcca030357e8a5d55fc69d612d6e0bb4d7222ca8f31c413f650117d/vnanet-tct.jpg.avif\" srcset=\"https://mediaen.vietnamplus.vn/images/5184e82901547b7c6ac2fd1ce6abd7566bb435ef2dcca030357e8a5d55fc69d612d6e0bb4d7222ca8f31c413f650117d/vnanet-tct.jpg.avif 1x, https://mediaen.vietnamplus.vn/images/51b9f5fa95771c658a18dfab008fc1a16bb435ef2dcca030357e8a5d55fc69d612d6e0bb4d7222ca8f31c413f650117d/vnanet-tct.jpg.avif 2x\" alt=\"Vietnamese Party leader attends funeral service for top Lao legislator\" class=\"image-fallback\">",
-    "source": "VietnamPlus Business (English)",
-    "processedAt": "2026-08-12T13:16:07.652Z"
-  },
-  {
-    "url": "https://vnexpress.net/insta360-x6-camera-quay-toan-canh-do-phan-giai-8k-5108304.html",
-    "title": "Insta360 X6 - camera quay toàn cảnh độ phân giải 8K",
-    "source": "VnExpress So Hoa",
-    "processedAt": "2026-08-12T13:28:50.554Z"
-  },
-  {
-    "url": "https://cafef.vn/nga-tap-doan-rostec-gap-nguy-khi-loi-nhuan-rong-giam-toi-42-188260812184258299.chn",
-    "title": "Nga: Tập đoàn Rostec gặp nguy khi lợi nhuận ròng giảm tới 42%",
-    "source": "CafeF Tai Chinh Quoc Te",
-    "processedAt": "2026-08-12T13:28:50.564Z"
-  },
-  {
-    "url": "https://vneconomy.vn/so-huu-chung-cu-co-thoi-han-co-hoi-cho-nhom-co-phieu-bat-dong-san-nao-len-ngoi.htm",
-    "title": "Sở hữu chung cư có thời hạn, cơ hội cho nhóm cổ phiếu bất động sản nào lên ngôi?",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-12T13:31:26.659Z"
-  },
-  {
-    "url": "https://vneconomy.vn/khong-nen-dan-trai-von-thu-hoi-dat-khi-chua-ro-nguon-doi-voi-du-an-vanh-dai-5-vung-thu-do.htm",
-    "title": "Không nên dàn trải vốn, thu hồi đất khi chưa rõ nguồn đối với dự án Vành đai 5 – Vùng Thủ đô",
-    "source": "VnEconomy - Tai chinh",
-    "processedAt": "2026-08-12T13:31:26.666Z"
-  },
-  {
     "url": "https://vneconomy.vn/bat-nhip-xu-huong-du-lich-tinh-gon-cung-the-techcombank.htm",
     "title": "Bắt nhịp xu hướng du lịch tinh gọn cùng thẻ Techcombank",
     "source": "VnEconomy - Tai chinh",
@@ -32592,5 +32562,17 @@
     "title": "Mỹ tạm dừng kế hoạch tấn công Iran, chuyển trọng tâm sang gây sức ép kinh tế",
     "source": "CafeF Tai Chinh Quoc Te",
     "processedAt": "2026-08-26T13:15:58.561Z"
+  },
+  {
+    "url": "https://t.me/CoinMarketCapAnnouncements/15825",
+    "title": "LATEST: 📈 US spot Bitcoin ETFs have now logged 7 straight days of inflows, pushing August totals to $3.03B and cutting YTD net outflows by more than half to $2.26B.",
+    "source": "CoinMarketCap Announcements (TG)",
+    "processedAt": "2026-08-26T13:31:27.285Z"
+  },
+  {
+    "url": "https://www.coindesk.com/tech/2026/08/26/ethereum-developers-propose-first-step-to-protect-eth-staking-from-quantum-attacks",
+    "title": "Ethereum developers propose first step to protect ETH staking from quantum attacks",
+    "source": "CoinDesk",
+    "processedAt": "2026-08-26T13:31:51.168Z"
   }
 ]
