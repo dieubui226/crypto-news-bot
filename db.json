@@ -1,11 +1,5 @@
 [
   {
-    "url": "https://t.me/vncointele/27613",
-    "title": "MỚI NHẤT: Cổ phiếu Reddit tăng 11% trong phiên giao dịch ngoài giờ sau khi S&P Dow Jones Indices thông báo công ty sẽ gia nhập S&P 500 vào ngày 18/8, thay thế AvalonBay Communities.",
-    "source": "VNCointele (TG)",
-    "processedAt": "2026-08-13T22:46:07.101Z"
-  },
-  {
     "url": "https://t.me/cointelegraph/71603",
     "title": "🔥 LATEST: Reddit shares jumped 11% after hours after S&P Dow Jones Indices announced the company will join the S&P 500 on Aug. 18, replacing AvalonBay Communities.News | Markets | YouTube",
     "source": "Cointelegraph (TG)",
@@ -31859,5 +31853,11 @@
     "title": "LATEST: ⚡ Charles Schwab plans to add Solana, Avalanche and Chainlink to its crypto platform in the coming months, expanding beyond Bitcoin and Ethereum.",
     "source": "CoinMarketCap Announcements (TG)",
     "processedAt": "2026-08-27T22:31:21.916Z"
+  },
+  {
+    "url": "https://decrypt.co/376767/bitcoin-quantum-safe-transaction-starkware",
+    "title": "Bitcoin Completes First Experimental Quantum-Safe Transaction, Starkware Says",
+    "source": "Decrypt",
+    "processedAt": "2026-08-27T22:47:02.211Z"
   }
 ]
