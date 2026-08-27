@@ -1,109 +1,5 @@
 [
   {
-    "url": "https://t.me/CoinMarketCapAnnouncements/15094",
-    "title": "LATEST: 🚨 Security firm A Security says a researcher used fewer than 20 AI prompts to build a working exploit for Zoom's annotation tool in under 24 hours, before Zoom patched it.",
-    "source": "CoinMarketCap Announcements (TG)",
-    "processedAt": "2026-08-13T14:16:42.467Z"
-  },
-  {
-    "url": "https://t.me/wublockchainenglish/25546",
-    "title": "Andre Cronje: Most DeFi Protocols Are No Longer Truly DecentralizedAccording to Cointelegraph, Flying Tulip founder and Fantom creator Andre Cronje stated during a recent X Spaces show that most DeFi protocols are no longer truly decentralized. Cronje argued that \"true DeFi\" must be decentralized, immutable, and free of intermediaries, qualities largely absent in protocols operating today. He noted that as builders integrate circuit breakers, risk committees, decision-makers, and institutional oversight, DeFi has departed from its inherent decentralization into a new paradigm called \"onchain finance or open finance,\" sacrificing immutability in the process. According to DefiLlama data, TVL in DeFi has more than halved over the past 10 months, dropping from $167 billion in early October 2025 to $75 billion. — link",
-    "source": "Wu Blockchain English (TG)",
-    "processedAt": "2026-08-13T14:16:43.761Z"
-  },
-  {
-    "url": "https://www.coindesk.com/markets/2026/08/13/speculation-on-dogecoin-is-back-to-october-2025-levels-the-price-is-down-70",
-    "title": "Speculation on dogecoin is back to October 2025 levels. The price is down 70%",
-    "source": "CoinDesk",
-    "processedAt": "2026-08-13T14:16:44.354Z"
-  },
-  {
-    "url": "https://cointelegraph.com/news/gerovich-shuts-down-bitcoin-sale-metaplanets-transfer?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "title": "Metaplanet CEO shuts down Bitcoin sale speculation after $322M transfer",
-    "source": "Cointelegraph",
-    "processedAt": "2026-08-13T14:16:45.503Z"
-  },
-  {
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxONmYyOGx0V0VlY1JyN2s2WnlzWmM0dmlIekhTTHFMcW1TckZlSzRRQW53dFh3Smd4cGFRZ0VkV29XVGxhMm5xSll1b1Y0R3l0NnZTM1lrNG1pLTFwUjVzdkFrMHAzNVhZdXJmR19fdllOWFZCZ0h1ZzV1ODA1M2JxLV9fb2lGU3RkdHlKTVBXRUNsbXRVRzN2U1ZnXzdyV0xxY0pYOC1nQWRfcFB0bmNIRlFMR1g?oc=5",
-    "title": "Bộ Khoa học và CNTT Hàn Quốc (MSIT) nâng cấp ABLE, mở rộng sang AI và tài sản số - 디지털투데이",
-    "source": "Google News - Tai san ma hoa VN",
-    "processedAt": "2026-08-13T14:17:04.090Z"
-  },
-  {
-    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9xMXpsUXI5V1JZSXdybEN1cU4tTmloYk9pYUFsNEU2UDQ1dTNoMEdROHFSY0RsOGV5THJmOEhkMzZLWk52d2JZM1V1Rm55cjh2TWZxWVRFWXdJdkJwcjRvVWQ5VEo4Zi11N0xSNGc4VnRwOFZ1MDZYaDNCNA?oc=5",
-    "title": "Các khoản giảm giá Solana khiến Forward Industries lỗ 69 triệu USD trong quý 3 - BeInCrypto",
-    "source": "Google News - Tai san ma hoa VN",
-    "processedAt": "2026-08-13T14:17:04.785Z"
-  },
-  {
-    "url": "https://cointelegraph.com/news/crypto-valuations-protocol-revenue-token-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "title": "Crypto valuations could double as protocols link revenue to tokens: Bitwise CIO",
-    "source": "Cointelegraph",
-    "processedAt": "2026-08-13T14:17:05.745Z"
-  },
-  {
-    "url": "https://www.coindesk.com/tech/2026/08/13/bitcoin-firms-ask-ai-labs-for-same-tools-attackers-already-have",
-    "title": "Bitcoin firms ask AI labs for same tools attackers already have",
-    "source": "CoinDesk",
-    "processedAt": "2026-08-13T14:17:06.557Z"
-  },
-  {
-    "url": "https://blogtienao.com/khao-sat-cua-mexc-nguoi-dung-tradfi-ngay-cang-quan-tam-giao-dich-da-tai-san-tren-cex/",
-    "title": "Khảo sát của MEXC: Người dùng TradFi ngày càng quan tâm giao dịch đa tài sản trên CEX",
-    "source": "BlogTienAo",
-    "processedAt": "2026-08-13T14:17:07.421Z"
-  },
-  {
-    "url": "https://www.coindesk.com/markets/2026/08/13/metaplanet-denies-selling-bitcoin-worth-usd320-million",
-    "title": "Metaplanet denies selling bitcoin worth $320 million",
-    "source": "CoinDesk",
-    "processedAt": "2026-08-13T14:17:08.092Z"
-  },
-  {
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPYk9lLXN1VXJnamtwZGJpbXBYUzRvZ2xmTlQ1cDVxUFdodnVsYTVoaTltR21Oa1l2VWQxM19vUF9sdjlZTEh2ZEtmREExaVA0M1plSmhTXzQ3aDJTTmYxVGtVME5jb1JPaFBjQkpubmdfWER4VGZqX0pVblk3aFEyV1kyYnRXMXI4U0pYZDBzMzdTeXFLM0dvTXNRaVF6V2x2QjhKQjlfMEhNekdSWXc?oc=5",
-    "title": "Giao dịch tài chính số, doanh nghiệp làm gì để không sập bẫy rủi ro công nghệ? - Cổng thông tin đài tiếng nói Việt Nam",
-    "source": "Google News - Tai san ma hoa VN",
-    "processedAt": "2026-08-13T14:17:09.606Z",
-    "summary": "• Thảo luận về các giải pháp giúp doanh nghiệp phòng tránh rủi ro công nghệ khi tham gia giao dịch tài chính số.\n• Nêu bật tầm quan trọng của việc quản trị rủi ro và bảo mật trong bối cảnh chuyển đổi số tài chính tại Việt Nam."
-  },
-  {
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbWFmcE8zWjhNTElhMi1IYTc0bG5NLVU2UEFpakhXSXVsbGJnVk9reXlvNUdpOHRqcDdzRkxsUXpiZXRCU3dET25jQ3U5TjBtekgyQTMxVlJuWWo5MjdkV2NZV0Z4dUVLWURGaVN5Ui1lRlFKbDZhaTMyNkFCMVMxdWQ5NXZoQlktWldwRERzMzFNYlF0NWp0Y1o3dUJib2dndFJWdEVZdXZLVkEyNWc?oc=5",
-    "title": "Việt Nam - Vương quốc Anh hợp tác xây hệ sinh thái tài chính kết nối quốc tế và bền vững - Vietnam.vn",
-    "source": "Google News - Tai san ma hoa VN",
-    "processedAt": "2026-08-13T14:17:13.828Z",
-    "summary": "• Việt Nam và Vương quốc Anh hợp tác xây dựng hệ sinh thái tài chính kết nối quốc tế và bền vững.\n• Sự kiện nằm trong khuôn khổ phát triển tài chính công nghệ (Fintech) và kết nối thị trường tài chính."
-  },
-  {
-    "url": "https://www.theblock.co/news/regulation/2026-08-13-blockchain-association-backs-custodia-petition-411672",
-    "title": "Blockchain Association backs Custodia’s Supreme Court bid over Fed master account access",
-    "source": "The Block",
-    "processedAt": "2026-08-13T14:17:17.897Z"
-  },
-  {
-    "url": "https://cointelegraph.com/news/copper-us-arm-joins-finra-after-sec-broker-dealer-approval?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "title": "Copper US arm becomes FINRA member, SEC-registered broker-dealer",
-    "source": "Cointelegraph",
-    "processedAt": "2026-08-13T14:17:19.019Z"
-  },
-  {
-    "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNWERyOWwtU1h5Z0o0VlNfYjNfbGFHeU5OdE9NMkxhVzRQdGpwRTc5MTA4RW9BNG80OXVKblNzV3RHRE93M2NWZ1FkMU9qMzdLdGZzR1Zha0hfdHJ0QWVkMTdqTkk0VGVURDM0c2ZUS1RUQlUyRkRRelFyWGphTnM0QlN6VHU3Ync1Ujc5UzhCTFFmZFd5X1VRa1FJS3pwb3pLTjJRYkJYQ29FZGZ3bVdQelFXTHBSOU5xR29wT2dTRnVYOUE1OFE3VjJfQl9nekdleG5sTWc0SEVPeDNjQmZka0RWVGd3NEE0ei1KVWQ5cHpLMi1IT2gyNlhtSDB0QQ?oc=5",
-    "title": "Hàn Quốc siết thẩm định đăng ký doanh nghiệp tài sản số từ 20/8 - 디지털투데이",
-    "source": "Google News - Tai san ma hoa VN",
-    "processedAt": "2026-08-13T14:17:19.828Z"
-  },
-  {
-    "url": "https://cafef.vn/bien-gioi-voi-thai-lan-van-dong-campuchia-bat-ngo-cong-bo-con-so-16-ty-usd-188260813163314555.chn",
-    "title": "Biên giới với Thái Lan vẫn đóng, Campuchia bất ngờ công bố con số 1,6 tỷ USD",
-    "source": "CafeF Tai Chinh Quoc Te",
-    "processedAt": "2026-08-13T14:17:19.956Z"
-  },
-  {
-    "url": "https://vnexpress.net/fpt-va-vien-tri-tue-nhan-tao-mila-hop-tac-nghien-cuu-ai-tien-tien-5108882.html",
-    "title": "FPT và Viện Trí tuệ nhân tạo Mila hợp tác nghiên cứu AI tiên tiến",
-    "source": "VnExpress So Hoa",
-    "processedAt": "2026-08-13T14:17:19.962Z"
-  },
-  {
     "url": "https://en.vietnamplus.vn/intl-sports-exhibitions-export-trade-fair-open-in-ho-chi-minh-city-post350023.vnp",
     "title": "<img src=\"https://mediaen.vietnamplus.vn/images/7d1b1ad3fc9563dcff6a3a0b9636850cfe0d6c63feea79bc307c4006e7f5bd9457d65dd8909e3ed982be32886531b84b/vnanet-exhibition.jpg.avif\" srcset=\"https://mediaen.vietnamplus.vn/images/7d1b1ad3fc9563dcff6a3a0b9636850cfe0d6c63feea79bc307c4006e7f5bd9457d65dd8909e3ed982be32886531b84b/vnanet-exhibition.jpg.avif 1x, https://mediaen.vietnamplus.vn/images/9208427127649c9760468496aed1bd78fe0d6c63feea79bc307c4006e7f5bd9457d65dd8909e3ed982be32886531b84b/vnanet-exhibition.jpg.avif 2x\" alt=\"Domestic and foreign businesses engage in trade networking at the event series held at Ho Chi Minh&#39;s Saigon Exhibition and Convention Centre (SECC) on August 13, 2026. (Photo: VNA)\" class=\"image-fallback\">",
     "source": "VietnamPlus Business (English)",
@@ -32185,5 +32081,29 @@
     "title": "‘Ông lớn’ năng lượng châu Âu rút khỏi dự án khí đốt 25 tỷ USD của Nga, công suất gần 20 triệu tấn/năm",
     "source": "CafeF Tai Chinh Quoc Te",
     "processedAt": "2026-08-27T14:16:03.310Z"
+  },
+  {
+    "url": "https://en.vietnamplus.vn/vietnam-welcomes-us-tech-companies-long-term-operations-top-leader-post350944.vnp",
+    "title": "<img src=\"https://mediaen.vietnamplus.vn/images/UYToKQFUe3xqwv0c5qvXVkG8bQzCFITo150oCA6W518gd0dqzkhj4JDJyKISt16OEc0-toHbeHM_7os8JA_UdFPT8u_0tihzGvbIn2_zF6k/vnanet-potal-tong-bi-thu-chu-tich-n.jpg.avif\" srcset=\"https://mediaen.vietnamplus.vn/images/UYToKQFUe3xqwv0c5qvXVkG8bQzCFITo150oCA6W518gd0dqzkhj4JDJyKISt16OEc0-toHbeHM_7os8JA_UdFPT8u_0tihzGvbIn2_zF6k/vnanet-potal-tong-bi-thu-chu-tich-n.jpg.avif 1x, https://mediaen.vietnamplus.vn/images/Ubn1-pV3HGWKGN-rAI_BoUG8bQzCFITo150oCA6W518gd0dqzkhj4JDJyKISt16OEc0-toHbeHM_7os8JA_UdFPT8u_0tihzGvbIn2_zF6k/vnanet-potal-tong-bi-thu-chu-tich-n.jpg.avif 2x\" alt=\"Vietnam welcomes US tech companies&#39; long-term operations: Top leader\" class=\"image-fallback\">",
+    "source": "VietnamPlus Business (English)",
+    "processedAt": "2026-08-27T14:31:18.861Z"
+  },
+  {
+    "url": "https://t.me/wublockchainenglish/25764",
+    "title": "Highlight Clip: Arthur Hayes: Why Did BitMEX Choose to End Its Operations?Arthur Hayes: Why Did BitMEX Choose to End Its Operations?On August 22, 2026, BitMEX co-founder said in an interview that BitMEX’s decision to cease operations was not due to a hack or regulatory pressure, but rather a decision made voluntarily by the team. He revealed that after discussions among the three founders, they concluded that the company was no longer profitable and was instead continuing to consume resources, leading them to decide to shut down operations. Arthur Hayes stated that BitMEX’s ownership had remained unchanged throughout its 13-year history, and the board ultimately reached a unanimous decision to end the business, with the team choosing to leave on their own terms. — link",
+    "source": "Wu Blockchain English (TG)",
+    "processedAt": "2026-08-27T14:31:20.447Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE04ajNqTUIxTXRPc2h4WFd5b0t2ZFJRVHNRM1YzNHpnanFNMmFGbElXWVFnYm14UVdBcnIxcjFtVGVTR1B0OWRfbTZXWlNZSFRq?oc=5",
+    "title": "一周涨幅红黑榜：普涨行情下，谁领跑，谁掉队？ - odaily.news",
+    "source": "Google News - RWA Tokenization",
+    "processedAt": "2026-08-27T14:31:21.209Z"
+  },
+  {
+    "url": "https://www.theblock.co/news/business/2026-08-27-charles-schwab-add-solana-avalanche-chainlink-to-crypto-trading-platform-412923",
+    "title": "Charles Schwab to add Solana, Avalanche and Chainlink to crypto trading platform",
+    "source": "The Block",
+    "processedAt": "2026-08-27T14:31:22.942Z"
   }
 ]
