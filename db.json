@@ -1,23 +1,5 @@
 [
   {
-    "url": "https://t.me/CoinMarketCapAnnouncements/15103",
-    "title": "LATEST: 📈 Binance's bStocks has surpassed Kraken's xStocks to become the second-largest tokenized stock issuer at $610.6M, just two months after launch.",
-    "source": "CoinMarketCap Announcements (TG)",
-    "processedAt": "2026-08-13T16:31:23.972Z"
-  },
-  {
-    "url": "https://blogtienao.com/mot-altcoin-lon-vua-thoat-khoi-tham-hoa-trong-gang-tac-mang-luoi-suyt-te-liet/",
-    "title": "Một altcoin lớn vừa thoát khỏi “thảm họa” trong gang tấc, mạng lưới suýt tê liệt",
-    "source": "BlogTienAo",
-    "processedAt": "2026-08-13T16:31:24.699Z"
-  },
-  {
-    "url": "https://blogtienao.com/xrp-lai-gap-su-co-bao-mat-hacker-tao-luong-lon-xrp-gia-va-chuyen-ve-vi-rieng/",
-    "title": "XRP lại gặp sự cố bảo mật: Hacker tạo lượng lớn XRP giả và chuyển về ví riêng",
-    "source": "BlogTienAo",
-    "processedAt": "2026-08-13T16:31:25.243Z"
-  },
-  {
     "url": "https://t.me/wublockchainenglish/25550",
     "title": "July 2026 Exchange Website Traffic Report: total about 134.31 million visits, MoM decreased 2.35%Data compiled by the WuBlockchain Data Center show that major crypto exchanges recorded about 134.31 million website visits in July 2026, down 2.35% from 137.54 million in June. Binance ranked first with 36.04 million visits, followed by OKX with 25.62 million and Coinbase with 20.60 million. The three exchanges accounted for a combined 61.2% of total traffic.Among the 12 exchanges tracked, five recorded month-over-month growth and seven declined. Bitfinex (+3.7%), KuCoin (+3.2%) and Bybit (+2.8%) posted the largest increases, while Deribit (-44.7%), HTX (-23.0%) and Upbit (-16.0%) saw the steepest declines. India was Binance’s largest source of visitors, Japan was the largest for OKX, and the U.S. was the largest for Coinbase. — link",
     "source": "Wu Blockchain English (TG)",
@@ -31793,5 +31775,41 @@
     "title": "Polish Olympic chief arrested as prosecutors probe suspected crypto-linked bribe",
     "source": "CoinDesk",
     "processedAt": "2026-08-27T16:16:29.373Z"
+  },
+  {
+    "url": "https://t.me/CoinMarketCapAnnouncements/15907",
+    "title": "LATEST: 🚨 DeFi protocol Moonwell acknowledged an issue affecting its MAMO Core Market on Base, pausing new borrowing while investigating, with PeckShield reporting $8.7M in DAI was drained in an exploit.",
+    "source": "CoinMarketCap Announcements (TG)",
+    "processedAt": "2026-08-27T16:31:33.474Z"
+  },
+  {
+    "url": "https://t.me/wublockchainenglish/25766",
+    "title": "USDT and USDC Supply Returns to Growth After Three-Month Contraction, Up $1.7 Billion in AugustData compiled by WuBlockchain on USDT and USDC circulating supply show that their combined circulating supply increased by about $1.7 billion in August 2026, ending three consecutive months of contraction. Combined supply fell by roughly $2.6 billion, $6.0 billion and $2.2 billion from May through July, respectively.Historical data suggest that monthly stablecoin growth above $10 billion marks an important threshold for stronger liquidity expansion. Monthly increases exceeded $18 billion in 2021 and again in late 2024, while growth repeatedly reached $8 billion to $12 billion during the 2025 bull market. By comparison, the current $1.7 billion increase remains modest. Although BTC has rebounded from around $60,000 to nearly $80,000, stablecoin supply growth has yet to recover to levels seen during previous bull-market phases, suggesting that the current move reflects an early-stage liquidity recovery rather than a new phase of large-scale liquidity expansion. — link",
+    "source": "Wu Blockchain English (TG)",
+    "processedAt": "2026-08-27T16:31:34.587Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPd2x6SkRaam5ndV9UdUZlalVtaTNzM3hyZ2J4NXM3SXRIdUFKbVBHVjVRUjI4blhBZGV0TDAzR2I5Y3NTSEUzMnl4TTBURkJVOE5FbF90RG54QkhLczBWaUZ4cEZxSkh5dFgwU0FWX3E1ZXI5TmtPTExIenowWFlRaFl3YVQycFJ1UGo4c1BiNzNlTHNweEE?oc=5",
+    "title": "iShares J.P. Morgan EM Local Currency Bond Tokenized ETF (Ondo) - CryptoRank",
+    "source": "Google News - Vietnam Crypto & Fintech (English)",
+    "processedAt": "2026-08-27T16:31:35.325Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1NWTBRc3pDblN2QUhYckpEdkdPSEoyODJSQjFXLXlLQkpvY3J0Y0lydFFoWXlEUkExd3VuS2hVbkplRnd0ZXJLWFJPRi13bHBPazBuMkRIcHF4YlVHazRjSjQwWFBzaXlXT21nX0lNb2psdzdWVTJqUTN3ZldYNEE?oc=5",
+    "title": "Zoom Communications tokenized stock (xStock) - CryptoRank",
+    "source": "Google News - Vietnam Crypto & Fintech (English)",
+    "processedAt": "2026-08-27T16:31:36.475Z"
+  },
+  {
+    "url": "https://cointelegraph.com/news/charles-schwab-to-add-solana-avalanche-and-chainlink-to-crypto-platform?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "title": "Charles Schwab adda Solana, Avalanche and Chainlink to nascent crypto platform",
+    "source": "Cointelegraph",
+    "processedAt": "2026-08-27T16:31:37.523Z"
+  },
+  {
+    "url": "https://decrypt.co/376717/bitcoin-could-overtake-gold-in-the-next-bull-run-binance-founder-cz",
+    "title": "Bitcoin Could Overtake Gold in the Next Bull Run: Binance Founder CZ",
+    "source": "Decrypt",
+    "processedAt": "2026-08-27T16:31:38.270Z"
   }
 ]
