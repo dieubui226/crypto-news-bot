@@ -33474,5 +33474,24 @@
     "title": "StarkWare Researcher Executes First Quantum-Safe Bitcoin Transaction on MainnetStarkWare researcher Avihu Levy’s Quantum-Safe Bitcoin (QSB) scheme has completed its first confirmed transaction on the Bitcoin mainnet, demonstrating a way to protect transactions from Shor-algorithm attacks without a soft fork or changes to Bitcoin’s consensus rules. QSB shifts transaction security away from elliptic-curve cryptography toward hash-based assumptions, though it remains experimental, requires roughly $75–$150 in off-chain GPU computation per transaction. — link",
     "source": "Wu Blockchain English (TG)",
     "processedAt": "2026-08-27T03:46:38.186Z"
+  },
+  {
+    "url": "https://en.vietnamplus.vn/vietjet-opens-early-sales-of-31-million-tickets-for-lunar-new-year-post350870.vnp",
+    "title": "<img src=\"https://mediaen.vietnamplus.vn/images/MsRtawN-PdlxiUtN2zYQ3GNtsu5H6nmTRoiv6cmBCV-8MGtkV3cfpZ28-VizJzlqA6kfDmNSQdh2qbFzzlKSJA/vietjet-aircraft.jpg.avif\" srcset=\"https://mediaen.vietnamplus.vn/images/MsRtawN-PdlxiUtN2zYQ3GNtsu5H6nmTRoiv6cmBCV-8MGtkV3cfpZ28-VizJzlqA6kfDmNSQdh2qbFzzlKSJA/vietjet-aircraft.jpg.avif 1x, https://mediaen.vietnamplus.vn/images/wnx_W-I9oUN7fz7kwwJQq2Ntsu5H6nmTRoiv6cmBCV-8MGtkV3cfpZ28-VizJzlqA6kfDmNSQdh2qbFzzlKSJA/vietjet-aircraft.jpg.avif 2x\" alt=\"Vietjet opens early sales of 3.1 million tickets for Lunar New Year. (Photo: viejet)\" class=\"image-fallback\">",
+    "source": "VietnamPlus Business (English)",
+    "processedAt": "2026-08-27T04:01:22.879Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQUERWU1NwRzFwNTM3TkJWeTVnaFJfdzBOM3VIaGQyNWpaVUp2WnQ3OGctUVFyem1TZ3VFT2RIMTkyaldIdTdQdWdvSG40anJRajlacVVOZzZXRnkteUlubXRBc2hoY01QLTRGLXFoY3FGUl9HX0tVdy1xVnRhMGZzNWZtbkFjSkFpemRrRHVQVGxfcWkzMEtQRnhrQ1c2Rnhw?oc=5",
+    "title": "Mantle Vault Expands Into DeFi With Grove, CIAN, and Fluxion - CryptoRank",
+    "source": "Google News - RWA Tokenization",
+    "processedAt": "2026-08-27T04:01:23.758Z"
+  },
+  {
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE05elByc3hqdmVMMHdDUzB6RnZFMF9ydlUyMVFTV3F4TFU4NnlxUFd1XzlNaE1UWjBlZEwxY0ZXUlRKcDNDYVBudEZ3S0c1U3pYTmJwd2NNY1hHM0dZQWtEaWV6ck5HSHJid3RtU005TUp2cVlmUHpBbkdpNzNxQmc?oc=5",
+    "title": "Mạo danh Vietcombank chào mời chơi....tiền số - baodautu",
+    "source": "Google News - Tai san ma hoa VN",
+    "processedAt": "2026-08-27T04:01:25.109Z",
+    "summary": "• Kẻ gian mạo danh Vietcombank để lừa đảo, chào mời người dân tham gia đầu tư tiền số.\n• Cảnh báo rủi ro về các hình thức giả mạo tổ chức tài chính nhằm chiếm đoạt tài sản liên quan đến tài sản mã hóa tại Việt Nam."
   }
 ]
