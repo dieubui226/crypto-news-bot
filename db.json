@@ -1,267 +1,5 @@
 [
   {
-    "url": "https://t.me/CoinMarketCapAnnouncements/15082",
-    "title": "LATEST: 🚨 A French couple who bought a home once owned by crypto millionaires suffered three break-ins in under a month after attackers found the old owners' leaked address online.",
-    "source": "CoinMarketCap Announcements (TG)",
-    "processedAt": "2026-08-13T11:46:13.404Z"
-  },
-  {
-    "url": "https://t.me/wublockchainenglish/25538",
-    "title": "Solana Stays Online as Outage Disrupts 102 of 699 ValidatorsSolana Foundation technology executive Jacob Creech said an infrastructure provider used by some validators suffered an outage overnight, but the Solana network continued producing blocks and processing transactions throughout the incident. Of 699 staked validators, 597 — roughly 85% — continued voting, while affected validators recovered within 40 minutes and validators in the Solana Foundation Delegation Program were unaffected. — link",
-    "source": "Wu Blockchain English (TG)",
-    "processedAt": "2026-08-13T11:46:14.267Z"
-  },
-  {
-    "url": "https://t.me/wublockchainenglish/25539",
-    "title": "Bitcoin ETFs See $61 Million Outflow as Ether Funds Buck TrendU.S. spot Bitcoin ETFs recorded $61.16 million in net outflows on Aug. 12, led by Fidelity’s FBTC with $46.82 million in redemptions. Spot Ether ETFs, by contrast, posted $7.38 million in net inflows, all of which went into BlackRock’s ETHA. Farside Investors independently shows the same rounded figures — $61.1 million of Bitcoin ETF outflows and $7.4 million of Ether ETF inflows. — link",
-    "source": "Wu Blockchain English (TG)",
-    "processedAt": "2026-08-13T11:46:15.225Z"
-  },
-  {
-    "url": "https://t.me/wublockchainenglish/25540",
-    "title": "South Korea Tightens Crypto Transfers After Bybit, MEXC and HTX Apps Pulled From Google PlaySouth Korea is tightening transfers to offshore crypto platforms after Bybit, MEXC and HTX apps were removed from local Google Play. Under revised rules, exchanges may require proof of account ownership, transaction purpose and source of funds, and can delay or reject transfers if information is insufficient. Transfers of 10 million won ($7,000) or more to overseas exchanges or self-hosted wallets will face enhanced suspicious-transaction monitoring. — link",
-    "source": "Wu Blockchain English (TG)",
-    "processedAt": "2026-08-13T11:46:16.277Z"
-  },
-  {
-    "url": "https://t.me/wublockchainenglish/25541",
-    "title": "Hyperliquid Opens Low-Latency Data Nodes to Infrastructure Providers at Under $1,000 a MonthHyperliquid Foundation has opened its low-latency on-chain data nodes to qualified infrastructure providers, allowing them to offer access at standardized pricing, currently indicated at under $1,000 per month. Previously, direct access required staking 10,000 HYPE and qualifying for Tier 1 maker rebates, defined as more than 0.5% of 14-day weighted maker volume. — link",
-    "source": "Wu Blockchain English (TG)",
-    "processedAt": "2026-08-13T11:46:17.194Z"
-  },
-  {
-    "url": "https://decrypt.co/videos/interviews/50vopyFa/the-white-whale-up-10x-in-a-week-lighter-tge-saylor-buys-109m-btc",
-    "title": "The White Whale up 10x in a week! Lighter TGE! Saylor buys $109M BTC!",
-    "source": "Decrypt",
-    "processedAt": "2026-08-13T11:46:18.071Z"
-  },
-  {
-    "url": "https://decrypt.co/videos/interviews/WsvLVFlp/crypto-wallets-can-directly-compete-with-neobanks",
-    "title": "Crypto Wallets Can ‘Directly Compete With Neobanks'",
-    "source": "Decrypt",
-    "processedAt": "2026-08-13T11:46:18.777Z"
-  },
-  {
-    "url": "https://decrypt.co/videos/interviews/OS1PGiAq/global-crypto-mcap-up-to-322-trillion-xrp-up-12-japan-endorse-crypto-fear-greed-back-to-neutral",
-    "title": "Global Crypto MCap up to $3.22 Trillion! XRP up 12%! Japan Endorse Crypto! Fear & Greed back to Neutral!",
-    "source": "Decrypt",
-    "processedAt": "2026-08-13T11:46:19.451Z"
-  },
-  {
-    "url": "https://decrypt.co/videos/interviews/XjhRjGIk/crypto-starts-2026-strong-venezuela-impacts-on-the-market-lighter-tge-reactions",
-    "title": "Crypto starts 2026 STRONG! Venezuela Impacts on the market! Lighter TGE reactions!",
-    "source": "Decrypt",
-    "processedAt": "2026-08-13T11:46:19.976Z"
-  },
-  {
-    "url": "https://decrypt.co/videos/interviews/GVQVX2ND/first-2026-dip-btc-at-92k-morgan-stanley-file-for-btc-eth-sol-etfs-hyperliquid-airdrop-speculation",
-    "title": "First 2026 Dip! BTC at 92K! Morgan Stanley file for BTC, ETH & SOL ETFs! Hyperliquid Airdrop Speculation!",
-    "source": "Decrypt",
-    "processedAt": "2026-08-13T11:46:20.804Z"
-  },
-  {
-    "url": "https://decrypt.co/videos/interviews/wmsgKRFW/the-zcash-situation-explained-interview-with-zec-bull-mert-btc-below-90k-zec-falls-19",
-    "title": "The ZCash situation explained! Interview with ZEC bull Mert! BTC below $90K! ZEC falls 19%!",
-    "source": "Decrypt",
-    "processedAt": "2026-08-13T11:46:21.370Z"
-  },
-  {
-    "url": "https://decrypt.co/videos/interviews/72tPnqPX/zec-rebounds-11-trump-says-he-wont-pardon-sam-bankman-fried-florida-revisits-its-strategic-bitcoin-reserve",
-    "title": "ZEC Rebounds 11%! Trump says he won’t pardon Sam Bankman-Fried! Florida revisits it’s Strategic Bitcoin Reserve!",
-    "source": "Decrypt",
-    "processedAt": "2026-08-13T11:46:21.964Z"
-  },
-  {
-    "url": "https://decrypt.co/videos/interviews/0y90noNs/a16z-raise-15b-jerome-powell-vs-trump-crypto-remains-flat-special-guest-dudas",
-    "title": "A16z raise $15B! Jerome Powell vs Trump! Crypto remains flat! Special Guest: Dudas!",
-    "source": "Decrypt",
-    "processedAt": "2026-08-13T11:46:22.868Z"
-  },
-  {
-    "url": "https://decrypt.co/videos/interviews/mefbKZgQ/psyopanime-meme-up-30x-are-memes-back-monero-ath-interview-w-joseph-chalom-ceo-of-sharplink",
-    "title": "PsyopAnime Meme up 30X! Are Memes back? Monero ATH! Interview W/ Joseph Chalom, CEO of Sharplink",
-    "source": "Decrypt",
-    "processedAt": "2026-08-13T11:46:23.423Z"
-  },
-  {
-    "url": "https://decrypt.co/videos/interviews/IuLdmgP6/pump-memes-heating-up-xmr-vs-zec-how-important-are-these-rate-cuts-under-exposed",
-    "title": "Pump & Memes HEATING up! XMR vs ZEC! How important are these rate cuts? - Under Exposed",
-    "source": "Decrypt",
-    "processedAt": "2026-08-13T11:46:23.976Z"
-  },
-  {
-    "url": "https://decrypt.co/videos/interviews/Iv1NIhI4/are-we-back-crypto-is-green-solana-intern-goes-rogue-pump-up-13-monero-hits-another-ath",
-    "title": "Are we back? Crypto is Green! Solana Intern goes rogue! Pump up 13%! Monero hits another ATH!",
-    "source": "Decrypt",
-    "processedAt": "2026-08-13T11:46:25.249Z"
-  },
-  {
-    "url": "https://decrypt.co/videos/interviews/9g4stfJX/massive-coinbase-news-bitcoin-rips-to-96-750-footballfun-tge-interview-with-founder",
-    "title": "Massive Coinbase News! Bitcoin Rips to $96,750! Football.Fun TGE Interview with Founder!",
-    "source": "Decrypt",
-    "processedAt": "2026-08-13T11:46:25.842Z"
-  },
-  {
-    "url": "https://decrypt.co/videos/interviews/lokwS0bc/crypto-sells-off-amidst-trump-tariff-turmoil-trove-falls-90-in-awful-tge-pump-fund-announced",
-    "title": "Crypto sells off amidst Trump Tariff Turmoil! $Trove falls 90% in awful TGE! Pump Fund announced!",
-    "source": "Decrypt",
-    "processedAt": "2026-08-13T11:46:26.808Z"
-  },
-  {
-    "url": "https://decrypt.co/videos/interviews/O1HZN4PH/trump-tariffs-3-return-of-the-bull-market-nyse-tokenising-what-that-means-for-hype-claude-meme-meta",
-    "title": "Trump Tariffs 3: Return of the Bull Market! NYSE Tokenising, what that means for $Hype! Claude Meme Meta!",
-    "source": "Decrypt",
-    "processedAt": "2026-08-13T11:46:27.729Z"
-  },
-  {
-    "url": "https://decrypt.co/videos/interviews/nWmEOl4c/trumps-speech-at-davos-gives-small-boost-to-crypto-saylor-buys-213b-btc-blondish-interview",
-    "title": "Trump’s speech at Davos gives small boost to Crypto! Saylor buys $2.13B BTC! Blondish Interview!",
-    "source": "Decrypt",
-    "processedAt": "2026-08-13T11:46:28.331Z"
-  },
-  {
-    "url": "https://decrypt.co/videos/interviews/MqZOhomP/crypto-rebounds-after-trump-tacos-on-tariffs-bitgo-21b-ipo-solanas-skr-token-soars-250-fdv",
-    "title": "Crypto rebounds after Trump TACO’s on Tariffs! BitGo $2.1B IPO! Solana’s SKR token soars 250% FDV!",
-    "source": "Decrypt",
-    "processedAt": "2026-08-13T11:46:29.215Z"
-  },
-  {
-    "url": "https://decrypt.co/videos/interviews/ZJJKjnAR/from-stellar-to-canton-how-franklin-templeton-adopted-tokenization",
-    "title": "From Stellar to Canton: How Franklin Templeton Adopted Tokenization",
-    "source": "Decrypt",
-    "processedAt": "2026-08-13T11:46:29.938Z"
-  },
-  {
-    "url": "https://decrypt.co/videos/interviews/VpBdSuOE/trump-sues-jpmorgan-for-5b-ledger-prepares-for-4b-ipo-crypto-adoption-is-no-longer-reversible-says-pwc",
-    "title": "Trump sues JPMorgan for $5B! Ledger prepares for $4B IPO! “Crypto Adoption is no longer reversible” says PWC!",
-    "source": "Decrypt",
-    "processedAt": "2026-08-13T11:46:30.815Z"
-  },
-  {
-    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxORFRMai1ZSzk5a3pBUXRDWXdvZmR6b2hmaUxUelZNMzdscGljc1BOaFdaRTlXUG5BNllIeU5PMTMtNXQxeHlHOThwV2FTQWt4Wl9vQlp5cWFIZmxzbjA0U1pGRjlwTXZROWVGMlgzcFlCbmZlRG94aVJtTnkxeEJXYmtWNWN6V2hQZVY5UGRFcW01VUd1UU9ud093VFllWEdUTG5aWG1mYzFjVk1WTjJXT3VLeFFBZ3hqeVVfUXNHTTg?oc=5",
-    "title": "Vietnam Drafts 0.1% Levy on Crypto Transactions, According to The Hanoi Times - CoinMarketCap",
-    "source": "Google News - Vietnam Crypto & Fintech (English)",
-    "processedAt": "2026-08-13T11:46:32.115Z",
-    "summary": "• Việt Nam đang dự thảo mức thuế/phí 0.1% đối với các giao dịch tiền điện tử theo thông tin từ The Hanoi Times.\n• Động thái này phản ánh bước tiến mới trong việc nghiên cứu khung quản lý và chính sách thuế liên quan đến tài sản số tại Việt Nam."
-  },
-  {
-    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9fR2k2STc2b0xoRm9VTXpkT3dLeFJlVDE4R3VZTHg0dTJEY2d1MFZ0aldTcGEzUGZOS3UtUHVXTG1ucUsxQURoeU43QXVpeFB0WUF3dEc1U2pLQXpmU05FalVDYkN2SThnYU85ZnhyTTM?oc=5",
-    "title": "Hong Kong flags Fun Coffee as suspected crypto scam after $127M in losses - Cryptopolitan",
-    "source": "Google News - Vietnam Crypto & Fintech (English)",
-    "processedAt": "2026-08-13T11:46:35.895Z"
-  },
-  {
-    "url": "https://tokenist.com/shelbit-binance-iran-sanctions-evasion/",
-    "title": "Binance Iran News: Exchange Received $540M After Iranian Shelbit Was Fined",
-    "source": "The Tokenist",
-    "processedAt": "2026-08-13T11:46:36.645Z"
-  },
-  {
-    "url": "https://tokenist.com/russia-crypto-mining-ban-ten-regions/",
-    "title": "Russia Crypto News: Mining Banned in 10 Regions Until 2031 to Protect Energy Grid",
-    "source": "The Tokenist",
-    "processedAt": "2026-08-13T11:46:37.433Z"
-  },
-  {
-    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1GZXROY19yZFZ1TjYwRXZQc0dlcENodVNjc3VDcXZOR0dZamM5Q0taeE9zUFhwbERKVF9pUUR5UlNjdVFNWGx5YUZhanB5RkphUFdlelA0cTJNdw?oc=5",
-    "title": "HK, Macao police detain eight over HK$94m 'Fun Coffee' crypto fraud - chinadailyhk",
-    "source": "Google News - Vietnam Crypto & Fintech (English)",
-    "processedAt": "2026-08-13T11:46:38.269Z"
-  },
-  {
-    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUFEteDN6RXhpckFPY1pZVGYzTDEwNkpxRHVxSFNPRjNhbkNJWmxmVV9lNkpvczVBTUlKQnAtaGFLbFpQOEh0djE3WnRFcW1tYjViR2haVEk5VlVzVS05OXJNQnJnZ18zM1I5ZmpWT3pydktyXzVCMHZMb2ZBMmlRWFp4RWxna1Rk?oc=5",
-    "title": "Vietnam Plans Q3 Launch for Regulated Crypto Market - CoinMarketCap",
-    "source": "Google News - Vietnam Crypto & Fintech (English)",
-    "processedAt": "2026-08-13T11:46:39.283Z",
-    "summary": "• Việt Nam có kế hoạch ra mắt thị trường tiền mã hóa được quản lý vào quý 3.\n• Động thái này đánh dấu bước tiến quan trọng trong việc thiết lập khung pháp lý cho tài sản số tại Việt Nam."
-  },
-  {
-    "url": "https://tokenist.com/bitget-japan-crypto-exit-fsa-penalties/",
-    "title": "Japan Crypto News: Criminal Penalty Risk Drives Bitget Out of Nippon by Year-End",
-    "source": "The Tokenist",
-    "processedAt": "2026-08-13T11:46:43.033Z"
-  },
-  {
-    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxONzNRZHZ4d3hSb1hhVG1QZDZsc0xCWlhxZzFwX0l4SU9MMkhDX05mbUR6UXhzcjhSMlVpUGFHTk0tRC1OUzF4YUZ3M3JHREhDX3JGeFlOSFlYSDNRZVRDRkJ0VXhZTkRPeHpzczdVeFNmV0FiaTg0ZkJjRXNGQTRDZzFfd01vZHdtV0taVUJjRUlSeEk2VWV0YU8yclhOaFlwRlJBZHBpMnhSb3RrSlE2NUZZWlE2Mk01LVVNajJfVFlzeUJDUHc?oc=5",
-    "title": "Hong Kong police arrest six over Fun Coffee crypto scam involving $94m losses - The Standard (HK)",
-    "source": "Google News - Vietnam Crypto & Fintech (English)",
-    "processedAt": "2026-08-13T11:46:59.831Z"
-  },
-  {
-    "url": "https://en.vietnamplus.vn/ewec-da-nang-2026-trade-tourism-investment-fair-opens-post350003.vnp",
-    "title": "<img src=\"https://mediaen.vietnamplus.vn/images/7d1b1ad3fc9563dcff6a3a0b9636850cfe0d6c63feea79bc307c4006e7f5bd943c827b3e782e5d5a38c5e4ade6a91e351290b3dbd39b43edd9e566bf8d317e2e54ea60835c1236121fb884de69a6bc9bb433cd44ac3b3e64b0a9e59d5df616e9bd89e9bb57aa36da99951aca817e286046416e4002beeb60eff82a4850c535b38226fec985cc9a7a7c0467337d3da21803a91f0e635241d876a9b173ce529224/vnanet-potal-khai-mac-hoi-cho-quoc-te-thuong-mai-du-lich-va-dau-tu-hanh-lang-kinh-te-dong-tay-da-nang-2026-8951103.jpg.avif\" srcset=\"https://mediaen.vietnamplus.vn/images/7d1b1ad3fc9563dcff6a3a0b9636850cfe0d6c63feea79bc307c4006e7f5bd943c827b3e782e5d5a38c5e4ade6a91e351290b3dbd39b43edd9e566bf8d317e2e54ea60835c1236121fb884de69a6bc9bb433cd44ac3b3e64b0a9e59d5df616e9bd89e9bb57aa36da99951aca817e286046416e4002beeb60eff82a4850c535b38226fec985cc9a7a7c0467337d3da21803a91f0e635241d876a9b173ce529224/vnanet-potal-khai-mac-hoi-cho-quoc-te-thuong-mai-du-lich-va-dau-tu-hanh-lang-kinh-te-dong-tay-da-nang-2026-8951103.jpg.avif 1x, https://mediaen.vietnamplus.vn/images/9208427127649c9760468496aed1bd78fe0d6c63feea79bc307c4006e7f5bd943c827b3e782e5d5a38c5e4ade6a91e351290b3dbd39b43edd9e566bf8d317e2e54ea60835c1236121fb884de69a6bc9bb433cd44ac3b3e64b0a9e59d5df616e9bd89e9bb57aa36da99951aca817e286046416e4002beeb60eff82a4850c535b38226fec985cc9a7a7c0467337d3da21803a91f0e635241d876a9b173ce529224/vnanet-potal-khai-mac-hoi-cho-quoc-te-thuong-mai-du-lich-va-dau-tu-hanh-lang-kinh-te-dong-tay-da-nang-2026-8951103.jpg.avif 2x\" alt=\"The opening ceremony of the East-West Economic Corridor International Trade, Tourism and Investment Fair 2026 (EWEC-Da Nang 2026) on August 12 (Photo: VNA)\" class=\"image-fallback\">",
-    "source": "VietnamPlus Business (English)",
-    "processedAt": "2026-08-13T12:01:35.165Z"
-  },
-  {
-    "url": "https://vneconomy.vn/esg-company-tour-2026-doanh-nghiep-sme-tim-hieu-mo-hinh-chuyen-doi-xanh-tai-prime-group.htm",
-    "title": "ESG Company Tour 2026: Doanh nghiệp SME tìm hiểu mô hình chuyển đổi xanh tại Prime Group",
-    "source": "VnEconomy - Kinh te so",
-    "processedAt": "2026-08-13T12:01:35.255Z"
-  },
-  {
-    "url": "https://vneconomy.vn/aciar-va-viet-nam-tang-cuong-hop-tac-nghien-cuu-nong-nghiep-ho-tro-chuyen-doi-xanh.htm",
-    "title": "ACIAR và Việt Nam tăng cường hợp tác nghiên cứu nông nghiệp hỗ trợ chuyển đổi xanh",
-    "source": "VnEconomy - Kinh te so",
-    "processedAt": "2026-08-13T12:01:35.262Z"
-  },
-  {
-    "url": "https://vneconomy.vn/viet-nam-new-zealand-thuc-day-hop-tac-cong-nghe-nong-nghiep-xanh-va-ket-noi-hang-khong.htm",
-    "title": "Việt Nam - New Zealand thúc đẩy hợp tác công nghệ, nông nghiệp xanh và kết nối hàng không",
-    "source": "VnEconomy - Kinh te so",
-    "processedAt": "2026-08-13T12:01:35.269Z"
-  },
-  {
-    "url": "https://t.me/wublockchainenglish/25542",
-    "title": "UK FCA and HTX in Settlement Talks Over Alleged Illegal Crypto PromotionsAccording to CNA, the UK Financial Conduct Authority (FCA) and crypto exchange HTX are in settlement talks over allegations that the platform illegally promoted crypto services to UK consumers, court filings show. The FCA sued HTX in October 2025, alleging violations of the UK’s crypto financial promotion rules introduced in 2023, marking the regulator’s first lawsuit against a crypto firm over marketing to UK consumers. London’s High Court has paused the proceedings to give the two sides until late August to resolve the dispute. Both the FCA and HTX declined to comment on the status of the talks. — link",
-    "source": "Wu Blockchain English (TG)",
-    "processedAt": "2026-08-13T12:01:41.270Z"
-  },
-  {
-    "url": "https://tokenist.com/spacex-earnings-q2-2026-ai-capex-selloff/",
-    "title": "SpaceX Debut Earnings: Revenue Doubles but $18B AI Capex Triggers After-Hours Selloff",
-    "source": "The Tokenist",
-    "processedAt": "2026-08-13T12:01:41.967Z"
-  },
-  {
-    "url": "https://tokenist.com/gold-price-iran-hormuz-fed-rate-hikes/",
-    "title": "Fed Rate-Hike Bets Halved as Iran Diplomacy Sends Gold Price to $4,222",
-    "source": "The Tokenist",
-    "processedAt": "2026-08-13T12:01:42.752Z"
-  },
-  {
-    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNRUUwX21xTnZRRGhady1pcTFINlJENWlkeWgxZTdwWnNzQ2N0cVg0VHlHOTk1c25LT2hYMkVydWZOOXlZTzhta2FnenNMTTFLU1ZJZVZQeGxscDIxc3hvYmk1cU0zUkRjSE8tUVE4WGxYZnhVLThVbFBHYjd3OUJRZFpja0l3ZDRELVdKSHVOQVNDeERhbjVPY1Z6d05hRmNKeF9YNHYwcUVJcURkdUNMLWM4T2tpaFYwdnMyWUR0ejQxd0FPdXBzbk1CaDZvclhKRXNxc1F6bTExUdIB2gFBVV95cUxNc040eXgteTlrWGNpVU9JdXVkYUtaUFhGd2s4NFd3QVNrNmZfRV83YWR0WXhCZ3haSWVoX3hSNVlWRzFjdi1KZ0Jua1RzRWktRGplUEZDR1Jma2dkWTJxbGNRWkFtWVpSRXJ6T2NaMVZCVVZVR2dFRGF5ZjJrNDhULUU3OTlWakItVlZjbHRXLVJjaFdjNVVFd29leHZiRUpSMWg1ZldQRzJIV0dlZEQxdFBzdUxaUy13MVlQWFRHSmMydDFYdWJrX3lwRHhoVTZSR3VoZDVhcXFTQQ?oc=5",
-    "title": "Fears grow that Fun Coffee crypto scam duped over 1,000 as losses mount - scmp.com",
-    "source": "Google News - Vietnam Crypto & Fintech (English)",
-    "processedAt": "2026-08-13T12:01:43.425Z"
-  },
-  {
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbURuQTR1STNrSnBjVkxyYV8wdEdLU1RWYW8ycnh4MkdBLXlnS0UyU2pfUXJjVkRqUlZuU2I1elNhTGxYNVliY3RUUmRTaE5tT05aTEQ2RVdvZVZRWlZnNGRjWlZUZHNjUURiWUlvWTR5QmoxMWdlVHdqanp2OFg1bkNPVXpTYWhvQXBpQ3VNanoxZTIzM2JGQWxDQk9LUXM5eVRsbVMyV0xBSDROZlhHc0tRR1E?oc=5",
-    "title": "VN proposes bringing crypto asset services under anti-money laundering rules - Báo VietNamNet",
-    "source": "Google News - Vietnam Crypto & Fintech (English)",
-    "processedAt": "2026-08-13T12:01:44.893Z",
-    "summary": "• Việt Nam đề xuất đưa các dịch vụ tài sản mã hóa vào khuôn khổ pháp lý về phòng, chống rửa tiền.\n• Động thái này thể hiện sự chú trọng của cơ quan quản lý trong việc giám sát thị trường tài sản số tại Việt Nam."
-  },
-  {
-    "url": "https://tokenist.com/galaxy-digital-q2-2026-earnings-helios-crypto-loss/",
-    "title": "Helios Ramp Can’t Offset Crypto Losses as Galaxy Digital Posts $85M Q2 Net Loss",
-    "source": "The Tokenist",
-    "processedAt": "2026-08-13T12:01:48.619Z"
-  },
-  {
-    "url": "https://tokenist.com/coinbase-uk-stock-trading-fca-mifid/",
-    "title": "Coinbase Launches UK Stock Trading in Its Biggest-Ever British Expansion",
-    "source": "The Tokenist",
-    "processedAt": "2026-08-13T12:01:50.227Z"
-  },
-  {
-    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQR1NUU0UtbU9CdEE3NHVtcldrczhvTGttQURKRE5MdE5qS3F5dDdZQndEOXh5V2s4WER6Um9aOG5od1ExYlE2VEF6RnczNHhVaGhtYkVsWElvMW1DT3hQd0FfbkYtNjREcDlsQ00tMzJlNFVfNEx6Q2piaG5zdldUNjRTb1Z2cF93WW5z?oc=5",
-    "title": "700 bln USD for net zero: Vietnam bets on VIFC - Báo VietNamNet",
-    "source": "Google News - Vietnam Crypto & Fintech (English)",
-    "processedAt": "2026-08-13T12:01:52.239Z",
-    "summary": "• Việt Nam kỳ vọng huy động 700 tỷ USD cho mục tiêu phát thải ròng bằng không (net zero).\n• Định hướng phát triển gắn liền với việc thúc đẩy Trung tâm Tài chính Quốc tế Việt Nam (VIFC)."
-  },
-  {
     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRXpxMVJrUlJBNHlOeUtlZ2d5TnpKa2pWZW9FWlZPSS1RWU9Tb3ZZeDRqS2ZRSmlkUVFOTEdqRVZyNVFNRlplYmJNbWlkdzQ0WkFlNk1wNWIwUmlOU0VqaHNNRUpvblZPbVBGYXZ1YkFXRWNQY21Nc1BzUHRrcWZqSTNJUHVyd1dCQm54VA?oc=5",
     "title": "Vietnam needs $700 billion to achieve net-zero roadmap - Vietnam Investment Review - VIR",
     "source": "Google News - Vietnam Crypto & Fintech (English)",
@@ -33144,5 +32882,53 @@
     "title": "Mirae Asset eyes $109 billion crypto empire after acquiring Digital X",
     "source": "CoinDesk",
     "processedAt": "2026-08-27T11:45:56.564Z"
+  },
+  {
+    "url": "https://en.vietnamplus.vn/vietnam-rok-step-up-cooperation-in-key-economic-sectors-post350906.vnp",
+    "title": "<img src=\"https://mediaen.vietnamplus.vn/images/fRsa0_yVY9z_ajoLljaFDIi-ck9hxQgSUVpUeLDH3BiyH70qi7tDVBeSQ9bLzaHrzrGNlIICbE_EriykJOBuMkbPl5SQ85IWfZOmlbFVIV9ghqxonlrfeOSU9y2RNgdtSBPotTR8phKCsHrSwlvckvQdq-FNxqG1w83bWRCLktQ/vnanet-potal-viet-nam-han-quoc-thuc-day-hop-tac-trong-cac-linh-vuc-kinh-te-trong-diem-8986057.jpg.avif\" srcset=\"https://mediaen.vietnamplus.vn/images/fRsa0_yVY9z_ajoLljaFDIi-ck9hxQgSUVpUeLDH3BiyH70qi7tDVBeSQ9bLzaHrzrGNlIICbE_EriykJOBuMkbPl5SQ85IWfZOmlbFVIV9ghqxonlrfeOSU9y2RNgdtSBPotTR8phKCsHrSwlvckvQdq-FNxqG1w83bWRCLktQ/vnanet-potal-viet-nam-han-quoc-thuc-day-hop-tac-trong-cac-linh-vuc-kinh-te-trong-diem-8986057.jpg.avif 1x, https://mediaen.vietnamplus.vn/images/kghCcSdknJdgRoSWrtG9eIi-ck9hxQgSUVpUeLDH3BiyH70qi7tDVBeSQ9bLzaHrzrGNlIICbE_EriykJOBuMkbPl5SQ85IWfZOmlbFVIV9ghqxonlrfeOSU9y2RNgdtSBPotTR8phKCsHrSwlvckvQdq-FNxqG1w83bWRCLktQ/vnanet-potal-viet-nam-han-quoc-thuc-day-hop-tac-trong-cac-linh-vuc-kinh-te-trong-diem-8986057.jpg.avif 2x\" alt=\"The 15th meeting of the Vietnam-RoK Joint Committee on Trade, Industry and Energy Cooperation and the ninth meeting of the Vietnam-RoK Free Trade Agreement (FTA) Committee are held in Seoul on August 26. (Photo: VNA)\" class=\"image-fallback\">",
+    "source": "VietnamPlus Business (English)",
+    "processedAt": "2026-08-27T12:01:27.270Z"
+  },
+  {
+    "url": "https://vneconomy.vn/meta-gia-nhap-danh-sach-doanh-nghiep-chi-hang-ty-usd-dan-xep-kien-tung.htm",
+    "title": "Meta gia nhập danh sách doanh nghiệp chi hàng tỷ USD dàn xếp kiện tụng",
+    "source": "VnEconomy - Kinh te so",
+    "processedAt": "2026-08-27T12:01:27.305Z"
+  },
+  {
+    "url": "https://t.me/CoinMarketCapAnnouncements/15889",
+    "title": "📈 CoinMarketCap | bStocks 📈NVIDIA ($NVDA) · $NVDABNVIDIA jumped 5% the day after earnings.🔹 Revenue hit $96.2B, up 106%🔹 Data centre brought in $89.0B🔹 The backlog passed $2 trillionNote: A $2T backlog means Nvidia has $2 trillion in confirmed, unfulfilled orders locked in for the future!Track $NVDAB, the tokenized $NVDA, on CoinMarketCap 👇https://coinmarketcap.com/currencies/nvidia-tokenized-bstocks/",
+    "source": "CoinMarketCap Announcements (TG)",
+    "processedAt": "2026-08-27T12:01:47.512Z"
+  },
+  {
+    "url": "https://t.me/wublockchainenglish/25760",
+    "title": "CoinGecko: Crypto Industry Lost $3.63 Billion From January 2025 to July 2026CoinGecko’s 2026 Crypto Security Report found that the crypto industry suffered $3.63 billion in losses across 245 recorded security incidents from January 2025 to July 2026, with the top 10 attacks accounting for more than 72.5% of the total stolen funds. Among the platforms attacked, about 60% (147) had undergone independent security audits before the incidents, accounting for 88.44% of total losses.However, most attacks occurred outside the audit scope, with only about 11% involving vulnerabilities within the scope of routine smart contract audits. Meanwhile, the active coverage capacity of onchain insurance protocols fell 20.2% from $163.2 million to $130.2 million, while limited coverage and other constraints led 5 of the 9 onchain insurance protocols to shut down or pivot. CEXs are increasingly relying on self-funded investor protection funds to address security risks. — link",
+    "source": "Wu Blockchain English (TG)",
+    "processedAt": "2026-08-27T12:01:49.303Z"
+  },
+  {
+    "url": "https://t.me/wublockchainenglish/25761",
+    "title": "A Conversation with NDV Founder Jason: Strategy May Have Overplayed Its Hand, and I'll Wait for a True Capitulation Before Buying the DipNDV’s Jason Huang: BTC drop driven by four-year cycle, Strategy debt/liquidity risk; cautious short-term, bullish long-term on stablecoins; fund up 20% YTD; see bear market bottom only after defining event. Read more: — link",
+    "source": "Wu Blockchain English (TG)",
+    "processedAt": "2026-08-27T12:01:50.477Z"
+  },
+  {
+    "url": "https://www.theblock.co/news/markets/2026-08-27-binance-co-founder-changpeng-cz-zhao-says-bitcoin-could-surpass-gold-in-next-bull-market-412904",
+    "title": "Binance co-founder Changpeng ‘CZ’ Zhao says bitcoin could surpass gold in next bull market",
+    "source": "The Block",
+    "processedAt": "2026-08-27T12:01:51.428Z"
+  },
+  {
+    "url": "https://tokenist.com/bitcoin-quantum-safe-mainnet/",
+    "title": "StarkWare Mines Bitcoin Quantum-Safe Transaction on Mainnet",
+    "source": "The Tokenist",
+    "processedAt": "2026-08-27T12:01:52.361Z"
+  },
+  {
+    "url": "https://www.theblock.co/news/markets/2026-08-27-blackrocks-mitchnick-says-bitcoins-risk-off-narrative-is-the-one-to-bet-on-long-term-as-rally-consolidates-near-80000-412897",
+    "title": "BlackRock’s Mitchnick says bitcoin’s risk-off narrative is ‘the one to bet on’ long term as rally consolidates near $80,000",
+    "source": "The Block",
+    "processedAt": "2026-08-27T12:01:53.351Z"
   }
 ]
