@@ -15,6 +15,12 @@ export interface ProcessedArticle {
   summary?: string;
   /** Diacritic-free, outlet-suffix-free title used for duplicate detection. */
   titleNorm?: string;
+  /**
+   * The Vietnamese headline the AI produced for a broadcast article. Indexed
+   * alongside the original so one event reported in two languages still
+   * matches: raw English and Vietnamese headlines share almost no tokens.
+   */
+  translatedTitle?: string;
   /** True only for articles actually broadcast to Telegram. */
   sent?: boolean;
 }

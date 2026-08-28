@@ -1,6 +1,6 @@
 import * as dotenv from 'dotenv';
 import { SOURCES } from './config/sources';
-import { JSONDatabase } from './database/db';
+import { JSONDatabase, DuplicateCandidate } from './database/db';
 import { CrawlerService } from './services/crawler';
 import { AIService } from './services/ai';
 import { TelegramService } from './services/telegram';
@@ -180,11 +180,36 @@ async function checkNews() {
       const analysis = await aiService.analyzeArticle(article);
 
       if (analysis.relevant && analysis.importance === 'high') {
-        // Pass 3: headlines that only partly overlap get an AI verdict, using
+        // Pass 3: the check above compared raw headlines, which never matches
+        // an English report against a Vietnamese one about the same event.
+        // Re-run it with the Vietnamese title the AI just produced.
+        let candidates = similar;
+        const translatedTitle = analysis.title;
+        if (translatedTitle && translatedTitle !== article.title) {
+          const byUrl = new Map<string, DuplicateCandidate>();
+          const translatedMatches = db.findSimilarSent(fingerprint(translatedTitle), dedupWindowDays);
+          for (const match of [...similar, ...translatedMatches]) {
+            const best = byUrl.get(match.record.url);
+            if (!best || match.score > best.score) byUrl.set(match.record.url, match);
+          }
+          candidates = Array.from(byUrl.values()).sort((a, b) => b.score - a.score);
+        }
+
+        const strongestTranslated = candidates[0];
+        if (strongestTranslated && strongestTranslated.score >= AUTO_DUPLICATE_THRESHOLD) {
+          console.log(
+            `[Dedup] Vietnamese headline for "${article.title}" repeats an article already sent (${(strongestTranslated.score * 100).toFixed(0)}% match with "${strongestTranslated.record.title}"). Skipping.`
+          );
+          await db.add(article.url, article.title, article.source, analysis.summary);
+          duplicateCount++;
+          continue;
+        }
+
+        // Pass 4: headlines that only partly overlap get an AI verdict, using
         // the summary we just generated. Cheaper than the alternative: sending
         // the same event twice under two different titles.
         let isDuplicate = false;
-        for (const candidate of similar.slice(0, maxDuplicateChecks)) {
+        for (const candidate of candidates.slice(0, maxDuplicateChecks)) {
           const verdict = await aiService.isSameStory(
             analysis.title || article.title,
             analysis.summary || article.contentSnippet,
@@ -219,8 +244,10 @@ async function checkNews() {
           analysis.importance
         );
 
-        // Save to DB with summary, flagged as sent so later articles dedupe against it
-        await db.add(article.url, article.title, article.source, analysis.summary, true);
+        // Save to DB with summary, flagged as sent so later articles dedupe
+        // against it. The translated title is stored too, so a later report of
+        // the same event in the other language still matches.
+        await db.add(article.url, article.title, article.source, analysis.summary, true, analysis.title);
 
         // Sleep to avoid rate limiting or spamming the chat
         await delay(3000);

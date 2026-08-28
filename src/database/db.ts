@@ -13,8 +13,12 @@ export class JSONDatabase {
   private subscribersPath: string;
   private memoryCache: Map<string, ProcessedArticle> = new Map();
   private subscribersCache: Set<number> = new Set();
-  /** Token fingerprints for broadcast articles only, keyed by URL. */
-  private sentFingerprints: Map<string, TitleFingerprint> = new Map();
+  /**
+   * Token fingerprints for broadcast articles only, keyed by URL. One entry
+   * per headline we know for that story (the original and, when the AI
+   * produced one, the Vietnamese translation).
+   */
+  private sentFingerprints: Map<string, TitleFingerprint[]> = new Map();
 
   constructor(dbPath: string = 'db.json') {
     this.dbPath = path.resolve(dbPath);
@@ -112,7 +116,14 @@ export class JSONDatabase {
    * `sent` marks articles actually broadcast, which are the only ones later
    * articles are deduplicated against.
    */
-  async add(url: string, title: string, source: string, summary?: string, sent: boolean = false): Promise<void> {
+  async add(
+    url: string,
+    title: string,
+    source: string,
+    summary?: string,
+    sent: boolean = false,
+    translatedTitle?: string
+  ): Promise<void> {
     const record: ProcessedArticle = {
       url,
       title,
@@ -120,6 +131,7 @@ export class JSONDatabase {
       processedAt: new Date().toISOString(),
       summary,
       titleNorm: fingerprint(title).normalized,
+      translatedTitle,
       sent,
     };
 
@@ -131,11 +143,26 @@ export class JSONDatabase {
 
   /** Keeps the fingerprint index in sync with the broadcast records. */
   private indexIfSent(record: ProcessedArticle): void {
-    if (record.sent) {
-      this.sentFingerprints.set(record.url, fingerprint(record.title));
-    } else {
+    if (!record.sent) {
       this.sentFingerprints.delete(record.url);
+      return;
     }
+
+    const prints: TitleFingerprint[] = [];
+    const seen = new Set<string>();
+    for (const title of [record.title, record.translatedTitle]) {
+      if (!title) continue;
+      const fp = fingerprint(title);
+      if (!fp.normalized || seen.has(fp.normalized)) continue;
+      seen.add(fp.normalized);
+      prints.push(fp);
+    }
+
+    if (prints.length === 0) {
+      this.sentFingerprints.delete(record.url);
+      return;
+    }
+    this.sentFingerprints.set(record.url, prints);
   }
 
   /**
@@ -146,14 +173,20 @@ export class JSONDatabase {
     const cutoff = Date.now() - days * 24 * 60 * 60 * 1000;
     const matches: DuplicateCandidate[] = [];
 
-    for (const [url, stored] of this.sentFingerprints.entries()) {
+    for (const [url, storedPrints] of this.sentFingerprints.entries()) {
       const record = this.memoryCache.get(url);
       if (!record) continue;
       if (new Date(record.processedAt).getTime() < cutoff) continue;
 
-      const score = stored.normalized === candidate.normalized
-        ? 1
-        : similarity(stored.tokens, candidate.tokens);
+      // A story may be indexed under several headlines. The closest one
+      // decides the pair.
+      let score = 0;
+      for (const stored of storedPrints) {
+        const pairScore = stored.normalized === candidate.normalized
+          ? 1
+          : similarity(stored.tokens, candidate.tokens);
+        if (pairScore > score) score = pairScore;
+      }
 
       if (score >= CANDIDATE_THRESHOLD) {
         matches.push({ record, score });

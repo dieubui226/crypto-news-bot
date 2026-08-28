@@ -7,9 +7,16 @@ on:
   workflow_dispatch:
     # Allows manual triggering from the GitHub Actions tab
 
+# Two overlapping runs read the same db.json, so both decide a story is unsent
+# and both broadcast it. Queue runs instead of letting them race.
+concurrency:
+  group: news-bot-scrape
+  cancel-in-progress: false
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     permissions:
       contents: write # Required to push db.json changes back to the repository
 
@@ -46,13 +53,38 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          
-          # Check if db.json has been modified
-          if git status --porcelain | grep -q "db.json"; then
-            echo "Database changed. Committing updates..."
-            git add db.json
-            git commit -m "chore: update news database cache [skip ci]"
-            git push origin main
-          else
+
+          if ! git status --porcelain | grep -q "db.json"; then
             echo "No new articles added to database. Skipping commit."
+            exit 0
           fi
+
+          echo "Database changed. Committing updates..."
+          git add db.json
+          git commit -m "chore: update news database cache [skip ci]"
+
+          # A dropped push throws away this run's record of what was broadcast,
+          # and the next run re-sends every story in it. Retry rather than lose it.
+          for attempt in 1 2 3; do
+            if git push origin main; then
+              echo "Database pushed on attempt $attempt."
+              exit 0
+            fi
+
+            echo "Push attempt $attempt failed. Rebasing onto origin/main..."
+            git fetch origin main
+            if ! git rebase origin/main; then
+              # db.json is append-heavy and conflicts are unmergeable by line.
+              # Keep our copy: it names every story this run already sent.
+              git rebase --abort || true
+              cp db.json "$RUNNER_TEMP/db.ours.json"
+              git reset --hard origin/main
+              cp "$RUNNER_TEMP/db.ours.json" db.json
+              git add db.json
+              git commit -m "chore: update news database cache [skip ci]"
+            fi
+            sleep $((attempt * 5))
+          done
+
+          echo "::error::Could not push db.json after 3 attempts. The next run will re-send this cycle's stories."
+          exit 1
