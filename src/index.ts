@@ -4,6 +4,7 @@ import { JSONDatabase } from './database/db';
 import { CrawlerService } from './services/crawler';
 import { AIService } from './services/ai';
 import { TelegramService } from './services/telegram';
+import { fingerprint, AUTO_DUPLICATE_THRESHOLD } from './services/dedup';
 import { Article } from './types';
 
 // Load environment variables
@@ -13,6 +14,12 @@ const pollIntervalMinutes = parseInt(process.env.POLL_INTERVAL_MINUTES || '5', 1
 const dbPath = process.env.DB_PATH || 'db.json';
 // Caps AI calls per run so a large backlog cannot burn the whole daily quota in one cycle.
 const maxArticlesPerRun = parseInt(process.env.MAX_ARTICLES_PER_RUN || '40', 10);
+// How far back duplicate detection looks. One event gets re-reported for days,
+// so the window has to outlive the news cycle, not just the run.
+const dedupWindowDays = parseInt(process.env.DEDUP_WINDOW_DAYS || '7', 10);
+// Cap on AI same-story comparisons per article, so a crowded topic cannot
+// trigger a dozen extra calls for one headline.
+const maxDuplicateChecks = parseInt(process.env.MAX_DUPLICATE_CHECKS || '3', 10);
 
 // Initialize services
 const db = new JSONDatabase(dbPath);
@@ -114,8 +121,27 @@ async function checkNews() {
 
     let analyzedCount = 0;
     let deferredCount = 0;
+    let duplicateCount = 0;
 
+    // Pass 1: collapse identical headlines inside this batch. Aggregators and
+    // syndicated feeds hand us the same story under different URLs, and paying
+    // for AI analysis on each copy is pure waste.
+    const seenInBatch = new Map<string, string>();
+    const batchDeduped: Article[] = [];
     for (const article of newArticles) {
+      const { normalized } = fingerprint(article.title);
+      const firstSource = normalized ? seenInBatch.get(normalized) : undefined;
+      if (firstSource) {
+        console.log(`[Dedup] Same headline as [${firstSource}] earlier in this batch: "${article.title}". Skipping.`);
+        await db.add(article.url, article.title, article.source);
+        duplicateCount++;
+        continue;
+      }
+      if (normalized) seenInBatch.set(normalized, article.source);
+      batchDeduped.push(article);
+    }
+
+    for (const article of batchDeduped) {
       const isDedicated = dedicatedSources.some(ds => article.source.includes(ds));
       const textToTest = `${article.title} ${article.contentSnippet || ''}`.toLowerCase();
       const hasKeyword = CRYPTO_KEYWORDS.some(kw => textToTest.includes(kw));
@@ -123,6 +149,21 @@ async function checkNews() {
       if (!isDedicated && !hasKeyword) {
         // Skip non-crypto articles from general sources without wasting AI calls
         await db.add(article.url, article.title, article.source);
+        continue;
+      }
+
+      // Pass 2: compare against what was actually broadcast in the last
+      // `dedupWindowDays`. A near-identical headline needs no AI to settle.
+      const fp = fingerprint(article.title);
+      const similar = db.findSimilarSent(fp, dedupWindowDays);
+      const strongest = similar[0];
+
+      if (strongest && strongest.score >= AUTO_DUPLICATE_THRESHOLD) {
+        console.log(
+          `[Dedup] "${article.title}" repeats an article already sent (${(strongest.score * 100).toFixed(0)}% headline match with "${strongest.record.title}"). Skipping.`
+        );
+        await db.add(article.url, article.title, article.source);
+        duplicateCount++;
         continue;
       }
 
@@ -139,8 +180,35 @@ async function checkNews() {
       const analysis = await aiService.analyzeArticle(article);
 
       if (analysis.relevant && analysis.importance === 'high') {
+        // Pass 3: headlines that only partly overlap get an AI verdict, using
+        // the summary we just generated. Cheaper than the alternative: sending
+        // the same event twice under two different titles.
+        let isDuplicate = false;
+        for (const candidate of similar.slice(0, maxDuplicateChecks)) {
+          const verdict = await aiService.isSameStory(
+            analysis.title || article.title,
+            analysis.summary || article.contentSnippet,
+            candidate.record.title,
+            candidate.record.summary
+          );
+          if (!verdict.decided) break; // AI unavailable: fall through and send rather than lose the news
+          if (verdict.duplicate) {
+            console.log(
+              `[Dedup] AI judged "${article.title}" to be the same story as "${candidate.record.title}" (already sent). Skipping.`
+            );
+            isDuplicate = true;
+            break;
+          }
+        }
+
+        if (isDuplicate) {
+          await db.add(article.url, article.title, article.source, analysis.summary);
+          duplicateCount++;
+          continue;
+        }
+
         console.log(`[Orchestrator] -> Article is RELEVANT (${analysis.importance}). Broadcasting to Telegram...`);
-        
+
         await telegramService.sendNews(
           analysis.title || article.title,
           article.title,
@@ -151,8 +219,8 @@ async function checkNews() {
           analysis.importance
         );
 
-        // Save to DB with summary
-        await db.add(article.url, article.title, article.source, analysis.summary);
+        // Save to DB with summary, flagged as sent so later articles dedupe against it
+        await db.add(article.url, article.title, article.source, analysis.summary, true);
 
         // Sleep to avoid rate limiting or spamming the chat
         await delay(3000);
@@ -165,6 +233,10 @@ async function checkNews() {
           await db.add(article.url, article.title, article.source);
         }
       }
+    }
+
+    if (duplicateCount > 0) {
+      console.log(`[Dedup] Suppressed ${duplicateCount} duplicate article(s) this cycle (window: ${dedupWindowDays} days).`);
     }
 
     if (deferredCount > 0) {

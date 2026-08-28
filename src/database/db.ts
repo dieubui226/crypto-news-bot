@@ -1,12 +1,20 @@
 import * as fs from 'fs/promises';
 import * as path from 'path';
 import { ProcessedArticle } from '../types';
+import { fingerprint, similarity, CANDIDATE_THRESHOLD, TitleFingerprint } from '../services/dedup';
+
+export interface DuplicateCandidate {
+  record: ProcessedArticle;
+  score: number;
+}
 
 export class JSONDatabase {
   private dbPath: string;
   private subscribersPath: string;
   private memoryCache: Map<string, ProcessedArticle> = new Map();
   private subscribersCache: Set<number> = new Set();
+  /** Token fingerprints for broadcast articles only, keyed by URL. */
+  private sentFingerprints: Map<string, TitleFingerprint> = new Map();
 
   constructor(dbPath: string = 'db.json') {
     this.dbPath = path.resolve(dbPath);
@@ -25,10 +33,20 @@ export class JSONDatabase {
       const data = await fs.readFile(this.dbPath, 'utf8');
       const records: ProcessedArticle[] = JSON.parse(data);
       this.memoryCache.clear();
+      this.sentFingerprints.clear();
       for (const record of records) {
+        // Records written before dedup existed have no flags. A stored summary
+        // only ever came from a broadcast, so it identifies the sent ones.
+        if (record.sent === undefined) {
+          record.sent = Boolean(record.summary);
+        }
+        if (!record.titleNorm) {
+          record.titleNorm = fingerprint(record.title).normalized;
+        }
         this.memoryCache.set(record.url, record);
+        this.indexIfSent(record);
       }
-      console.log(`[DB] Articles loaded. Tracking ${this.memoryCache.size} articles.`);
+      console.log(`[DB] Articles loaded. Tracking ${this.memoryCache.size} articles (${this.sentFingerprints.size} previously broadcast).`);
     } catch (error: any) {
       if (error.code === 'ENOENT') {
         console.log('[DB] Articles file not found. Initializing a new one...');
@@ -90,20 +108,59 @@ export class JSONDatabase {
   }
 
   /**
-   * Adds an article to the processed database
+   * Adds an article to the processed database.
+   * `sent` marks articles actually broadcast, which are the only ones later
+   * articles are deduplicated against.
    */
-  async add(url: string, title: string, source: string, summary?: string): Promise<void> {
+  async add(url: string, title: string, source: string, summary?: string, sent: boolean = false): Promise<void> {
     const record: ProcessedArticle = {
       url,
       title,
       source,
       processedAt: new Date().toISOString(),
       summary,
+      titleNorm: fingerprint(title).normalized,
+      sent,
     };
-    
+
     this.memoryCache.set(url, record);
+    this.indexIfSent(record);
     const records = Array.from(this.memoryCache.values());
     await this.saveArticles(records);
+  }
+
+  /** Keeps the fingerprint index in sync with the broadcast records. */
+  private indexIfSent(record: ProcessedArticle): void {
+    if (record.sent) {
+      this.sentFingerprints.set(record.url, fingerprint(record.title));
+    } else {
+      this.sentFingerprints.delete(record.url);
+    }
+  }
+
+  /**
+   * Finds previously broadcast articles from the last `days` whose headline
+   * overlaps enough to plausibly be the same story, best match first.
+   */
+  findSimilarSent(candidate: TitleFingerprint, days: number): DuplicateCandidate[] {
+    const cutoff = Date.now() - days * 24 * 60 * 60 * 1000;
+    const matches: DuplicateCandidate[] = [];
+
+    for (const [url, stored] of this.sentFingerprints.entries()) {
+      const record = this.memoryCache.get(url);
+      if (!record) continue;
+      if (new Date(record.processedAt).getTime() < cutoff) continue;
+
+      const score = stored.normalized === candidate.normalized
+        ? 1
+        : similarity(stored.tokens, candidate.tokens);
+
+      if (score >= CANDIDATE_THRESHOLD) {
+        matches.push({ record, score });
+      }
+    }
+
+    return matches.sort((a, b) => b.score - a.score);
   }
 
   /**
@@ -118,6 +175,7 @@ export class JSONDatabase {
       const processedTime = new Date(record.processedAt).getTime();
       if (now.getTime() - processedTime > limitMs) {
         this.memoryCache.delete(url);
+        this.sentFingerprints.delete(url);
         deletedCount++;
       }
     }

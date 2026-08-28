@@ -13,6 +13,10 @@ export interface ProcessedArticle {
   source: string;
   processedAt: string;
   summary?: string;
+  /** Diacritic-free, outlet-suffix-free title used for duplicate detection. */
+  titleNorm?: string;
+  /** True only for articles actually broadcast to Telegram. */
+  sent?: boolean;
 }
 
 export interface CrawlerConfig {

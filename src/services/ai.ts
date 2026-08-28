@@ -192,10 +192,79 @@ JSON kết quả bắt buộc đúng schema sau:
 }
 `;
 
+    const { data, errorKind } = await this.generateJson<AIAnalysisResult>(prompt, article.title);
+    if (!data) {
+      return this.failure(article, errorKind);
+    }
+
+    return {
+      relevant: data.relevant,
+      title: data.title || article.title,
+      summary: data.summary || '',
+      category: data.category || 'other',
+      importance: data.importance || 'low'
+    };
+  }
+
+  /**
+   * Decides whether two headlines report the same underlying event.
+   * Used only for pairs whose headline overlap is ambiguous, so the extra AI
+   * calls stay rare.
+   */
+  async isSameStory(
+    candidateTitle: string,
+    candidateSnippet: string | undefined,
+    existingTitle: string,
+    existingSummary?: string
+  ): Promise<{ duplicate: boolean; decided: boolean }> {
+    if (!this.aiClient || this.quotaExhausted) {
+      return { duplicate: false, decided: false };
+    }
+
+    const prompt = `
+Bạn là trợ lý biên tập tin tức. Xác định xem HAI bản tin dưới đây có nói về CÙNG MỘT sự kiện/sự việc hay không.
+
+Bản tin A (đã gửi trước đó):
+- Tiêu đề: ${existingTitle}
+- Tóm tắt: ${existingSummary || 'Không có'}
+
+Bản tin B (bản tin mới):
+- Tiêu đề: ${candidateTitle}
+- Tóm tắt: ${candidateSnippet || 'Không có'}
+
+Quy tắc:
+- "duplicate": true nếu hai bản tin tường thuật CÙNG một sự kiện, cùng một thông báo, cùng một quyết định hoặc cùng một số liệu công bố — kể cả khi khác nguồn, khác cách giật tít, khác ngôn ngữ.
+- "duplicate": false nếu bản tin B có diễn biến MỚI, số liệu MỚI, quyết định tiếp theo, phản ứng của bên thứ ba, hoặc thực chất là một sự việc khác dù cùng chủ đề.
+- Nếu không đủ dữ kiện để kết luận chắc chắn, trả về false.
+
+Chỉ trả về JSON hợp lệ, không markdown, không giải thích:
+{"duplicate": true, "reason": "ngắn gọn 1 câu"}
+`;
+
+    const { data } = await this.generateJson<{ duplicate: boolean; reason?: string }>(
+      prompt,
+      `so sánh trùng lặp: "${candidateTitle}"`
+    );
+
+    if (!data || typeof data.duplicate !== 'boolean') {
+      return { duplicate: false, decided: false };
+    }
+
+    if (data.duplicate && data.reason) {
+      console.log(`[AI] Duplicate confirmed: ${data.reason}`);
+    }
+    return { duplicate: data.duplicate, decided: true };
+  }
+
+  /**
+   * Runs a JSON prompt through the model chain, walking down to the next model
+   * on quota exhaustion or retirement and retrying transient failures.
+   */
+  private async generateJson<T>(prompt: string, label: string): Promise<{ data: T | null; errorKind: AIErrorKind }> {
     const usableModels = this.models.filter(m => !this.deadModels.has(m) && !this.exhaustedModels.has(m));
     if (usableModels.length === 0) {
       console.error('[AI] No usable models left: every configured model is retired or out of quota. Check GEMINI_MODELS.');
-      return this.failure(article, this.deadModels.size === this.models.length ? 'notFound' : 'quota');
+      return { data: null, errorKind: this.deadModels.size === this.models.length ? 'notFound' : 'quota' };
     }
 
     let lastKind: AIErrorKind = 'other';
@@ -203,27 +272,19 @@ JSON kết quả bắt buộc đúng schema sau:
     for (const modelToTry of usableModels) {
       for (let attempt = 1; attempt <= MAX_ATTEMPTS_PER_MODEL; attempt++) {
         try {
-          const model = this.aiClient.getGenerativeModel({
+          const model = this.aiClient!.getGenerativeModel({
             model: modelToTry,
             generationConfig: { responseMimeType: 'application/json' }
           });
 
           const response = await model.generateContent(prompt);
           const responseText = response.response.text() || '';
-          const result: AIAnalysisResult = JSON.parse(responseText);
-
-          return {
-            relevant: result.relevant,
-            title: result.title || article.title,
-            summary: result.summary || '',
-            category: result.category || 'other',
-            importance: result.importance || 'low'
-          };
+          return { data: JSON.parse(responseText) as T, errorKind: 'other' };
         } catch (err: any) {
           const message = err.message || String(err);
           const kind = this.classifyError(message);
           lastKind = kind;
-          console.error(`[AI] Attempt ${attempt} with model ${modelToTry} failed (${kind}) for "${article.title}":`, message);
+          console.error(`[AI] Attempt ${attempt} with model ${modelToTry} failed (${kind}) for "${label}":`, message);
 
           if (kind === 'notFound') {
             // The model has been retired, so never call it again in this process.
@@ -262,8 +323,8 @@ JSON kết quả bắt buộc đúng schema sau:
       console.error('[AI] Quota exhausted on every model. Remaining articles are left untouched for the next run.');
     }
 
-    console.error(`[AI] All models and retries failed for article "${article.title}". Flagging as analysis error.`);
-    return this.failure(article, lastKind);
+    console.error(`[AI] All models and retries failed for "${label}". Flagging as analysis error.`);
+    return { data: null, errorKind: lastKind };
   }
 }
 
