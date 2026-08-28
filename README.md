@@ -11,7 +11,8 @@ Bot Telegram quét tin tức tự động và realtime (thời gian thực) về
 3. **Tóm Tắt & Dịch Thuật Tự Động**: Tự động dịch tiêu đề tiếng Anh sang tiếng Việt mượt mà và tóm tắt thành 2-3 gạch đầu dòng cô đọng nhất.
 4. **Bảo Mật & Riêng Tư (Private Bot)**: Chỉ gửi tin đến danh sách Chat ID của bạn được thiết lập cấu hình trong file `.env`. Từ chối tất cả người lạ chat với bot.
 5. **Dễ Dàng Thêm Nguồn Mới**: Cấu hình các nguồn tin (RSS hoặc HTML Scraper) được module hóa trong file `src/config/sources.ts`.
-6. **Không Trùng Lặp Tin**: Sử dụng database JSON nội bộ siêu nhẹ để ghi nhớ các tin đã gửi, tự động dọn dẹp các tin cũ hơn 14 ngày để tối ưu bộ nhớ.
+6. **Không Trùng Lặp Tin**: Một sự kiện được nhiều báo đưa tin sẽ chỉ được gửi một lần. Bot so khớp tiêu đề (bỏ dấu, bỏ tên tòa soạn, lọc từ dừng) với các tin đã gửi trong 7 ngày, và chỉ hỏi AI với những cặp thực sự mập mờ. Tin đã gửi được lưu kèm tiêu đề tiếng Việt do AI dịch, nên một sự kiện đưa tin bằng hai ngôn ngữ vẫn khớp được với nhau.
+7. **Trạng Thái Chạy Trên CI**: `db.json` và `subscribers.json` là bộ nhớ tạm (đã gửi tin nào, đã xem URL nào), không phải source code — chúng nằm trong `.gitignore` và được giữ qua GitHub Actions cache. Tin đã gửi lưu 14 ngày (phải sống lâu hơn cửa sổ chống trùng); ghi chú "đã xem URL này" chỉ lưu 3 ngày. Mất cache không gây hại: bot sẽ nạp lại nền im lặng và gửi tin bình thường từ chu kỳ sau.
 
 ---
 

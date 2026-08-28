@@ -19,6 +19,8 @@ export class JSONDatabase {
    * produced one, the Vietnamese translation).
    */
   private sentFingerprints: Map<string, TitleFingerprint[]> = new Map();
+  /** True when memoryCache holds changes not yet written to disk. */
+  private dirty = false;
 
   constructor(dbPath: string = 'db.json') {
     this.dbPath = path.resolve(dbPath);
@@ -85,7 +87,18 @@ export class JSONDatabase {
   private async saveArticles(records: ProcessedArticle[]): Promise<void> {
     const dir = path.dirname(this.dbPath);
     await fs.mkdir(dir, { recursive: true });
-    await fs.writeFile(this.dbPath, JSON.stringify(records, null, 2), 'utf8');
+    // Written compact: this file is a machine-read cache, and indenting a few
+    // thousand records only inflates it.
+    await fs.writeFile(this.dbPath, JSON.stringify(records), 'utf8');
+    this.dirty = false;
+  }
+
+  /**
+   * Writes pending changes to disk. Cheap to call when nothing changed.
+   */
+  async flush(): Promise<void> {
+    if (!this.dirty) return;
+    await this.saveArticles(Array.from(this.memoryCache.values()));
   }
 
   /**
@@ -137,8 +150,15 @@ export class JSONDatabase {
 
     this.memoryCache.set(url, record);
     this.indexIfSent(record);
-    const records = Array.from(this.memoryCache.values());
-    await this.saveArticles(records);
+    this.dirty = true;
+
+    // Broadcast records are the ones that must survive a crash: losing one
+    // means the story goes out again next run. A plain "already seen this URL"
+    // note costs at most one wasted AI call to rebuild, so those wait for the
+    // end-of-cycle flush instead of rewriting a multi-megabyte file per article.
+    if (sent) {
+      await this.flush();
+    }
   }
 
   /** Keeps the fingerprint index in sync with the broadcast records. */
@@ -197,25 +217,33 @@ export class JSONDatabase {
   }
 
   /**
-   * Cleans records older than a certain number of days to prevent file size bloat
+   * Drops records the bot no longer needs.
+   *
+   * The two kinds of record have very different lifetimes. Broadcast records
+   * are what later articles are deduplicated against, so they must outlive the
+   * dedup window. Everything else is only a note that a URL has been looked at,
+   * which stops mattering once the source feed stops listing it — a few days.
+   * Giving both the same fortnight left 93% of the file as dead weight.
    */
-  async cleanOlderThan(days: number): Promise<void> {
-    const now = new Date();
-    const limitMs = days * 24 * 60 * 60 * 1000;
-    
+  async prune(sentDays: number, seenDays: number): Promise<void> {
+    const now = Date.now();
+    const sentCutoff = now - sentDays * 24 * 60 * 60 * 1000;
+    const seenCutoff = now - seenDays * 24 * 60 * 60 * 1000;
+
     let deletedCount = 0;
     for (const [url, record] of this.memoryCache.entries()) {
       const processedTime = new Date(record.processedAt).getTime();
-      if (now.getTime() - processedTime > limitMs) {
+      const cutoff = record.sent ? sentCutoff : seenCutoff;
+      if (processedTime < cutoff) {
         this.memoryCache.delete(url);
         this.sentFingerprints.delete(url);
         deletedCount++;
       }
     }
-    
+
     if (deletedCount > 0) {
-      console.log(`[DB] Cleaned up ${deletedCount} database records older than ${days} days.`);
-      await this.saveArticles(Array.from(this.memoryCache.values()));
+      this.dirty = true;
+      console.log(`[DB] Pruned ${deletedCount} record(s): broadcasts older than ${sentDays} days, other records older than ${seenDays}.`);
     }
   }
 

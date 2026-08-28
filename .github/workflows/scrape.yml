@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     # Allows manual triggering from the GitHub Actions tab
 
-# Two overlapping runs read the same db.json, so both decide a story is unsent
+# Two overlapping runs read the same database, so both decide a story is unsent
 # and both broadcast it. Queue runs instead of letting them race.
 concurrency:
   group: news-bot-scrape
@@ -18,20 +18,32 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     permissions:
-      contents: write # Required to push db.json changes back to the repository
+      contents: read
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          # Fetches the latest commits to avoid git push conflicts
-          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
+
+      # db.json is a rolling record of what has been crawled and broadcast, not
+      # source. Committing it back every 15 minutes put 1,500+ commits of a
+      # multi-megabyte file into the repo's history and made cloning slow.
+      # A cache miss is harmless: the bot seeds an empty database silently and
+      # starts broadcasting again on the next cycle.
+      - name: Restore news database
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            db.json
+            subscribers.json
+          key: news-db-${{ github.run_id }}
+          restore-keys: |
+            news-db-
 
       - name: Install dependencies
         run: npm ci
@@ -49,42 +61,23 @@ jobs:
           POLL_INTERVAL_MINUTES: 15
           DRY_RUN: 'false'
 
-      - name: Commit and Push Database updates
+      # Runs even when the scraper failed: anything already broadcast this cycle
+      # must be remembered, or the next run sends it again.
+      - name: Count database records
+        id: db-check
+        if: always()
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          count=$(node -e "try { console.log(JSON.parse(require('fs').readFileSync('db.json','utf8')).length) } catch (e) { console.log(0) }")
+          echo "count=$count" >> "$GITHUB_OUTPUT"
+          echo "Database holds $count records."
 
-          if ! git status --porcelain | grep -q "db.json"; then
-            echo "No new articles added to database. Skipping commit."
-            exit 0
-          fi
-
-          echo "Database changed. Committing updates..."
-          git add db.json
-          git commit -m "chore: update news database cache [skip ci]"
-
-          # A dropped push throws away this run's record of what was broadcast,
-          # and the next run re-sends every story in it. Retry rather than lose it.
-          for attempt in 1 2 3; do
-            if git push origin main; then
-              echo "Database pushed on attempt $attempt."
-              exit 0
-            fi
-
-            echo "Push attempt $attempt failed. Rebasing onto origin/main..."
-            git fetch origin main
-            if ! git rebase origin/main; then
-              # db.json is append-heavy and conflicts are unmergeable by line.
-              # Keep our copy: it names every story this run already sent.
-              git rebase --abort || true
-              cp db.json "$RUNNER_TEMP/db.ours.json"
-              git reset --hard origin/main
-              cp "$RUNNER_TEMP/db.ours.json" db.json
-              git add db.json
-              git commit -m "chore: update news database cache [skip ci]"
-            fi
-            sleep $((attempt * 5))
-          done
-
-          echo "::error::Could not push db.json after 3 attempts. The next run will re-send this cycle's stories."
-          exit 1
+      # Never overwrite a good cache with an empty database from a run that
+      # died before it got started.
+      - name: Save news database
+        if: always() && steps.db-check.outputs.count != '0'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            db.json
+            subscribers.json
+          key: news-db-${{ github.run_id }}

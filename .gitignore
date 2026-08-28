@@ -3,3 +3,7 @@ dist/
 .env
 *.log
 .DS_Store
+
+# Rolling crawl/broadcast state, persisted through the Actions cache
+db.json
+subscribers.json

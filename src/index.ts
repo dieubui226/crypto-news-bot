@@ -20,6 +20,11 @@ const dedupWindowDays = parseInt(process.env.DEDUP_WINDOW_DAYS || '7', 10);
 // Cap on AI same-story comparisons per article, so a crowded topic cannot
 // trigger a dozen extra calls for one headline.
 const maxDuplicateChecks = parseInt(process.env.MAX_DUPLICATE_CHECKS || '3', 10);
+// Broadcast records have to outlive the dedup window or a repeat of an older
+// story matches nothing. "Already seen this URL" notes only have to outlive the
+// source feed's own listing, which is a few days at most.
+const sentRetentionDays = parseInt(process.env.SENT_RETENTION_DAYS || '14', 10);
+const seenRetentionDays = parseInt(process.env.SEEN_RETENTION_DAYS || '3', 10);
 
 // Initialize services
 const db = new JSONDatabase(dbPath);
@@ -273,8 +278,8 @@ async function checkNews() {
       console.log(`[Orchestrator] Analyzed ${analyzedCount} articles. No backlog left.`);
     }
 
-    // Auto-clean database articles older than 14 days
-    await db.cleanOlderThan(14);
+    await db.prune(sentRetentionDays, seenRetentionDays);
+    await db.flush();
 
   } catch (error) {
     console.error('[Orchestrator] Critical error in check cycle:', error);
@@ -315,6 +320,7 @@ async function shutdown(signal: string) {
   if (checkTimeout) {
     clearTimeout(checkTimeout);
   }
+  await db.flush();
   await telegramService.stop();
   console.log('[System] Shutdown complete. Goodbye!');
   process.exit(0);
