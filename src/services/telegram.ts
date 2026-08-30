@@ -217,14 +217,15 @@ export class TelegramService {
   /**
    * Sends an operational alert to the operator only.
    *
-   * Deliberately not the news broadcast path: TELEGRAM_CHAT_IDS may point at a
-   * public channel, and "the bot is broken" is not something its readers need.
-   * Falls back to the first configured target when no alert chat is set, since
-   * an alert nobody receives is worse than one in the wrong place.
+   * This bot has real subscribers, and none of them signed up to watch it
+   * break. TELEGRAM_ALERT_CHAT_ID is therefore the only destination an alert
+   * can ever reach: no fallback to the broadcast targets, no reuse of the
+   * subscriber list. With no alert chat configured the alert stays in the
+   * Actions log, which is the correct failure mode here — an alert sent to the
+   * wrong audience costs more than one nobody sees.
    */
   async sendAlert(text: string, recovered: boolean = false): Promise<void> {
-    const configured = process.env.TELEGRAM_ALERT_CHAT_ID?.trim();
-    const target = configured || this.authorizedChatIds[0];
+    const target = process.env.TELEGRAM_ALERT_CHAT_ID?.trim();
     const message = `${recovered ? '✅' : '🚨'} <b>News bot</b>\n\n${this.escapeHTML(text)}`;
 
     if (this.dryRun || !this.bot) {
@@ -232,7 +233,7 @@ export class TelegramService {
       return;
     }
     if (!target) {
-      console.error('[Telegram] Health alert raised but no alert target is configured:', text);
+      console.error('[Telegram] Health alert raised but TELEGRAM_ALERT_CHAT_ID is not set. Not sending anywhere:', text);
       return;
     }
 
