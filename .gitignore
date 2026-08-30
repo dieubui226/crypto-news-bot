@@ -8,3 +8,5 @@ dist/
 db.json
 subscribers.json
 health.json
+.env.*
+!.env.example

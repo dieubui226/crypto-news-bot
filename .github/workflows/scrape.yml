@@ -73,6 +73,18 @@ jobs:
           SINGLE_RUN: 'true'
           POLL_INTERVAL_MINUTES: 15
           DRY_RUN: 'false'
+          # Các nút chỉnh của bot. Sửa thẳng ở đây, không cần đụng vào code.
+          # Nhịp gửi: tối đa bao nhiêu tin mỗi chu kỳ, giãn cách bao nhiêu giây.
+          MAX_SENDS_PER_RUN: '3'
+          SEND_SPACING_SECONDS: '60'
+          # Chống trùng: số ngày nhìn lại, và trần số bài đưa cho AI mỗi chu kỳ.
+          DEDUP_WINDOW_DAYS: '7'
+          MAX_ARTICLES_PER_RUN: '40'
+          # Lưu trữ: tin đã gửi phải sống lâu hơn cửa sổ chống trùng.
+          SENT_RETENTION_DAYS: '14'
+          SEEN_RETENTION_DAYS: '3'
+          # Bao nhiêu giờ không gửi tin nào thì coi là lỗi thầm lặng.
+          SILENCE_ALERT_HOURS: '24'
           # Lets the bot tell a genuinely first-ever run apart from one that
           # inherited a database and still found it empty.
           CACHE_RESTORED: ${{ steps.restore-db.outputs.cache-matched-key != '' }}
