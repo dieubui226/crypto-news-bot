@@ -5,6 +5,7 @@ import { CrawlerService } from './services/crawler';
 import { AIService } from './services/ai';
 import { TelegramService } from './services/telegram';
 import { fingerprint, AUTO_DUPLICATE_THRESHOLD } from './services/dedup';
+import { HealthMonitor } from './services/health';
 import { Article } from './types';
 
 // Load environment variables
@@ -25,12 +26,22 @@ const maxDuplicateChecks = parseInt(process.env.MAX_DUPLICATE_CHECKS || '3', 10)
 // source feed's own listing, which is a few days at most.
 const sentRetentionDays = parseInt(process.env.SENT_RETENTION_DAYS || '14', 10);
 const seenRetentionDays = parseInt(process.env.SEEN_RETENTION_DAYS || '3', 10);
+// Going this long without broadcasting anything, while runs keep succeeding, is
+// a silent failure rather than a quiet news day: the channel averages well over
+// a dozen items a day.
+const silenceAlertHours = parseInt(process.env.SILENCE_ALERT_HOURS || '24', 10);
+const healthPath = process.env.HEALTH_PATH || 'health.json';
+// Set by the workflow from the cache-restore step. Inheriting a database and
+// still finding it empty is the signature of lost state, which a genuinely
+// first-ever run must not be mistaken for.
+const cacheWasRestored = process.env.CACHE_RESTORED === 'true';
 
 // Initialize services
 const db = new JSONDatabase(dbPath);
 const crawlerService = new CrawlerService();
 const aiService = new AIService();
 const telegramService = new TelegramService(db);
+const health = new HealthMonitor(healthPath, silenceAlertHours);
 
 let isRunning = false;
 let checkTimeout: NodeJS.Timeout | null = null;
@@ -76,6 +87,7 @@ async function checkNews() {
     }
 
     console.log(`[Orchestrator] Found total of ${allArticles.length} articles across all sources.`);
+    health.recordCrawl(allArticles.length);
 
     // Filter out already processed articles
     const newArticles = allArticles.filter(article => !db.has(article.url));
@@ -249,6 +261,8 @@ async function checkNews() {
           analysis.importance
         );
 
+        health.recordBroadcast();
+
         // Save to DB with summary, flagged as sent so later articles dedupe
         // against it. The translated title is stored too, so a later report of
         // the same event in the other language still matches.
@@ -289,6 +303,20 @@ async function checkNews() {
     // flushing only at the end of the happy path loses the whole seed and
     // leaves the next run believing the database is still empty.
     await db.flush();
+
+    // Reported last so the checks see the finished cycle, and inside `finally`
+    // so a cycle that threw or returned early still gets noticed.
+    try {
+      const alerts = health.evaluate(db.size === 0, cacheWasRestored);
+      for (const alert of alerts) {
+        console.log(`[Health] ${alert.recovered ? 'RECOVERED' : 'ALERT'} (${alert.id}): ${alert.text}`);
+        await telegramService.sendAlert(alert.text, alert.recovered);
+      }
+      await health.save();
+    } catch (err) {
+      console.error('[Health] Health reporting failed:', err);
+    }
+
     isRunning = false;
     console.log(`[Orchestrator] Check cycle complete. Sleeping for ${pollIntervalMinutes} minutes...\n`);
     // Schedule next run or exit if single-run mode is active
@@ -312,6 +340,7 @@ async function start() {
   
   // Initialize Database
   await db.init();
+  await health.load();
 
   // Run first check immediately
   await checkNews();

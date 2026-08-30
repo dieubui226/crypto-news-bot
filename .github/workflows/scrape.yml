@@ -36,6 +36,7 @@ jobs:
       # A cache miss is harmless: the bot seeds an empty database silently and
       # starts broadcasting again on the next cycle.
       - name: Restore news database
+        id: restore-db
         uses: actions/cache/restore@v4
         with:
           path: |
@@ -44,6 +45,17 @@ jobs:
           key: news-db-${{ github.run_id }}
           restore-keys: |
             news-db-
+
+      # Health state is cached separately and on purpose. The failure it exists
+      # to catch is the article database going missing, so sharing a cache entry
+      # with it would blind the check exactly when it is needed.
+      - name: Restore health state
+        uses: actions/cache/restore@v4
+        with:
+          path: health.json
+          key: news-health-${{ github.run_id }}
+          restore-keys: |
+            news-health-
 
       - name: Install dependencies
         run: npm ci
@@ -57,9 +69,13 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_IDS: ${{ secrets.TELEGRAM_CHAT_IDS }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_ALERT_CHAT_ID: ${{ secrets.TELEGRAM_ALERT_CHAT_ID }}
           SINGLE_RUN: 'true'
           POLL_INTERVAL_MINUTES: 15
           DRY_RUN: 'false'
+          # Lets the bot tell a genuinely first-ever run apart from one that
+          # inherited a database and still found it empty.
+          CACHE_RESTORED: ${{ steps.restore-db.outputs.cache-matched-key != '' }}
 
       # Runs even when the scraper failed: anything already broadcast this cycle
       # must be remembered, or the next run sends it again.
@@ -81,3 +97,12 @@ jobs:
             db.json
             subscribers.json
           key: news-db-${{ github.run_id }}
+
+      # Saved on its own condition: when the database is missing, the health
+      # state is the only thing that can still report why.
+      - name: Save health state
+        if: always() && hashFiles('health.json') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: health.json
+          key: news-health-${{ github.run_id }}

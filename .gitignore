@@ -7,3 +7,4 @@ dist/
 # Rolling crawl/broadcast state, persisted through the Actions cache
 db.json
 subscribers.json
+health.json

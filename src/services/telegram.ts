@@ -215,6 +215,36 @@ export class TelegramService {
   }
 
   /**
+   * Sends an operational alert to the operator only.
+   *
+   * Deliberately not the news broadcast path: TELEGRAM_CHAT_IDS may point at a
+   * public channel, and "the bot is broken" is not something its readers need.
+   * Falls back to the first configured target when no alert chat is set, since
+   * an alert nobody receives is worse than one in the wrong place.
+   */
+  async sendAlert(text: string, recovered: boolean = false): Promise<void> {
+    const configured = process.env.TELEGRAM_ALERT_CHAT_ID?.trim();
+    const target = configured || this.authorizedChatIds[0];
+    const message = `${recovered ? '✅' : '🚨'} <b>News bot</b>\n\n${this.escapeHTML(text)}`;
+
+    if (this.dryRun || !this.bot) {
+      console.log(`\n--- [DRY RUN - ALERT] ---\nTo: ${target || 'nobody'}\n${message}\n-------------------------\n`);
+      return;
+    }
+    if (!target) {
+      console.error('[Telegram] Health alert raised but no alert target is configured:', text);
+      return;
+    }
+
+    try {
+      await this.bot.telegram.sendMessage(target, message, { parse_mode: 'HTML' });
+      console.log(`[Telegram] Health alert sent to ${target}.`);
+    } catch (error: any) {
+      console.error('[Telegram] Failed to send health alert:', error.message);
+    }
+  }
+
+  /**
    * Closes the bot connection gracefully
    */
   async stop() {
