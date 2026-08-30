@@ -30,6 +30,11 @@ const seenRetentionDays = parseInt(process.env.SEEN_RETENTION_DAYS || '3', 10);
 // a silent failure rather than a quiet news day: the channel averages well over
 // a dozen items a day.
 const silenceAlertHours = parseInt(process.env.SILENCE_ALERT_HOURS || '24', 10);
+// Readers experience a burst as spam even when every item in it is relevant, so
+// a cycle broadcasts a few at a time and leaves the rest for the next run. A
+// backlog then drains over an hour instead of arriving as one wall of messages.
+const maxSendsPerRun = parseInt(process.env.MAX_SENDS_PER_RUN || '3', 10);
+const sendSpacingSeconds = parseInt(process.env.SEND_SPACING_SECONDS || '60', 10);
 const healthPath = process.env.HEALTH_PATH || 'health.json';
 // Set by the workflow from the cache-restore step. Inheriting a database and
 // still finding it empty is the signature of lost state, which a genuinely
@@ -137,6 +142,7 @@ async function checkNews() {
     ];
 
     let analyzedCount = 0;
+    let sentThisRun = 0;
     let deferredCount = 0;
     let duplicateCount = 0;
 
@@ -185,7 +191,10 @@ async function checkNews() {
       }
 
       // Leave the rest of the backlog untouched so the next run can pick it up.
-      if (aiService.isQuotaExhausted || analyzedCount >= maxArticlesPerRun) {
+      // The send budget is checked here rather than at the point of sending:
+      // analysing an article we have already decided not to broadcast this
+      // cycle spends an AI call for nothing.
+      if (aiService.isQuotaExhausted || analyzedCount >= maxArticlesPerRun || sentThisRun >= maxSendsPerRun) {
         deferredCount++;
         continue;
       }
@@ -268,8 +277,13 @@ async function checkNews() {
         // the same event in the other language still matches.
         await db.add(article.url, article.title, article.source, analysis.summary, true, analysis.title);
 
-        // Sleep to avoid rate limiting or spamming the chat
-        await delay(3000);
+        sentThisRun++;
+
+        // Space the messages out. Skipped after the last one the budget allows,
+        // since the wait would only delay the end of the run.
+        if (sentThisRun < maxSendsPerRun) {
+          await delay(sendSpacingSeconds * 1000);
+        }
       } else {
         if (analysis.error) {
           console.log(`[Orchestrator] -> Analysis failed for "${article.title}" due to AI API errors. Skipping DB commit to retry later.`);
@@ -286,10 +300,14 @@ async function checkNews() {
     }
 
     if (deferredCount > 0) {
-      const reason = aiService.isQuotaExhausted ? 'AI quota exhausted' : `per-run limit of ${maxArticlesPerRun} reached`;
-      console.log(`[Orchestrator] Analyzed ${analyzedCount} articles. Deferred ${deferredCount} to the next run (${reason}).`);
+      const reason = aiService.isQuotaExhausted
+        ? 'AI quota exhausted'
+        : sentThisRun >= maxSendsPerRun
+          ? `send budget of ${maxSendsPerRun} per run spent`
+          : `per-run analysis limit of ${maxArticlesPerRun} reached`;
+      console.log(`[Orchestrator] Analyzed ${analyzedCount}, broadcast ${sentThisRun}. Deferred ${deferredCount} to the next run (${reason}).`);
     } else {
-      console.log(`[Orchestrator] Analyzed ${analyzedCount} articles. No backlog left.`);
+      console.log(`[Orchestrator] Analyzed ${analyzedCount}, broadcast ${sentThisRun}. No backlog left.`);
     }
 
     await db.prune(sentRetentionDays, seenRetentionDays);
