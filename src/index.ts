@@ -279,11 +279,16 @@ async function checkNews() {
     }
 
     await db.prune(sentRetentionDays, seenRetentionDays);
-    await db.flush();
 
   } catch (error) {
     console.error('[Orchestrator] Critical error in check cycle:', error);
   } finally {
+    // Every exit from this cycle runs through here, including the early
+    // returns for an empty database and an empty crawl. Seeding writes
+    // thousands of records and not one of them forces a write on its own, so
+    // flushing only at the end of the happy path loses the whole seed and
+    // leaves the next run believing the database is still empty.
+    await db.flush();
     isRunning = false;
     console.log(`[Orchestrator] Check cycle complete. Sleeping for ${pollIntervalMinutes} minutes...\n`);
     // Schedule next run or exit if single-run mode is active
