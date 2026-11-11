@@ -35,6 +35,11 @@ const silenceAlertHours = parseInt(process.env.SILENCE_ALERT_HOURS || '24', 10);
 // backlog then drains over an hour instead of arriving as one wall of messages.
 const maxSendsPerRun = parseInt(process.env.MAX_SENDS_PER_RUN || '3', 10);
 const sendSpacingSeconds = parseInt(process.env.SEND_SPACING_SECONDS || '60', 10);
+// The per-run budget alone still allows 3 sends every 15 minutes, close to 300
+// a day if GitHub runs the schedule on time. This caps the rolling 24 hours.
+// Articles over the cap are deferred, not dropped, so the next run with budget
+// left picks them up while they are still in the feeds.
+const maxSendsPerDay = parseInt(process.env.MAX_SENDS_PER_DAY || '15', 10);
 const healthPath = process.env.HEALTH_PATH || 'health.json';
 // Set by the workflow from the cache-restore step. Inheriting a database and
 // still finding it empty is the signature of lost state, which a genuinely
@@ -144,6 +149,11 @@ async function checkNews() {
     let analyzedCount = 0;
     let sentThisRun = 0;
     let deferredCount = 0;
+    const sentLast24h = db.countSentSince(Date.now() - 24 * 60 * 60 * 1000);
+    const runBudget = Math.max(0, Math.min(maxSendsPerRun, maxSendsPerDay - sentLast24h));
+    if (runBudget < maxSendsPerRun) {
+      console.log(`[Orchestrator] ${sentLast24h} sent in the last 24h (daily cap ${maxSendsPerDay}). Budget this run: ${runBudget}.`);
+    }
     let duplicateCount = 0;
 
     // Pass 1: collapse identical headlines inside this batch. Aggregators and
@@ -194,7 +204,7 @@ async function checkNews() {
       // The send budget is checked here rather than at the point of sending:
       // analysing an article we have already decided not to broadcast this
       // cycle spends an AI call for nothing.
-      if (aiService.isQuotaExhausted || analyzedCount >= maxArticlesPerRun || sentThisRun >= maxSendsPerRun) {
+      if (aiService.isQuotaExhausted || analyzedCount >= maxArticlesPerRun || sentThisRun >= runBudget) {
         deferredCount++;
         continue;
       }
@@ -281,7 +291,7 @@ async function checkNews() {
 
         // Space the messages out. Skipped after the last one the budget allows,
         // since the wait would only delay the end of the run.
-        if (sentThisRun < maxSendsPerRun) {
+        if (sentThisRun < runBudget) {
           await delay(sendSpacingSeconds * 1000);
         }
       } else {
@@ -302,8 +312,10 @@ async function checkNews() {
     if (deferredCount > 0) {
       const reason = aiService.isQuotaExhausted
         ? 'AI quota exhausted'
-        : sentThisRun >= maxSendsPerRun
-          ? `send budget of ${maxSendsPerRun} per run spent`
+        : sentThisRun >= runBudget
+          ? (runBudget < maxSendsPerRun
+            ? `daily cap of ${maxSendsPerDay} sends per 24h reached`
+            : `send budget of ${maxSendsPerRun} per run spent`)
           : `per-run analysis limit of ${maxArticlesPerRun} reached`;
       console.log(`[Orchestrator] Analyzed ${analyzedCount}, broadcast ${sentThisRun}. Deferred ${deferredCount} to the next run (${reason}).`);
     } else {
