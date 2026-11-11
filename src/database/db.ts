@@ -185,6 +185,15 @@ export class JSONDatabase {
     this.sentFingerprints.set(record.url, prints);
   }
 
+  /** Counts broadcasts made at or after `sinceMs` (epoch milliseconds). */
+  countSentSince(sinceMs: number): number {
+    let count = 0;
+    for (const record of this.memoryCache.values()) {
+      if (record.sent && new Date(record.processedAt).getTime() >= sinceMs) count++;
+    }
+    return count;
+  }
+
   /**
    * Finds previously broadcast articles from the last `days` whose headline
    * overlaps enough to plausibly be the same story, best match first.
