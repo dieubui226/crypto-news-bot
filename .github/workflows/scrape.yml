@@ -19,6 +19,8 @@ jobs:
     timeout-minutes: 20
     permissions:
       contents: read
+      # Cần để bước keepalive cuối job bật lại chính workflow này.
+      actions: write
 
     steps:
       - name: Checkout repository
@@ -118,3 +120,13 @@ jobs:
         with:
           path: health.json
           key: news-health-${{ github.run_id }}
+
+      # GitHub tự tắt lịch chạy của repo public sau 60 ngày không có commit
+      # (đã xảy ra ngày 29/10/2026). Gọi API bật lại chính workflow này mỗi chu kỳ
+      # để bộ đếm 60 ngày luôn được reset, không cần commit giả.
+      - name: Keep schedule alive
+        if: always()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/scrape.yml/enable"
